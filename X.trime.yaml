@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
+  keyboards: [.default, number, symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -467,7 +467,7 @@ preset_keyboards:
       - {click: "9", width: 18}
       - {click: "BackSpace", width: 16, swipe_left: DelH}
       # Line4
-      - {click: "K_back1", key_text_size: 15}
+      - {click: "K_back1", long_click: "k_symbol", key_text_size: 15}
       - {click: "q_zb", key_text_size: 15}
       - {click: "q_ts", long_click: "q_bq" , key_text_size: 15, width: 18}
       - {click: "0", width: 18}
@@ -475,8 +475,60 @@ preset_keyboards:
       - {click: "Return", width: 16, key_text_size: 15}
     name: "数字"
     width: 15
-#
-    
+# 符号布局
+  symbol:
+    height: *baseH  
+    horizontal_gap: *baseCG 
+    vertical_gap: *baseLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    key_symbol_offset_y: *symbolY
+    key_press_offset_x: 0
+    key_press_offset_y: 3
+    key_symbol_offset_x: *symbolX
+    label_transform: uppercase # 中文 字母大写，none
+    keys:
+      # 1 
+      - {click: 1, long_click: "!"}
+      - {click: 2, long_click: "@"}
+      - {click: 3, long_click: "#", swipe_down: edit_menu}
+      - {click: 4, long_click: "$"}
+      - {click: 5, long_click: "%"}
+      - {click: 6, long_click: "^"}
+      - {click: 7, long_click: "&"}
+      - {click: 8, long_click: "*"}
+      - {click: 9, long_click: "("}
+      - {click: 0, long_click: ")"}
+      # 2
+      - {click: '@', long_click: "", swipe_down: Select_all}
+      - {click: '#', long_click: "№"}
+      - {click: '$', long_click: "￥", swipe_down: Date_time}
+      - {click: '_', long_click: "—"}
+      - {click: '&', long_click: "*"}
+      - {click: '-', long_click: "["}
+      - {click: '+', long_click: "]"}
+      - {click: '(', long_click: "{"}
+      - {click: ')', long_click: "}", swipe_down: "="}
+      - {click: '/', long_click: "\\"}
+      # 3 
+      - {click: Shift_L, composing: Escape, width: 15}
+      - {click: '*', long_click: "★"}
+      - {click: '"', long_click: "✔", swipe_down: Cut}
+      - {click: "'", long_click: "✘", swipe_down: Copy}
+      - {click: ':', long_click: "♪", swipe_down: Paste}
+      - {click: ';', long_click: "™" }
+      - {click: '!', long_click: "¡" }
+      - {click: '?', long_click: "¿" }
+      - {click: BackSpace, width: 15, swipe_left: DelH}
+      # 4
+      - {height: *downH, click: number, swipe_up: q_zb, has_menu: Page_Down, long_click: K_menu, width: 18}
+      - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
+      - {click: space, ascii: space_en, swipe_left: Left, swipe_right: Right, width: 38}
+      - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
+      - {click: Return, long_click: Color_settings1, swipe_up: Theme_settings, width: 18}
+    name: "符号"
+    width: 10    
+
 #
   qtzb:
     author: 青 铜 #中文，
@@ -1766,6 +1818,7 @@ preset_keys:
   edit_plus: {label: 增强编辑 , send: Eisu_toggle, select: "editplus"}
   number: {label: 12! , send: Eisu_toggle, select: "number"}
   english: {label: ️中文, send: Eisu_toggle, select: english} #英文键盘
+  k_symbol: {label: .?! , send: Eisu_toggle, select: "symbol"} #符号键盘
   k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
 
 #编辑
