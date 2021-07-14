@@ -1,0 +1,1935 @@
+#顶部 顶端
+name: x
+author: chr
+
+other:
+  #圆角
+  a: &Corner 8 
+  #文字偏移
+  b: &symbolY 0.6 #上标Y
+  c: &symbolX 0 #上标X
+  d: &textY 0 #文本Y
+  e: &hintY -1 #下标Y
+  #字号
+  f: &textS 16 
+  g: &symbolS 7 #上标
+  h: &hintS 6 #下标
+height:
+  #键高(按键上下方向长度) 
+  A: &baseH 46.5 #基础键高
+  B: &downH 48.5 #末行键高
+  C: &miniH 32.5 #小键键高(符号键盘)
+  D: &numbH 46.5 #数字键高(数字键盘)
+  #间隔(键与键的距离) 
+  E: &baseLG 6 #基础行距
+  F: &miniLG 3 #小键行距
+  G: &numbLG 3 #数字行距
+  H: &baseCG 4 #基础列距
+  I: &miniCG 3 #小键列距
+  J: &numbCG 3 #数字列距
+#
+style:
+  auto_caps: false #自动句首大写:true|false|ascii
+  background_dim_amount: 0.5
+  #candidate_font: ziti.ttf #候选字型
+  candidate_padding: 2 #候选项内边距
+  candidate_spacing: 4 #候选间距
+  candidate_text_size: 21 #候选字号
+  candidate_use_cursor: true #高亮候选项
+  candidate_view_height: 26 #候选区高度
+  color_scheme: default #配色方案
+  comment_font: ziti.ttf #候选窗和状态栏提示字型
+  comment_height: 10 #候选窗和状态栏提示区高度
+  comment_on_top: true #候选窗和状态栏提示在上方true或右侧false
+  comment_text_size: 12 #候选窗和状态栏提示字号
+  hanb_font: Ext.ttf #扩充字型
+  horizontal: false #水平模式
+  horizontal_gap: *miniCG #符号键盘列间距
+  layout: #悬浮窗口位置
+    position: bottom_left #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right
+    min_length: 2 #候选窗口最小词长
+    max_length: 18 #超过字数则换行
+    sticky_lines: 0 #固顶行数
+    max_entries: 7 #候选窗口最大词条数
+    all_phrases: false #所有满足条件的词语都显示在窗口
+    border: 1 #候选窗口边框宽度
+    max_width: 620 #最大宽度，超过则自动换行
+    max_height: 30 #最大高度
+    min_width: 0 #最小宽度
+    min_height: 0 #最小高度
+    margin_x: 5 #水平边距   #悬浮窗宽
+    margin_y: 0 #竖直边距   #悬浮窗高
+    line_spacing: 0 #候选词的行间距(px)
+    line_spacing_multiplier: 1 #候选词的行间距(倍数)
+    spacing: 1 #悬浮窗偏移量
+    round_corner: *Corner #候选窗口圆角
+    alpha: 255 #透明度(0-255)
+    elevation: 1 #阴影(>=Android5.0)
+    background: candidate_text_color #颜色色或者backgrounds目录下的图片文件名，此项无效时后面配色的text_back_color则生效
+    movable: false #是否可移动窗口，或仅移动一次 true|false|once
+  window: #悬浮窗口组件
+    - {start: "  ", composition: "%s", end: " ", letter_spacing: 0.12} #编码
+    - {start: "\n", label: "", candidate: " %s ", comment: " %s", end: " ", sep: " "}  #label: "%s.", 序号;start: "\n", 换行
+  key_font: ziti.ttf #键盘字型
+  key_height: *baseH #符号键盘键高
+  key_long_text_size: 15 #两字以上时键字号
+  key_text_size: 21 #键字号
+  key_width: 10.0 #键宽，占银幕宽的百分比
+  keyboards: [.default, number, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
+  label_text_size: 11 #悬浮窗序号字号
+  label_font: ziti.ttf #标签字型
+  latin_font: latin.ttf #西文字型
+  latin_locale: en_US #西文语言
+  locale: zh_CN #预设语言
+  preview_font: ziti.ttf #按键提示字型
+  preview_height: 50 #按键提示高度
+  preview_offset: -10 #按键提示纵向偏移
+  preview_text_size: 36 #按键提示字号
+  proximity_correction: true #无click时是否沿用相邻键功能，位于左右两端的即使否也会沿用
+  reset_ascii_mode: false #不同进程中显示键盘时重置为中文状态（true:重置为中文；false:记忆中英状态）
+  round_corner: *Corner #符号键盘按键圆角半径
+  shadow_radius: 0.0 #按键阴影半径
+  speech_opencc_config: none #语音输入简繁转换
+  symbol_font: ziti.ttf #符号字型
+  symbol_text_size: 8 #符号字号 上标字号
+  text_font: ziti.ttf #编码字型
+  text_size: 16 #编码字号
+  vertical_correction: -3 #按键纵向偏移，负数下移接触面
+  vertical_gap: *baseLG #符号键盘行距
+fallback_colors:
+  keyboard_back_color: back_color  #键盘背景
+  #悬浮窗
+  border_color: xbcbj #悬浮窗边框
+  hilited_back_color: xfcbmbj #back_color #悬浮窗首选编码背景
+  hilited_candidate_back_color: hcb #悬浮窗首选背景
+  hilited_text_color: xfcbm #悬浮窗编码
+  text_back_color: xbcbj #编码区悬浮窗背景
+  label_color: candidate_text_color #悬浮窗次选序号
+  #气泡
+  preview_back_color: back_color #按键气泡背景
+  preview_text_color: key_text_color #按键气泡文本
+  shadow_color: border_color #按键文字阴影（阴影半径在shadow_radius中设置）
+  #状态栏候选栏
+  candidate_separator_color: back_color #border_color #状态栏分割背景
+  candidate_text_color: text_color #CN次选文字色
+  comment_text_color: key_text_color #EN次选编码提示
+  hilited_candidate_text_color: hilited_key_text_color #首选文字
+  hilited_comment_text_color: hilited_key_text_color #首选编码提示
+  #普通键
+  key_back_color: back_color #符号键盘按键背景✍背景
+  hilited_key_back_color: AAH #高亮按键背景
+  key_text_color: candidate_text_color #按键字母&悬浮窗✍色
+  hilited_key_text_color: key_text_color #hilited_candidate_text_color #高亮按键文本
+  key_symbol_color: comment_text_color #按键上下符号
+  hilited_key_symbol_color: hilited_key_text_color #高亮按键符号
+  #shift键锁定
+  on_key_back_color: 0xff7200
+  on_key_text_color: 0xffffffff
+  hilited_on_key_back_color: hilited_key_back_color
+  hilited_on_key_text_color: on_key_text_color
+  #shift键常态及功能键
+  off_key_back_color: key_back_color
+  hilited_off_key_back_color: hilited_key_back_color
+  off_key_text_color: szt
+  hilited_off_key_text_color: off_key_text_color 
+  AAH: key_text_color
+  shb: szb
+  bdb: szb
+  zbd: bdb
+  kgb: AAA
+  ybd: bdb
+  hsb: szb
+  hcb: szb
+  hst: szt
+  kgt: szt
+  bdt: szt
+  bds: szs
+  fhb: 0xff686973 #符号 导航键背景
+  hilite_b: szb #符号 导航选中键背景
+
+#颜色
+colors:
+  1: &黑 0xff000000
+  2: &白 0xffffffff
+  3: &橙 0xf08200
+  4: &黑b 0xff888888
+  5: &黑c 0xff555555
+  6: &灰  0xffcccccc
+  7: &红  0xff2200
+  8: &灰b 0xffaaaaaa
+  9: &灰c 0xff777777
+
+  
+#配色，
+preset_color_schemes:
+  default:
+    name: "iOS" #ios
+    back_color: 0xffD1D4D9 #候选背景
+    hilited_candidate_back_color: 0xaa007AFE   #首字 背景
+    hilited_key_back_color: *橙
+    hilited_key_text_color: *白
+    key_back_color: *白
+    key_symbol_color: *灰c
+    key_text_color: *黑
+    text_color: *黑 #次选
+    on_key_text_color: *红 #锁
+    xfcbm: *红
+    xbcbj: *白
+    xfcbmbj: 0x00 #悬浮窗编码背景
+    AAA: *白
+    AAH: *橙
+    szb: 0xAAB1BB
+    szt: *白
+    szs: *白
+    kgt: *黑c
+    qszb: 0xAAB1BB   #数字键盘 功能键背景
+    tab_b: 0xffbbbbbb #tab背景
+    qszt: *白   #字色 数字、符号
+    hcb: 0x007AFE
+    hct: *白
+
+  ge:
+    name: "Google" #Google 谷歌
+    back_color: 0xffeeeeee #候选背景
+    hilited_candidate_back_color: 0xFF4BCCD0   #首字 背景
+    hilited_key_back_color: *橙
+    hilited_key_text_color: *白
+    key_back_color: *白
+    key_symbol_color: *灰c
+    key_text_color: *黑
+    text_color: *黑 #次选
+    on_key_text_color: *红 #锁
+    xfcbm: *红
+    xbcbj: *白
+    xfcbmbj: 0x00
+    AAA: *白
+    AAH: *橙
+    szb: 0xffe1e1e1
+    szt: *黑c
+    szs: *黑c
+    kgt: *黑c
+    qszb: 0xffe1e1e1   #数字键盘 功能键背景
+    tab_b: 0xffbbbbbb #tab背景
+    qszt: *黑c   #字色 数字、符号
+    hcb: 0xFF82D0D2
+    hct: *白
+    hilite_b: 0xFF82D0D2
+
+  ry:
+    name: "入夜" #入夜
+    back_color: 0xFF353535 #候选背景
+    hilited_candidate_back_color: *橙   #首字 背景
+    hilited_key_back_color: *橙
+    hilited_key_text_color: *白
+    key_back_color: 0xFF474747
+    key_symbol_color: *白
+    key_text_color: *白
+    text_color: *白 #次选
+    on_key_text_color: *橙 #锁
+    xfcbm: 0xFFF7FF00 #悬浮窗编码
+    xbcbj: 0xa0424347
+    xfcbmbj: 0x00
+    AAH: 0xFFE56D4B
+    szb: 0xFF515152
+    szt: *灰
+    szs: *灰
+    qszb: 0xFF575759  #数字键盘 功能键背景
+    tab_b: 0xff686973 #tab背景
+    qszt: *灰   #字色 数字、符号
+    hcb: 0xFFE56D4B
+    hct: *白
+
+#键盘布局
+preset_keyboards:
+  default:
+    ascii_mode: 0
+    lock: true
+    height: *baseH  
+    horizontal_gap: *baseCG 
+    vertical_gap: *baseLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    key_symbol_offset_y: *symbolY
+    key_press_offset_x: 0
+    key_press_offset_y: 3
+    key_symbol_offset_x: *symbolX
+    label_transform: uppercase # 中文 字母大写，none
+    keys:
+      # 1 
+      - {click: q, long_click: "1"}
+      - {click: w, long_click: "2"}
+      - {click: e, long_click: "3", swipe_down: edit_menu}
+      - {click: r, long_click: "4"}
+      - {click: t, long_click: "5"}
+      - {click: y, long_click: "6"}
+      - {click: u, long_click: "7"}
+      - {click: i, long_click: "8"}
+      - {click: o, long_click: "9"}
+      - {click: p, long_click: "0"}
+      # 2
+      - {width: 5}
+      - {click: a, long_click: '@', swipe_down: Select_all}
+      - {click: s, long_click: '#'}
+      - {click: d, long_click: '$', swipe_down: Date_time}
+      - {click: f, long_click: '_'}
+      - {click: g, long_click: '&'}
+      - {click: h, long_click: '-'}
+      - {click: j, long_click: '+'}
+      - {click: k, long_click: '('}
+      - {click: l, long_click: ')', swipe_down: "="}
+      - {width: 5}
+      # 3 
+      - {click: Shift_L, composing: Escape, width: 15}
+      - {click: z, long_click: '\'}
+      - {click: x, long_click: '"', swipe_down: Cut}
+      - {click: c, long_click: "'", swipe_down: Copy}
+      - {click: v, long_click: ':', swipe_down: Paste}
+      - {click: b, long_click: ';'}
+      - {click: n, long_click: "!"}
+      - {click: m, long_click: '?'}
+      - {click: BackSpace, width: 15, swipe_left: DelH}
+      # 4
+      - {height: *downH, click: number, swipe_up: q_zb, has_menu: Page_Down, long_click: "K_menu", width: 18}
+      - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
+      - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
+      - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
+      - {click: Return, long_click: Color_settings1, swipe_up: Theme_settings, width: 18}
+    name: "默认"
+    width: 10
+#英语键盘
+  english:
+    __include: /preset_keyboards/default
+    ascii_mode: 1
+    __patch:
+        # "keys/@32/click": "."
+        "keys/@32/long_click": "。"
+        # "keys/@33/long_click": "k_default"
+        # "keys/@34/click": ","
+        "keys/@34/long_click": "，"
+    name: "英文键盘"
+# 菜单
+  K_menu:
+    height: *baseH
+    horizontal_gap: *baseCG
+    vertical_gap: *baseLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      # 一
+      - {click: "", key_back_color: 0x00, width: 10}
+      - {click: "refresh", hint: 刷　新, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Deploy", hint: 部　署, key_text_size: 17, key_back_color: 0x00}
+      - {click: "Menu", hint: 方　案, key_text_size: 22, key_back_color: 0x00}
+      - {click: "IME_switch", hint: 输入法, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Hint_switch", hint: 提　示, key_text_size: 20, key_back_color: 0x00}
+      - {click: "", key_back_color: 0x00, width: 10}
+      # 二
+      - {click: "", key_back_color: 0x00, width: 10}
+      - {click: "K_mr", hint: 默　认, key_text_size: 16, key_back_color: 0x00}
+      - {click: "", key_back_color: 0x00}
+      - {click: "Full_Half1", hint: 全半角, key_text_size: 16, key_back_color: 0x00}
+      - {click: "Candidate_switch", hint: 候选栏, key_text_size: 18, key_back_color: 0x00}
+      - {click: "t_fhvjj", key_back_color: 0x00}
+      - {click: "", key_back_color: 0x00, width: 10}
+      # 三
+      - {width: 100}
+      #四
+      - {width: 100}
+    key_hint_offset_y: *hintY
+    name: "菜单"
+    width: 16
+
+# 编辑
+  editmenu: #编辑
+    author: nobody
+    height: *baseH #高
+    horizontal_gap: *baseCG #竖
+    vertical_gap: *baseLG #行
+    round_corner: *Corner #圆
+    key_text_offset_y: *textY
+    keys:
+      # ❶
+      # ❷
+      - {click: "undo"}
+      - {click: Home, hint: 行首}
+      - {click: "Up"}
+      - {click: End, hint: 行尾}
+      - {click: "K_back1", width: 20}
+      # ❸
+      - {click: "edit_plus"}
+      - {click: "Left"}
+      - {click: "Shift"}
+      - {click: "Right"}
+      - {click: "Space", width: 20}
+      # ❹
+      - {click: "0x00", long_click: "0xff"}
+      - {click: "Tab1"}
+      - {click: "Down"}
+      - {click: "SelectLine", hint: 选中行}
+      - {click: "BackSpace", width: 20}
+      # ❺ 
+      - {click: "Select_all"}
+      - {click: "Cut"}
+      - {click: "Copy"}
+      - {click: "Paste"}
+      - {click: "Return", width: 20}
+    name: "编辑"
+    width: 20
+# 编辑增强
+  editplus:
+    author: 
+    height: *miniH #高
+    horizontal_gap: *baseCG #竖
+    vertical_gap: *baseLG #行
+    round_corner: *Corner #圆
+    key_text_offset_y: *textY
+    keys:
+      # ❶
+      - {click: "1", height: 35}
+      - {click: "2"}
+      - {click: "3"}
+      - {click: "4"}
+      - {click: "5"}
+      - {click: "6"}
+      - {click: "7"}
+      - {click: "8"}
+      - {click: "9"}
+      - {click: "0"}
+      # ❷
+      - {click:  "t_bj21", hint: 按键}
+      - {click:  "t_bj22", hint: 按键}
+      - {click:  "t_bj23", long_click: t_bj23s}
+      - {click:  "t_bj24"}
+      - {click: "undo"}
+      - {click: Home}
+      - {click: "Up"}
+      - {click: End}
+      - {click: "K_back1", width: 20}
+      # ❸
+      - {click:  "t_bj31", long_click: t_bj31s}
+      - {click:  "t_bj32", long_click: t_bj32s}
+      - {click:  "t_bj33", long_click: t_bj33s}
+      - {click:  "t_bj34", long_click: t_bj34s}
+      - {click: "Hint_switch"}
+      - {click: "Left"}
+      - {click: "Shift_lock", key_back_color: 0xdd8024}
+      - {click: "Right"}
+      - {click: "space_", width: 20}
+      # ❹
+      - {click:  "t_bj41", long_click: t_bj41s}
+      - {click:  "t_bj42"}
+      - {click:  "t_bj43", long_click: t_bj43s}
+      - {click:  "t_bj44", long_click: t_bj44s}
+      - {click: "0x00", long_click: "0xff"}
+      - {click: "Tab1"}
+      - {click: "Down"}
+      - {click: "SelectLine"}
+      - {click: "BackSpace", width: 20}
+      # ❺
+      - {click:  "t_bj51", long_click: t_bj51s}
+      - {click:  "t_bj52", long_click: t_bj52s}
+      - {click:  "t_bj53", long_click: t_bj53s}
+      - {click:  "t_bj54", long_click: t_bj54s}
+      - {click: "Select_all"}
+      - {click: "Cut"}
+      - {click: "Copy"}
+      - {click: "Paste"}
+      - {click: "Return", width: 20}
+    name: "编辑增强"
+    width: 10
+# 数字小键盘
+  number:
+    height: *numbH 
+    horizontal_gap: *numbCG
+    vertical_gap: *numbLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      # Line1
+      - {click: "+", key_text_size: 15}
+      - {click: "-", key_text_size: 15}
+      - {click: "1", width: 18}
+      - {click: "2", width: 18}
+      - {click: "3", width: 18}
+      - {click: "K_back1", width: 16, key_text_size: 13}
+      # Line2
+      - {click: "*", key_text_size: 21}
+      - {click: "/", key_text_size: 15}
+      - {click: "4", width: 18}
+      - {click: "5", width: 18}
+      - {click: "6", width: 18}
+      - {click: "space_", width: 16, key_text_size: 18}
+      # Line3
+      - {click: "(){Left}", key_text_size: 14}
+      - {click: "=", key_text_size: 18}
+      - {click: "7", width: 18}
+      - {click: "8", width: 18}
+      - {click: "9", width: 18}
+      - {click: "BackSpace", width: 16, swipe_left: DelH}
+      # Line4
+      - {click: "K_back1", key_text_size: 15}
+      - {click: "q_zb", key_text_size: 15}
+      - {click: "q_ts", long_click: "q_bq" , key_text_size: 15, width: 18}
+      - {click: "0", width: 18}
+      - {click: ".", long_click: ",", key_text_size: 22, width: 18}
+      - {click: "Return", width: 16, key_text_size: 15}
+    name: "数字"
+    width: 15
+#
+    
+#
+  qtzb:
+    author: 青 铜 #中文，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: "，", key_text_size: 16}
+      - {click: "。", key_text_size: 16}
+      - {click: "？", key_text_size: 16}
+      - {click: "！", key_text_size: 16}
+      - {click: "：", key_text_size: 16}
+      - {click: '“”', key_text_size: 16}
+      - {click: "‘’", key_text_size: 16}
+      - {click: "、", key_text_size: 16}
+      - {click: "……", key_text_size: 16}
+      - {click: "——", key_text_size: 16}
+      #❸
+      - {click: "～", key_text_size: 16}
+      - {click: "；", key_text_size: 16}
+      - {click: "·", key_text_size: 16}
+      - {click: "•", key_text_size: 16}
+      - {click: "｀", key_text_size: 16}
+      - {click: "ˉ", key_text_size: 16}
+      - {click: "＿", key_text_size: 16}
+      - {click: "¨", key_text_size: 16}
+      - {click: "ˇ", key_text_size: 16}
+      - {click: "￥", key_text_size: 16}
+      #❹
+      - {click: "［］{Left}", key_text_size: 16}
+      - {click: "【】{Left}", key_text_size: 16}
+      - {click: "「」{Left}", key_text_size: 16}
+      - {click: "『』{Left}", key_text_size: 16}
+      - {click: "（）{Left}", key_text_size: 16}
+      - {click: '《》{Left}', key_text_size: 16}
+      - {click: "〈〉{Left}", key_text_size: 16}
+      - {click: "〔〕{Left}", key_text_size: 16}
+      - {click: "«»{Left}", key_text_size: 16}
+      - {click: "‹›{Left}", key_text_size: 16}
+      #❺
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "中文"
+    width: 10
+#
+  qtyb:
+    author: 青 铜 #英文，
+    ascii_mode: 1
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: "中文", key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: ",", key_text_size: 16}
+      - {click: ".", key_text_size: 16}
+      - {click: "?", key_text_size: 16}
+      - {click: "!", key_text_size: 16}
+      - {click: ":", key_text_size: 16}
+      - {click: '"', key_text_size: 16}
+      - {click: "'", key_text_size: 16}
+      - {click: "%", key_text_size: 16}
+      - {click: "`", key_text_size: 16}
+      - {click: "#", key_text_size: 16}
+      #❸
+      - {click: "^", key_text_size: 16}
+      - {click: "_", key_text_size: 16}
+      - {click: "$", key_text_size: 16}
+      - {click: "~", key_text_size: 16}
+      - {click: ";", key_text_size: 16}
+      - {click: "&", key_text_size: 16}
+      - {click: "(){Left}", key_text_size: 16}
+      - {click: "[]{Left}", key_text_size: 16}
+      - {click: "<>{Left}", key_text_size: 16}
+      - {click: "{}{Left}", key_text_size: 16}
+      #❹
+      - {click: "+", key_text_size: 16}
+      - {click: "-", key_text_size: 16}
+      - {click: "*", key_text_size: 16}
+      - {click: "/", key_text_size: 16}
+      - {click: "=", key_text_size: 16}
+      - {click: "×", key_text_size: 16}
+      - {click: "÷", key_text_size: 16}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      #❺
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "英文"
+    width: 10
+
+  qtxh:
+    author: 青 铜 #序号，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: "❶", key_text_size: 16}
+      - {click: "❷", key_text_size: 16}
+      - {click: "❸", key_text_size: 16}
+      - {click: "❹", key_text_size: 16}
+      - {click: "❺", key_text_size: 16}
+      - {click: "❻", key_text_size: 16}
+      - {click: "❼", key_text_size: 16}
+      - {click: "❽", key_text_size: 16}
+      - {click: "❾", key_text_size: 16}
+      - {click: "❿", key_text_size: 16}
+      #❸
+      - {click: "①", key_text_size: 16}
+      - {click: "②", key_text_size: 16}
+      - {click: "③", key_text_size: 16}
+      - {click: "④", key_text_size: 16}
+      - {click: "⑤", key_text_size: 16}
+      - {click: "⑥", key_text_size: 16}
+      - {click: "⑦", key_text_size: 16}
+      - {click: "⑧", key_text_size: 16}
+      - {click: "⑨", key_text_size: 16}
+      - {click: "⑩", key_text_size: 16}
+      #❹
+      - {click: "⒈", key_text_size: 16}
+      - {click: "⒉", key_text_size: 16}
+      - {click: "⒊", key_text_size: 16}
+      - {click: "⒋", key_text_size: 16}
+      - {click: "⒌", key_text_size: 16}
+      - {click: "⒍", key_text_size: 16}
+      - {click: "⒎", key_text_size: 16}
+      - {click: "⒏", key_text_size: 16}
+      - {click: "⒐", key_text_size: 16}
+      - {click: "⒑", key_text_size: 16}
+      #❺
+      - {click: "Ⅰ", key_text_size: 16}
+      - {click: "Ⅱ", key_text_size: 16}
+      - {click: "Ⅲ", key_text_size: 16}
+      - {click: "Ⅳ", key_text_size: 16}
+      - {click: "Ⅴ", key_text_size: 16}
+      - {click: "Ⅵ", key_text_size: 16}
+      - {click: "Ⅶ", key_text_size: 16}
+      - {click: "Ⅷ", key_text_size: 16}
+      - {click: "Ⅹ", key_text_size: 16}
+      - {click: "Ⅺ", key_text_size: 16}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "序号"
+    width: 10
+
+  qtxh2:
+    author: 青 铜 #序号2，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: "壹", key_text_size: 16}
+      - {click: "贰", key_text_size: 16}
+      - {click: "叁", key_text_size: 16}
+      - {click: "肆", key_text_size: 16}
+      - {click: "伍", key_text_size: 16}
+      - {click: "陆", key_text_size: 16}
+      - {click: "柒", key_text_size: 16}
+      - {click: "捌", key_text_size: 16}
+      - {click: "玖", key_text_size: 16}
+      - {click: "拾", long_click: 〇, key_text_size: 16}
+      #❸
+      - {click: "¹", key_text_size: 16}
+      - {click: "²", key_text_size: 16}
+      - {click: "³", key_text_size: 16}
+      - {click: "⁴", key_text_size: 16}
+      - {click: "⁵", key_text_size: 16}
+      - {click: "⁶", key_text_size: 16}
+      - {click: "⁷", key_text_size: 16}
+      - {click: "⁸", key_text_size: 16}
+      - {click: "⁹", key_text_size: 16}
+      - {click: "⁰", key_text_size: 16}
+      #❹
+      - {click: "₁", key_text_size: 16}
+      - {click: "₂", key_text_size: 16}
+      - {click: "₃", key_text_size: 16}
+      - {click: "₄", key_text_size: 16}
+      - {click: "₅", key_text_size: 16}
+      - {click: "₆", key_text_size: 16}
+      - {click: "₇", key_text_size: 16}
+      - {click: "₈", key_text_size: 16}
+      - {click: "₉", key_text_size: 16}
+      - {click: "₀", key_text_size: 16}
+      #❺
+      - {click: "⁺", key_text_size: 16}
+      - {click: "⁻", key_text_size: 16}
+      - {click: "⁼", key_text_size: 16}
+      - {click: "⁽", key_text_size: 16}
+      - {click: "⁾", key_text_size: 16}
+      - {click: "₊", key_text_size: 16}
+      - {click: "₋", key_text_size: 16}
+      - {click: "₌", key_text_size: 16}
+      - {click: "₍", key_text_size: 16}
+      - {click: "₎", key_text_size: 16}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "序号2"
+    width: 10
+
+  qtux:
+    author: 青 铜 #数学，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: "⅟", key_text_size: 16}
+      - {click: "½", key_text_size: 16}
+      - {click: "↉", key_text_size: 16}
+      - {click: "⅓", key_text_size: 16}
+      - {click: "⅔", key_text_size: 16}
+      - {click: '¼', key_text_size: 16}
+      - {click: "⅕", key_text_size: 16}
+      - {click: "⅖", key_text_size: 16}
+      - {click: "⅗", key_text_size: 16}
+      - {click: "⅘", key_text_size: 16}
+      #❸
+      - {click: "⅙", key_text_size: 16}
+      - {click: "⅚", key_text_size: 16}
+      - {click: "⅐", key_text_size: 16}
+      - {click: "⅛", key_text_size: 16}
+      - {click: "⅜", key_text_size: 16}
+      - {click: "⅝", key_text_size: 16}
+      - {click: "⅞", key_text_size: 16}
+      - {click: "⅑", key_text_size: 16}
+      - {click: "⅒", key_text_size: 16}
+      - {click: "°", key_text_size: 16}
+      #❹
+      - {click: "℃", key_text_size: 16}
+      - {click: "℉", key_text_size: 16}
+      - {click: "％", key_text_size: 16}
+      - {click: "‰", key_text_size: 16}
+      - {click: "‱", key_text_size: 16}
+      - {click: "㎝", key_text_size: 16}
+      - {click: "㎠", key_text_size: 16}
+      - {click: "㎤", key_text_size: 16}
+      - {click: "㎎", key_text_size: 16}
+      - {click: "㎏", key_text_size: 16}
+      #❺
+      - {click: "㎞", key_text_size: 16}
+      - {click: "㎢", key_text_size: 16}
+      - {click: "㎦", key_text_size: 16}
+      - {click: "㎧", key_text_size: 16}
+      - {click: "㎨", key_text_size: 16}
+      - {click: "㎡", key_text_size: 16}
+      - {click: "㎥", key_text_size: 16}
+      - {click: "㎜", key_text_size: 16}
+      - {click: "㎟", key_text_size: 16}
+      - {click: "㎣", key_text_size: 16}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "数学"
+    width: 10
+
+  qtzm:
+    author: 青 铜 #字母，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
+      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      #❷
+      - {click: "Ⓐ", width: 8, key_text_size: 16}
+      - {click: "Ⓑ", width: 8, key_text_size: 16}
+      - {click: "Ⓒ", key_text_size: 16}
+      - {click: "️️Ⓓ️", key_text_size: 16}
+      - {click: "️️Ⓔ️", key_text_size: 16}
+      - {click: '️️Ⓕ️️', key_text_size: 16}
+      - {click: "Ⓖ", key_text_size: 16}
+      - {click: "️️Ⓗ", key_text_size: 16}
+      - {click: "Ⓘ", key_text_size: 16}
+      - {click: "Ⓙ", key_text_size: 16}
+      - {click: "Ⓚ", width: 8, key_text_size: 16}
+      - {click: "Ⓛ️", width: 8, key_text_size: 16}
+      - {click: "Ⓜ", width: 8, key_text_size: 16}
+      #❸
+      - {click: "Ⓝ️️", width: 8, key_text_size: 16}
+      - {click: "️️Ⓞ", width: 8, key_text_size: 16}
+      - {click: "Ⓟ", key_text_size: 16}
+      - {click: "Ⓠ", key_text_size: 16}
+      - {click: "Ⓡ", key_text_size: 16}
+      - {click: "Ⓢ️️", key_text_size: 16}
+      - {click: "Ⓣ", key_text_size: 16}
+      - {click: "Ⓤ", key_text_size: 16}
+      - {click: "Ⓥ", key_text_size: 16}
+      - {click: "Ⓦ️", key_text_size: 16}
+      - {click: "Ⓧ️️", width: 8, key_text_size: 16}
+      - {click: "Ⓨ️", width: 8, key_text_size: 16}
+      - {click: "Ⓩ️", width: 8, key_text_size: 16}
+      #❹
+      - {click: "🇦", width: 8, key_text_size: 16}
+      - {click: "🇧", width: 8, key_text_size: 16}
+      - {click: "️🇨", key_text_size: 16}
+      - {click: "️️🇩", key_text_size: 16}
+      - {click: "️🇪", key_text_size: 16}
+      - {click: "️🇫", key_text_size: 16}
+      - {click: "🇬", key_text_size: 16}
+      - {click: "️️🇭", key_text_size: 16}
+      - {click: "🇮", key_text_size: 16}
+      - {click: "🇯", key_text_size: 16}
+      - {click: "🇰️", width: 8, key_text_size: 16}
+      - {click: "🇱️", width: 8, key_text_size: 16}
+      - {click: "🇲️️", width: 8, key_text_size: 16}
+      #❺
+      - {click: "🇳", width: 8, key_text_size: 16}
+      - {click: "️️🇴", width: 8, key_text_size: 16}
+      - {click: "🇵", key_text_size: 16}
+      - {click: "🇶", key_text_size: 16}
+      - {click: "🇷", key_text_size: 16}
+      - {click: "🇸️️", key_text_size: 16}
+      - {click: "🇹", key_text_size: 16}
+      - {click: "🇺", key_text_size: 16}
+      - {click: "🇻", key_text_size: 16}
+      - {click: "🇼️", key_text_size: 16}
+      - {click: "🇽️️", width: 8, key_text_size: 16}
+      - {click: "🇾️", width: 8, key_text_size: 16}
+      - {click: "🇿️", width: 8, key_text_size: 16}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "字母"
+    width: 7.5
+
+  qtbq:
+    author: 青 铜 #表情，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: 🥶}
+      - {click: 🤬}
+      - {click: 🤢}
+      - {click: 🥵}
+      - {click: 😋}
+      - {click: 🤐}
+      - {click: 🤮}
+      - {click: 😏}
+      - {click: 🤗}
+      - {click: 😶}
+      #❸
+      - {click: 😁}
+      - {click: 😂}
+      - {click: 🤔}
+      - {click: 😴}
+      - {click: 🤓}
+      - {click: 😝}
+      - {click: ☺, key_text_size: 15}
+      - {click: 😪}
+      - {click: 😨}
+      - {click: 😳}
+      #❹
+      - {click: 👊}
+      - {click: ✌}
+      - {click: 🖐}
+      - {click: 🙏}
+      - {click: 👌}
+      - {click: ☝}
+      - {click: 🖕}
+      - {click: 🖖}
+      - {click: 🤟}
+      - {click: 🤞}
+      #❺
+      - {click: 💩}
+      - {click: 👻}
+      - {click: 👺}
+      - {click: 👹}
+      - {click: 👿}
+      - {click: ✍}
+      - {click: 👙}
+      - {click: 💋}
+      - {click: 🌂}
+      - {click: 👠}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "表情"
+    width: 10
+
+  qtbq1:
+    author: 青 铜 #植物，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: 🌱}
+      - {click: ☘}
+      - {click: 🍀}
+      - {click: 🌵}
+      - {click: 🌲}
+      - {click: 🌳}
+      - {click: 🌴}
+      - {click: 🎍}
+      - {click: 🎋}
+      - {click: 🍂}
+      #❸
+      - {click: 🍁}
+      - {click: 🌾}
+      - {click: 🌺}
+      - {click: 🌹}
+      - {click: 🥀}
+      - {click: 🌼}
+      - {click: 🌸}
+      - {click: 💐}
+      - {click: 🔥}
+      - {click: 💥}
+      #❹
+      - {click: 💦}
+      - {click: 💧}
+      - {click: ☔️}
+      - {click: ☂}
+      - {click: ⛄️}
+      - {click: ☃}
+      - {click: 🎃}
+      - {click: ❄️}
+      - {click: 🌎}
+      - {click: 🌙}
+      #❺
+      - {click: ⭐️}
+      - {click: 🌟}
+      - {click: ✨}
+      - {click: ☀️}
+      - {click: 🌤}
+      - {click: 🌦}
+      - {click: 🌧}
+      - {click: ⛈}
+      - {click: 🌩}
+      - {click: ⚡️}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "植物"
+    width: 10
+
+  qtbq2:
+    author: 青 铜 #食物，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: 🍏}
+      - {click: 🍎}
+      - {click: 🍐}
+      - {click: 🍊}
+      - {click: 🍋}
+      - {click: 🍌}
+      - {click: 🍉}
+      - {click: 🍇}
+      - {click: 🍓}
+      - {click: 🍒}
+      #❸
+      - {click: 🍑}
+      - {click: 🍍}
+      - {click: 🥭}
+      - {click: 🥝}
+      - {click: 🥥}
+      - {click: 🥑}
+      - {click: 🍅}
+      - {click: 🥬}
+      - {click: 🌶}
+      - {click: 🌽}
+      #❹
+      - {click: 🥢}
+      - {click: 🥣}
+      - {click: 🍴}
+      - {click: 🍼}
+      - {click: 🥤}
+      - {click: ☕️}
+      - {click: 🍾}
+      - {click: 🍺}
+      - {click: 🍷}
+      - {click: 🍹}
+      #❺
+      - {click: 🍠}
+      - {click: 🍖}
+      - {click: 🍗}
+      - {click: 🥚}
+      - {click: 🍳}
+      - {click: 🥓}
+      - {click: 🥩}
+      - {click: 🍥}
+      - {click: 🍬}
+      - {click: 🍰}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "食物"
+    width: 10
+
+  qtbq3:
+    author: 青 铜 #运动，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: 🏀}
+      - {click: ⚽️}
+      - {click: 🏐}
+      - {click: 🎱}
+      - {click: 🏈}
+      - {click: ⚾️️}
+      - {click: 🎾}
+      - {click: 🏸}
+      - {click: 🏓}
+      - {click: 🏌}
+      #❸
+      - {click: 🥌}
+      - {click: ⛷}
+      - {click: 🏹}
+      - {click: 🎣}
+      - {click: 🥊}
+      - {click: 🥋}
+      - {click: 🏊🏻}
+      - {click: 🧗}
+      - {click: 🏋🏻️}
+      - {click: 🚴🏻}
+      #❹
+      - {click: 🏇️}
+      - {click: 🏆}
+      - {click: 🏅}
+      - {click: 🥇}
+      - {click: 🥈}
+      - {click: 🥉}
+      - {click: 🎳}
+      - {click: 🎧}
+      - {click: 🎤}
+      - {click: 🎮}
+      #❺
+      - {click: 🎯}
+      - {click: 🎲}
+      - {click: 🎰}
+      - {click: 🛴}
+      - {click: 🛵}
+      - {click: 🏍}
+      - {click: 🚲}
+      - {click: 🛹}
+      - {click: 🛫}
+      - {click: 🛬}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "运动"
+    width: 10
+
+  qtbq4:
+    author: 青 铜 #动物，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: 🦠}
+      - {click: 🦟}
+      - {click: 🕷}
+      - {click: 🐜}
+      - {click: 🕸}
+      - {click: 🐞}
+      - {click: 🦀}
+      - {click: 🐶}
+      - {click: 🦊}
+      - {click: 🐙}
+      #❸
+      - {click: 🐦}
+      - {click: 🐤}
+      - {click: 🦅}
+      - {click: 🐝}
+      - {click: 🐛}
+      - {click: 🦖}
+      - {click: 🦐}
+      - {click: 🐠}
+      - {click: 🐟}
+      - {click: 🦛}
+      #❹
+      - {click: 🐘}
+      - {click: 🐾}
+      - {click: 🐷}
+      - {click: 🐽}
+      - {click: 🐸}
+      - {click: 🦇}
+      - {click: 🦞}
+      - {click: "", label: 生肖▶, key_text_size: 12, key_back_color: 0x00}
+      - {click: 🐁}
+      - {click: 🐄}
+      #❺
+      - {click: 🐅}
+      - {click: 🐇}
+      - {click: 🐉}
+      - {click: 🐍}
+      - {click: 🐎}
+      - {click: 🐏}
+      - {click: 🐒}
+      - {click: 🐓}
+      - {click: 🐕}
+      - {click: 🐖}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "动物"
+    width: 10
+
+  qtbq5:
+    author: 青 铜 #其他，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "q_bq",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      #❷
+      - {click: ⌨}
+      - {click: 🖱}
+      - {click: 💾}
+      - {click: 📒}
+      - {click: 📺}
+      - {click: 📻}
+      - {click: 🔒}
+      - {click: 🔓}
+      - {click: 🖊}
+      - {click: ⏳, key_text_size: 15}
+      #❸
+      - {click: 🔋}
+      - {click: 📚}
+      - {click: 💡}
+      - {click: 🗑}
+      - {click: 💰}
+      - {click: 💳}
+      - {click: 📝}
+      - {click: ⚙}
+      - {click: 💣}
+      - {click: 🚬}
+      #❹
+      - {click: 🧪}
+      - {click: 🧬}
+      - {click: 💊}
+      - {click: 💉}
+      - {click: 🌡}
+      - {click: 🔖}
+      - {click: 🔑}
+      - {click: 🛌}
+      - {click: 🧳}
+      - {click: 🗺}
+      #❺
+      - {click: 🛍}
+      - {click: 🎏}
+      - {click: 🎀}
+      - {click: 🛒}
+      - {click: 🎁}
+      - {click: 🎉}
+      - {click: 🎎}
+      - {click: 🎐}
+      - {click: ✂️}
+      - {click: 📁}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "其他"
+    width: 10
+
+  qtts1:
+    author: 青 铜 #箭头，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: q_ts1, key_back_color: tab_b, width: 17}
+      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {width: 17}
+      #❷
+      - {click: ️️↖, key_text_size: 15}
+      - {click: ️↑️️, key_text_size: 15}
+      - {click: ↗, key_text_size: 15}
+      - {click: △️️, key_text_size: 15}
+      - {click: ▲️️, key_text_size: 15}
+      - {click: ▽️️, key_text_size: 15}
+      - {click: ""}
+      - {click: ⬆️, key_text_size: 15}
+      - {click: ️⇧️️, key_text_size: 15}
+      - {click: ⬇️️, key_text_size: 15}
+      #❸
+      - {click: ←️️, key_text_size: 15}
+      - {click: ⇋️️️, key_text_size: 15}
+      - {click: →️️, key_text_size: 15}
+      - {click: ️◀, key_text_size: 15}
+      - {click: ↺, key_text_size: 15}
+      - {click: ▶, key_text_size: 15}
+      - {click: ""}
+      - {click: ⇦️️, key_text_size: 15}
+      - {click: ⬅, key_text_size: 15}
+      - {click: ⇨️️, key_text_size: 15}
+      #❹
+      - {click: ️↙, key_text_size: 15}
+      - {click: ↓️️️, key_text_size: 15}
+      - {click: ↘, key_text_size: 15}
+      - {click: ◁️️, key_text_size: 15}
+      - {click: ▼, key_text_size: 15}
+      - {click: ️▷, key_text_size: 15}
+      - {click: ""}
+      - {click: ⬅️, key_text_size: 15}
+      - {click: ⇩️️️, key_text_size: 15}
+      - {click: ➡️️, key_text_size: 15}
+      #❺
+      - {click: ⇤️️, key_text_size: 15}
+      - {click: ⇥️️️️, key_text_size: 15}
+      - {click: ↼️️, key_text_size: 15}
+      - {click: ◂️▸, key_text_size: 15}
+      - {click: ▴▾️️, key_text_size: 15}
+      - {click: ◃▹️️️, key_text_size: 15}
+      - {click: ""}
+      - {click: ⇐, key_text_size: 15}
+      - {click: ⬅, key_text_size: 15}
+      - {click: 🔄, key_text_size: 15}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "箭头"
+    width: 10
+
+  qtts2:
+    author: 青 铜 #星花，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: q_ts1, key_back_color: tab_b, width: 17}
+      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {width: 17}
+      # 二
+      - {click: "❋️️", key_text_size: 15}
+      - {click: "❊️️", key_text_size: 15}
+      - {click: "❉️", key_text_size: 15}
+      - {click: "❈️️", key_text_size: 15}
+      - {click: "✱️", key_text_size: 15}
+      - {click: "❆️", key_text_size: 15}
+      - {click: "❅", key_text_size: 15}
+      - {click: "❃", key_text_size: 15}
+      - {click: "❂️", key_text_size: 15}
+      - {click: "✡", key_text_size: 15}
+      # 三
+      - {click: "❁", key_text_size: 15}
+      - {click: "❀", key_text_size: 15}
+      - {click: "✿️", key_text_size: 15}
+      - {click: "✾", key_text_size: 15}
+      - {click: "✽", key_text_size: 15}
+      - {click: "✼", key_text_size: 15}
+      - {click: "✻", key_text_size: 15}
+      - {click: "✺", key_text_size: 15}
+      - {click: "✹️", key_text_size: 15}
+      - {click: "✵", key_text_size: 15}
+      # 四
+      - {click: "★️", key_text_size: 15}
+      - {click: "☆️", key_text_size: 15}
+      - {click: "⛤", key_text_size: 15}
+      - {click: "⛥", key_text_size: 15}
+      - {click: "⛦", key_text_size: 15}
+      - {click: "⛧️", key_text_size: 15}
+      - {click: "✯️", key_text_size: 15}
+      - {click: "✮", key_text_size: 15}
+      - {click: "✭", key_text_size: 15}
+      - {click: "✳", key_text_size: 15}
+      # 五
+      - {click: "✫", key_text_size: 15}
+      - {click: "️✪", key_text_size: 15}
+      - {click: "️✩", key_text_size: 15}
+      - {click: "️✧", key_text_size: 15}
+      - {click: "✦️", key_text_size: 15}
+      - {click: "✥️", key_text_size: 15}
+      - {click: "✣", key_text_size: 15}
+      - {click: "※", key_text_size: 15}
+      - {click: "❂", key_text_size: 15}
+      - {click: "️✲", key_text_size: 15}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "星花"
+    width: 10
+
+  qtts3:
+    author: 青 铜 #特殊1，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: q_ts1, key_back_color: tab_b, width: 17}
+      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {width: 17}
+      #❷
+      - {click: 🆚, key_text_size: 15}
+      - {click: 🉑, key_text_size: 15}
+      - {click: 🉐, key_text_size: 15}
+      - {click: ㊙️, key_text_size: 15}
+      - {click: ㊗️, key_text_size: 15}
+      - {click: 🈴, key_text_size: 15}
+      - {click: 🈵, key_text_size: 15}
+      - {click: 🈲, key_text_size: 15}
+      - {click: 🆎, key_text_size: 15}
+      - {click: 💮, key_text_size: 15}
+      #❸
+      - {click: 🅰, key_text_size: 15}
+      - {click: 🅱, key_text_size: 15}
+      - {click: 🚫, key_text_size: 15}
+      - {click: ❌, key_text_size: 15}
+      - {click: ⭕️, key_text_size: 15}
+      - {click: 💢, key_text_size: 15}
+      - {click: 🔞, key_text_size: 15}
+      - {click: 📵, key_text_size: 15}
+      - {click: ☸, key_text_size: 15}
+      - {click: 🔆, key_text_size: 15}
+      #❹
+      - {click: ❤️, key_text_size: 15}
+      - {click: 🖤, key_text_size: 15}
+      - {click: 💔, key_text_size: 15}
+      - {click: 💗, key_text_size: 15}
+      - {click: 💖, key_text_size: 15}
+      - {click: 💕, key_text_size: 15}
+      - {click: ❣️, key_text_size: 15}
+      - {click: 💝, key_text_size: 15}
+      - {click: ☯, key_text_size: 15}
+      - {click: ✡, key_text_size: 15}
+      #❺
+      - {click: ⚛, key_text_size: 15}
+      - {click: 🆔, key_text_size: 15}
+      - {click: 🈳, key_text_size: 15}
+      - {click: ♀️️, key_text_size: 15}
+      - {click: ♂️, key_text_size: 15}
+      - {click: ⚕️, key_text_size: 15}
+      - {click: ♻️, key_text_size: 15}
+      - {click: 💠, key_text_size: 15}
+      - {click: Ⓜ️️, key_text_size: 15}
+      - {click: 🌐, key_text_size: 15}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "特殊1"
+    width: 10
+
+  qtts4:
+    author: 青 铜 #特殊2，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: q_ts1, key_back_color: tab_b, width: 17}
+      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {width: 17}
+      # 五
+      - {click: "☪", key_text_size: 15}
+      - {click: "️☫", key_text_size: 15}
+      - {click: "☬️", key_text_size: 15}
+      - {click: "☭️", key_text_size: 15}
+      - {click: "️⚆", key_text_size: 15}
+      - {click: "️⚇", key_text_size: 15}
+      - {click: "⚈", key_text_size: 15}
+      - {click: "⚉", key_text_size: 15}
+      - {click: "⚿", key_text_size: 15}
+      - {click: "❖️", key_text_size: 15}
+      # 三
+      - {click: "♻", key_text_size: 15}
+      - {click: "♲️", key_text_size: 15}
+      - {click: "⎇️", key_text_size: 15}
+      - {click: "⏏", key_text_size: 15}
+      - {click: "⌖", key_text_size: 15}
+      - {click: "⎋", key_text_size: 15}
+      - {click: "⌨", key_text_size: 15}
+      - {click: "⌦", key_text_size: 15}
+      - {click: "⌫️", key_text_size: 15}
+      - {click: "⌅", key_text_size: 15}
+      # 四
+      - {click: "㊊️", key_text_size: 15}
+      - {click: "㊋️", key_text_size: 15}
+      - {click: "㊌", key_text_size: 15}
+      - {click: "㊍", key_text_size: 15}
+      - {click: "㊎", key_text_size: 15}
+      - {click: "㊏️", key_text_size: 15}
+      - {click: "㊐️", key_text_size: 15}
+      - {click: "㊗", key_text_size: 15}
+      - {click: "㊡️️", key_text_size: 15}
+      - {click: "⚙", key_text_size: 15}
+      # 五
+      - {click: "▁️️", key_text_size: 15}
+      - {click: "️▂️️", key_text_size: 15}
+      - {click: "▃️", key_text_size: 15}
+      - {click: "▄️️️", key_text_size: 15}
+      - {click: "️▅️", key_text_size: 15}
+      - {click: "️▆", key_text_size: 15}
+      - {click: "▇", key_text_size: 15}
+      - {click: "█", key_text_size: 15}
+      - {click: "◐", key_text_size: 15}
+      - {click: "●️", key_text_size: 15}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "特殊2"
+    width: 10
+
+  qtts5:
+    author: 青 铜 #特殊3，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: q_ts1, key_back_color: tab_b, width: 17}
+      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {width: 17}
+      #❷
+      - {click: ▬️️, key_text_size: 15}
+      - {click: ▭, key_text_size: 15}
+      - {click: ▰, key_text_size: 15}
+      - {click: ▱, key_text_size: 15}
+      - {click: ／, key_text_size: 15}
+      - {click: ＼, key_text_size: 15}
+      - {click: ｜, key_text_size: 15}
+      - {click: ☑, key_text_size: 15}
+      - {click: ️️☒, key_text_size: 15}
+      - {click: ️☩, key_text_size: 15}
+      #❸
+      - {click: ◎, key_text_size: 15}
+      - {click: ◉️, key_text_size: 15}
+      - {click: ○, key_text_size: 15}
+      - {click: ◌, key_text_size: 15}
+      - {click: ◖, key_text_size: 15}
+      - {click: ⊕️, key_text_size: 15}
+      - {click: ␣️, key_text_size: 15}
+      - {click: ⌥, key_text_size: 15}
+      - {click: ◆, key_text_size: 15}
+      - {click: ◇, key_text_size: 15}
+      #❹
+      - {click: 🔺, key_text_size: 15}
+      - {click: 🔻️, key_text_size: 15}
+      - {click: 🔹, key_text_size: 15}
+      - {click: 🔸, key_text_size: 15}
+      - {click: 🔵️, key_text_size: 15}
+      - {click: 🔴, key_text_size: 15}
+      - {click: 🔇️, key_text_size: 15}
+      - {click: 🇨🇳️, key_text_size: 15}
+      - {click: 💲️, key_text_size: 15}
+      - {click: 🀄️, key_text_size: 15}
+      #❺
+      - {click: ♦️️, key_text_size: 15}
+      - {click: ♥️, key_text_size: 15}
+      - {click: ♣️️, key_text_size: 15}
+      - {click: ♠️, key_text_size: 15}
+      - {click: 🃏, key_text_size: 15}
+      - {click: 💛, key_text_size: 15}
+      - {click: 🧡, key_text_size: 15}
+      - {click: 💚, key_text_size: 15}
+      - {click: 💙️, key_text_size: 15}
+      - {click: 💜, key_text_size: 15}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "number", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "特殊3"
+    width: 10
+
+android_keys:
+  name: [VoidSymbol, SOFT_LEFT, SOFT_RIGHT, HOME, BACK, CALL, ENDCALL,
+    '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+    asterisk, numbersign, Up, Down, Left, Right, CENTER,
+    VOLUME_UP, VOLUME_DOWN, POWER, CAMERA, Clear,
+    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,
+    comma, period, Alt_L, Alt_R, Shift_L, Shift_R, Tab, space,
+    SYM, EXPLORER, ENVELOPE, Return, BackSpace,
+    grave, minus, equal, bracketleft, bracketright, backslash, semicolon, apostrophe, slash, at,
+    NUM, HEADSETHOOK, FOCUS, plus, Menu, NOTIFICATION, Find,
+    MEDIA_PLAY_PAUSE, MEDIA_STOP, MEDIA_NEXT, MEDIA_PREVIOUS, MEDIA_REWIND, MEDIA_FAST_FORWARD, MUTE,
+    Page_Up, Page_Down, PICTSYMBOLS, Mode_switch,
+    BUTTON_A, BUTTON_B, BUTTON_C, BUTTON_X, BUTTON_Y, BUTTON_Z,
+    BUTTON_L1, BUTTON_R1, BUTTON_L2, BUTTON_R2,
+    BUTTON_THUMBL, BUTTON_THUMBR, BUTTON_START, BUTTON_SELECT, BUTTON_MODE,
+    Escape, Delete, Control_L, Control_R, Caps_Lock, Scroll_Lock, Meta_L, Meta_R,
+    function, Sys_Req, Pause, Home, End, Insert, Next,
+    MEDIA_PLAY, MEDIA_PAUSE, MEDIA_CLOSE, MEDIA_EJECT, MEDIA_RECORD,
+    F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,
+    Num_Lock, KP_0, KP_1, KP_2, KP_3, KP_4, KP_5, KP_6, KP_7, KP_8, KP_9,
+    KP_Divide, KP_Multiply, KP_Subtract, KP_Add, KP_Decimal, KP_Separator, KP_Enter, KP_Equal,
+    parenleft, parenright,
+    VOLUME_MUTE, INFO, CHANNEL_UP, CHANNEL_DOWN, ZOOM_IN, ZOOM_OUT,
+    TV, WINDOW, GUIDE, DVR, BOOKMARK, CAPTIONS, SETTINGS,
+    TV_POWER, TV_INPUT, STB_POWER, STB_INPUT, AVR_POWER, AVR_INPUT,
+    PROG_RED, PROG_GREEN, PROG_YELLOW, PROG_BLUE, APP_SWITCH,
+    BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_7, BUTTON_8,
+    BUTTON_9, BUTTON_10, BUTTON_11, BUTTON_12, BUTTON_13, BUTTON_14, BUTTON_15, BUTTON_16,
+    LANGUAGE_SWITCH, MANNER_MODE, 3D_MODE, CONTACTS, CALENDAR, MUSIC, CALCULATOR,
+    Zenkaku_Hankaku, Eisu_toggle, Muhenkan, Henkan, Hiragana_Katakana, yen, RO, Kana_Lock,
+    ASSIST, BRIGHTNESS_DOWN, BRIGHTNESS_UP, MEDIA_AUDIO_TRACK,
+    SLEEP, WAKEUP, PAIRING, MEDIA_TOP_MENU, '11', '12', LAST_CHANNEL, TV_DATA_SERVICE, VOICE_ASSIST,
+    TV_RADIO_SERVICE, TV_TELETEXT, TV_NUMBER_ENTRY, TV_TERRESTRIAL_ANALOG, TV_TERRESTRIAL_DIGITAL,
+    TV_SATELLITE, TV_SATELLITE_BS, TV_SATELLITE_CS, TV_SATELLITE_SERVICE, TV_NETWORK, TV_ANTENNA_CABLE,
+    TV_INPUT_HDMI_1, TV_INPUT_HDMI_2, TV_INPUT_HDMI_3, TV_INPUT_HDMI_4,
+    TV_INPUT_COMPOSITE_1, TV_INPUT_COMPOSITE_2, TV_INPUT_COMPONENT_1, TV_INPUT_COMPONENT_2, TV_INPUT_VGA_1,
+    TV_AUDIO_DESCRIPTION, TV_AUDIO_DESCRIPTION_MIX_UP, TV_AUDIO_DESCRIPTION_MIX_DOWN,
+    TV_ZOOM_MODE, TV_CONTENTS_MENU, TV_MEDIA_CONTEXT_MENU, TV_TIMER_PROGRAMMING,
+    Help, NAVIGATE_PREVIOUS, NAVIGATE_NEXT, NAVIGATE_IN, NAVIGATE_OUT,
+    STEM_PRIMARY, STEM_1, STEM_2, STEM_3,
+    Pointer_UpLeft, Pointer_DownLeft, Pointer_UpRight, Pointer_DownRight,
+    MEDIA_SKIP_FORWARD, MEDIA_SKIP_BACKWARD, MEDIA_STEP_FORWARD, MEDIA_STEP_BACKWARD,
+    SOFT_SLEEP, CUT, COPY, PASTE,
+    SYSTEM_NAVIGATION_UP, SYSTEM_NAVIGATION_DOWN, SYSTEM_NAVIGATION_LEFT, SYSTEM_NAVIGATION_RIGHT,
+    A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
+    exclam, quotedbl, dollar, percent, ampersand, colon, less, greater, question, asciicircum, underscore, braceleft, bar, braceright, asciitilde]
+  symbols: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"$%&:<>?^_{|}~'
+  when:
+    ascii: 西文标签
+    paging: 翻页标签
+    has_menu: 菜单标签
+    composing: 输入状态标签
+    #always: 始终
+    #hover: 滑过
+    combo: 并击
+    click: 单按
+    long_click: 长按
+    #double_click: 双按
+    swipe_left: 左滑
+    swipe_right: 右滑
+    swipe_up: 上滑
+    swipe_down: 下滑
+  property:
+    width: 宽度
+    height: 高度
+    gap: 间隔
+    preview: 预览
+    hint: 提示
+    label: 标签
+    text: 文本
+    states: 状态标签
+    repeatable: 连续按键
+    functional: 功能键
+    shift_lock: Shift锁定 #ascii_long: 英文长按中文单按锁定, long: 长按锁定, click: 单按锁定
+  action:
+    command: 命令
+    option: 参数
+    select: 选择
+    toggle: 状态
+    send: 按键
+    
+preset_keys:
+  edit_menu: {label: 编辑 , send: Eisu_toggle, select: "editmenu"}
+  edit_plus: {label: 增强编辑 , send: Eisu_toggle, select: "editplus"}
+  number: {label: 12! , send: Eisu_toggle, select: "number"}
+  english: {label: ️中文, send: Eisu_toggle, select: english} #英文键盘
+  k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
+
+#编辑
+  redo: {label: ↷, functional: false, send: Control+y} #重做
+  undo: {label: 撤销, functional: false, send: Control+z} #撤销
+  Home: {label: ⇤, send: Home, functional: false} #行首
+  End: {label: ⇥, send: End, functional: false} #行尾
+  SelectLine: {label: ↔, functional: false, text: "{End}{Shift+Home}"}  #选择行
+  Delete: {label: Del, send: Delete, repeatable: true, functional: false}
+
+ #菜单
+  refresh: {label: "⇋️", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+  K_menu: {label: "菜单", send: Eisu_toggle, select: "K_menu"}
+  Menu: {label: ✡, functional: false, send: Menu} #方案菜单
+  IME_switch: {label: ⌨, functional: false, send: LANGUAGE_SWITCH} #输入法
+  Deploy: {label: ♻, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
+  Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]}
+  Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
+  Color_settings: {label: ◀▷, functional: false, send: SETTINGS, option: "color"} #配色
+  Color_settings1: {label: 配色, send: SETTINGS, option: "color"} #配色
+  K_mr: {label: Ⓜ, functional: false, send: Eisu_toggle, select: .default}
+  q_vuji: {label: Ⓙ, functional: false, send: Eisu_toggle, select: "qtVJ"} 
+  Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
+
+ #符号盘
+  q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}
+  q_yb: {label: "英文", send: Eisu_toggle, select: "qtyb"}
+  q_ts: {label: "特殊", send: Eisu_toggle, select: "qtts1"}
+  q_xh: {label: "序号", send: Eisu_toggle, select: "qtxh"}
+  q_xh2: {label: "序号2", send: Eisu_toggle, select: "qtxh2"}
+  q_ux: {label: "数学", send: Eisu_toggle, select: "qtux"}
+  q_zm: {label: "字母", send: Eisu_toggle, select: "qtzm"}
+  q_bq: {label: "表情", send: Eisu_toggle, select: "qtbq"}
+  q_bq1: {label: "植物", send: Eisu_toggle, select: "qtbq1"}
+  q_bq2: {label: "食物", send: Eisu_toggle, select: "qtbq2"}
+  q_bq3: {label: "运动", send: Eisu_toggle, select: "qtbq3"}
+  q_bq4: {label: "动物", send: Eisu_toggle, select: "qtbq4"}
+  q_bq5: {label: "其他", send: Eisu_toggle, select: "qtbq5"}
+
+  q_ts1: {label: "箭头", send: Eisu_toggle, select: "qtts1"}
+  q_ts2: {label: "星号", send: Eisu_toggle, select: "qtts2"}
+  q_ts3: {label: "①", send: Eisu_toggle, select: "qtts3"}
+  q_ts4: {label: "②", send: Eisu_toggle, select: "qtts4"}
+  q_ts5: {label: "③", send: Eisu_toggle, select: "qtts5"}
+
+  t_yx: {label: "邮箱", functional: false, commit: "@qq.com"}
+  t_fhvj: {label: 返回, send: Eisu_toggle, select: .default} #返回主键盘
+  q_ywfh: {label: En, send: Eisu_toggle, select: .default}
+  t_fhvjj: {label: Ⓑ 返回, send: Eisu_toggle, select: .default}
+  K_jh: {label: ".", functional: false, commit: "."}
+
+ #超级编辑——
+  t_bj21: {label: "背景", functional: false, commit: ", key_back_color: "}
+  t_bj22: {label: "高亮", functional: false, commit: ", hilited_key_back_color: "}
+  t_bj23: {label: "字色", functional: false, commit: ", key_text_color: "}
+  t_bj23s: {label: "字号", functional: false, commit: ", key_text_size: "}
+  t_bj24: {label: "显示", functional: false, commit: ", label: "}
+
+  t_bj31: {label: "键宽", functional: false, commit: ", width: "}
+  t_bj31s: {label: "行距", functional: false, commit: "vertical_gap: "}
+  t_bj32: {label: "键高", functional: false, commit: "height: "}
+  t_bj32s: {label: "竖距", functional: false, commit: "horizontal_gap: "}
+  t_bj33: {label: "上标", functional: false, commit: ", key_symbol_color: "}
+  t_bj33s: {label: "圆角", functional: false, commit: "round_corner: "}
+  t_bj34: {label: "下标", functional: false, commit: ", hint: "}
+  t_bj34s: {label: "前置", functional: false, commit: "before"}
+  
+  t_bj41: {label: "点击", functional: false, commit: "click: "}
+  t_bj41s: {label: "编辑状态", functional: false, commit: ", composing: "}
+  t_bj42: {label: "长按", functional: false, commit: ", long_click: "}
+  t_bj43: {label: "坐标x", functional: false, commit: ", key_text_offset_x: "}
+  t_bj43s: {label: "坐标y", functional: false, commit: ", key_text_offset_y: "}
+  t_bj44: {label: "上标x", functional: false, commit: ", key_symbol_offset_x: "}
+  t_bj44s: {label: "上标y", functional: false, commit: ", key_symbol_offset_y: "}
+
+  t_bj51: {label: "上划", functional: false, commit: ", swipe_up: "}
+  t_bj51s: {label: "上", functional: false, commit: "Up"}
+  t_bj52: {label: "下划", functional: false, commit: ", swipe_down: "}
+  t_bj52s: {label: "下", functional: false, commit: "Down"}
+  t_bj53: {label: "左划", functional: false, commit: ", swipe_left: "}
+  t_bj53s: {label: "左", functional: false, commit: "Left"}
+  t_bj54: {label: "右划", functional: false, commit: ", swipe_right: "}
+  t_bj54s: {label: "右", functional: false, commit: "Right"}
+
+  # 编辑
+  Shift_R: {label: Enter, send: Shift_R}
+  Caps_Lock: {label: Caps, send: Caps_Lock}
+  Shift_L: {functional: true, label: Shift, send: Shift_L, shift_lock: ascii_long}  # 中文状态一次锁定，英文状态长按锁定
+  Shift_L1: {functional: true, label: Shift, send: Shift_L, shift_lock: long}  # 中文状态长按锁定
+  Shift_lock: {functional: false, label: ☩, preview: ☩, send: Shift_L, shift_lock: click}  # 英文状态一次锁定
+  Return: {label: Enter, preview: ↩, send: Return}
+  BackSpace: {label: " ⌫ ", preview: ⌫ , repeatable: true, send: BackSpace}
+  space: {repeatable: false, preview: ␣, functional: false, send: space} #空格
+  space_: {repeatable: true, preview: ␣, label: ␣, functional: true, send: space}
+  space_en: {repeatable: true, preview: ␣, label: ️English, functional: true, send: space}
+  Clear: {label: 全清, send: Clear}
+  Escape: {label: Esc, functional: false, send: Escape}
+  Insert: {label: Ins, send: Insert}
+  DelH: {label: "Del↔", functional: false, text: "{End}{Shift+Home}{Delete}"}  #删除行
+  Page_Up: {label: △, send: Page_Up, functional: false}
+  Page_Down: {label: ▽, send: Page_Down, functional: false}
+  Page_Up_: {label: ⬅️, send: Page_Up, functional: false}
+  Page_Down_: {label: ➡️️, send: Page_Down, functional: false}
+  Left: {label: ←, send: Left, repeatable: true, functional: false}
+  Down: {label: ↓️️, send: Down, repeatable: true, functional: false}
+  Up: {label: ️↑, send: Up, repeatable: true, functional: false}
+  Right: {label: →, send: Right, repeatable: true, functional: false}
+  JumpLeft: {label: ⇦, send: Control+Left, repeatable: true, functional: false}
+  JumpRight: {label: ⇨, send: Control+Right, repeatable: true, functional: false}
+  Select_all: {label: 全选, functional: false, send: Control+a}
+  select_all1: {label: " ", functional: false, send: Control+a}
+  Tab1: {label: Tab, functional: false, preview: '↹', repeatable: false, text: '	'}
+  Cut: {label: 剪切, functional: false, send: Control+x}
+  cut1: {label: " ", functional: false, send: Control+x}
+  Copy: {label: 复制, functional: false, send: Control+c}
+  copy1: {label: " ", functional: false, send: Control+c}
+  Paste: {label: 粘贴, functional: false, send: Control+v}
+  paste2: {label: ▣, functional: true, send: Control+v}
+  paste1: {label: " ", functional: false, send: Control+v}
+  # 符号输入
+  cn_fullstop: {label: '  。', send: period}
+  cn_comma: {label: '  ，', send: comma}
+  en_fullstop: {label: ".", commit: "."}
+  en_comma: {label: ",", commit: ","}
+  # rime组合键
+  F4: {label: 方案菜单, send: F4} 
+  BackToPreviousSyllable: {label: 删音节, send: Control+BackSpace}
+  CommitRawInput: {label: 编码, send: Control+Return}
+  CommitScriptText: {label: 编码, send: Shift+Return}
+  CommitComment: {label: 编码, send: Control+Shift+Return}
+  DeleteCandidate: {label: 删词, send: Control+Delete, functional: false}
+  # rime状态
+  Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, En ]}
+  #shift键锁定
+  on_key_back_color: 0xff7200 #shift锁键时背景（shift键不得设置key_back_color，否则无效）
+  on_key_text_color: 0xffffffff #hilited_key_text_color #shift锁键时文本
+  hilited_on_key_back_color: hilited_key_back_color #shift锁定时的高亮背景，按下时
+  hilited_on_key_text_color: on_key_text_color #hilited_key_text_color #shift锁定时的高亮文本
+  Candidate_switch1: {toggle: _hide_candidate, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ☐, ─ ]}
+  Comment_switch: {toggle: _hide_comment, send: Mode_switch, states: [ ZI.., "ZI  "]}
+  Color_switch: {label: ◲, functional: false, send: PROG_RED} #配色
+  Hint_switch: {toggle: _hide_key_hint, functional: false, send: Mode_switch, states: [ ≑, ≟]}
+  # trime设置
+  IME_switch1: {label: ●, functional: false, send: LANGUAGE_SWITCH}
+  K_back: {label: 返回, send: Eisu_toggle, select: .last_lock}
+  K_back1: {label: "返回", functional: false, send: Eisu_toggle, select: .last_lock}
+  K_backk: {label: " ", send: Eisu_toggle, select: .default}
+  Schema_switch: {label: ⇄, functional: false, send: Control+Shift+1}
+  Schema_Eng: {label: En, send: Control+Shift+0}
+  Help: {label: 说明, send: Help}
+  Info: {label: 关于, send: INFO}
+  Settings: {label: ⚙, functional: false, send: SETTINGS}
+  Theme_settings: {label: ⚕️, send: SETTINGS, option: "theme"} #主题
+  Schema_settings: {label: 方案, send: SETTINGS, option: "schema"}
+  
+  # trime命令
+  Date: {label: "日期", send: function, command: date, option: "yy.MM.d"}
+  Date_time: {label: "日期时间", send: function, command: date, option: "yyyy.M.d E HH:mm"}
+  ChineseDate: {label: " ", send: function, command: date, option: "zh_CN@calendar=chinese"} #农历等日期(>=Android 7.0)：date 语言@calendar=历法 格式。具体參見https://developer.android.com/reference/android/icu/util/Calendar.html
+  EnglishDate: {label: " ", send: function, command: date, option: "en_US@calendar=english"}
+  Time: {label: "时间", send: function, command: date, option: " HH:mm E"}
+  TrimeCmp: {label: 同文组件, send: function, command: run, option: "com.osfans.trime/ .Pref"} #运行程序指定组件：run包名/组件名
+  HDSS: {label: ◫, functional: false, send: function, command: run, option: "https://www.zdic.net/hans/?q=%3$s"}
+  LLQ: {label: ◰, functional: false, send: function, command: web_search, option: "%4$s"} # 直达光标前http开头的网址或搜索光标前内容
+  Sync: {label: 同步, send: function, command: broadcast, option: "com.osfans.trime.sync"}
+  Share: {label: 分享, functional: false, command: send, option: "%1$s"} #分享指定文本: %s或者%1$s爲當前字符
+#  XHQQQ: {label: 点这里, send: function, command: run, option: "mqqapi://card/show_pslcard?src_type=internal&version=1&card_type=group&uin=966868329"} #直接开启 仙鹤群
