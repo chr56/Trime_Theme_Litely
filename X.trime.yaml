@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -476,7 +476,7 @@ preset_keyboards:
     name: "数字"
     width: 15
 # 符号布局
-  symbol:
+  k_symbol:
     height: *baseH  
     horizontal_gap: *baseCG 
     vertical_gap: *baseLG
@@ -1818,7 +1818,7 @@ preset_keys:
   edit_plus: {label: 增强编辑 , send: Eisu_toggle, select: "editplus"}
   number: {label: 12! , send: Eisu_toggle, select: "number"}
   english: {label: ️中文, send: Eisu_toggle, select: english} #英文键盘
-  k_symbol: {label: .?! , send: Eisu_toggle, select: "symbol"} #符号键盘
+  k_symbol: {label: ".?!" , send: Eisu_toggle, select: "k_symbol"} #符号键盘
   k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
 
 #编辑
