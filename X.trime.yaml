@@ -215,9 +215,9 @@ preset_color_schemes:
     hct: *白
     hilite_b: 0xFF82D0D2
 
-  ry:
-    name: "入夜" #入夜
-    back_color: 0xFF353535 #候选背景
+  dark:
+    name: "暗黑"
+    back_color: 0xFF353536 #候选背景
     hilited_candidate_back_color: *橙   #首字 背景
     hilited_key_back_color: *橙
     hilited_key_text_color: *白
