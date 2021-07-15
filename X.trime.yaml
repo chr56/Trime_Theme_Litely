@@ -101,7 +101,7 @@ fallback_colors:
   #悬浮窗
   border_color: text_back_color #悬浮窗边框
   hilited_back_color: back_color #back_color #悬浮窗首选编码背景
-  hilited_candidate_back_color: hcb #悬浮窗首选背景
+  hilited_candidate_back_color: hilited_back_color #悬浮窗首选背景
   hilited_text_color: text_color #悬浮窗编码
   text_back_color: back_color #编码区悬浮窗背景
   label_color: candidate_text_color #悬浮窗次选序号
@@ -132,7 +132,6 @@ fallback_colors:
   hilited_off_key_back_color: hilited_key_back_color
   off_key_text_color: szt
   hilited_off_key_text_color: off_key_text_color 
-  hcb: szb
 
 #颜色
 colors:
@@ -166,7 +165,6 @@ preset_color_schemes:
     szb: 0xAAB1BB
     szt: *白
     tab_b: 0xffbbbbbb #tab背景
-    hcb: 0x007AFE
 
   ge:
     name: "Google" #Google 谷歌
@@ -185,7 +183,6 @@ preset_color_schemes:
     szb: 0xffe1e1e1
     szt: *黑c
     tab_b: 0xffbbbbbb #tab背景
-    hcb: 0xFF82D0D2
 
   dark:
     name: "暗黑"
@@ -204,7 +201,6 @@ preset_color_schemes:
     szb: 0xFF515152
     szt: *灰
     tab_b: 0xff686973 #tab背景
-    hcb: 0xFFE56D4B
 
 #键盘布局
 preset_keyboards:
