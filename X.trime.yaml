@@ -140,9 +140,6 @@ fallback_colors:
   ybd: bdb
   hsb: szb
   hcb: szb
-  hst: szt
-  kgt: szt
-  bdt: szt
   bds: szs
   fhb: 0xff686973 #符号 导航键背景
   hilite_b: szb #符号 导航选中键背景
@@ -181,7 +178,6 @@ preset_color_schemes:
     szb: 0xAAB1BB
     szt: *白
     szs: *白
-    kgt: *黑c
     qszb: 0xAAB1BB   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0x007AFE
@@ -206,7 +202,6 @@ preset_color_schemes:
     szb: 0xffe1e1e1
     szt: *黑c
     szs: *黑c
-    kgt: *黑c
     qszb: 0xffe1e1e1   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0xFF82D0D2
