@@ -171,7 +171,6 @@ preset_color_schemes:
     hilited_back_color: 0x00 #悬浮窗编码背景
     szb: 0xAAB1BB
     szt: *白
-    qszb: 0xAAB1BB   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0x007AFE
 
@@ -191,7 +190,6 @@ preset_color_schemes:
     hilited_back_color: 0x00
     szb: 0xffe1e1e1
     szt: *黑c
-    qszb: 0xffe1e1e1   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0xFF82D0D2
 
@@ -211,7 +209,6 @@ preset_color_schemes:
     hilited_back_color: 0x00
     szb: 0xFF515152
     szt: *灰
-    qszb: 0xFF575759  #数字键盘 功能键背景
     tab_b: 0xff686973 #tab背景
     hcb: 0xFFE56D4B
 
