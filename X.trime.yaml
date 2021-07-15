@@ -144,13 +144,27 @@ colors:
   6: &银  0xffc0c0c0
   8: &灰 0xffa9a9a9
   9: &灰c 0xff696969
-  GboardBlue:  0xff1a73e9
-  GboardGreen: 0xff4cb6ac
-  GboardWhite: 0xfff8f9fb
-  GboardGrey:  0xfff2f3f5
-  GboardDeepGrey: 0xff616362
-  GboardBlack:    0xff1f1f1f
-  GboardDarkGrey: 0xffa7a7a7
+  ###
+  # Gboard配色
+  ###
+  # 主题色
+  GboardBlue: &GBlue 0xff1a73e9
+  GboardTeal: &GTeal 0xff4cb6ac
+  # 无框
+  GboardWhite: 0xfff8f9fb #背景
+  GboardGrey:  0xfff2f3f5 #候选栏背景
+  GboardTextGrey: 0xff616362 #小字
+  # 有框
+  GboardWhiteDark: 0xffe9eaee #背景#候选栏背景
+  GboardTextDeepGrey: 0xff5d5e60 #小字 (按键全白)
+  # 无框_暗黑 蓝
+  GboardBlack: 0xff1f1f1f #背景
+  GboardBlackBlue: 0xff232426 #候选栏背景
+  GboardTextGrey_Dark: 0xffa7a7a7 #小字
+  # 有框_暗黑 蓝
+  GboardBlacklike: 0xff292e32 #背景#候选栏背景
+  GboardDarkGrey: 0xff484c4f #按键
+  GboardTextDeepGrey_Dark: 0xffb6b7b9 #小字
   10: &gold 0xffd700
   11: &midnightblue 0x191970 #太空蓝
   12: &mediumslateblue 0x7b68ee #偏紫
@@ -178,19 +192,19 @@ preset_color_schemes:
 
   gboard:
     name: "Gboard" 
-    back_color: 0xfff8f9fb #候选背景
-    hilited_candidate_back_color: 0xff1a73e9   #首字 背景
-    hilited_key_back_color: *橙
+    back_color: 0xfff8f9fb #背景
+    hilited_candidate_back_color: *GBlue   #首字 背景
+    hilited_key_back_color: 0xff616362
     hilited_key_text_color: *白
     key_back_color: *白
-    key_symbol_color: *灰c
+    key_symbol_color: 0xff616362
     key_text_color: *黑
-    text_color: *黑 #次选
-    on_key_text_color: *gold #锁
+    text_color: *黑 
+    on_key_text_color: *GBlue #Shift锁
     hilited_text_color: 0xff1a73e9
     text_back_color: *白
-    hilited_back_color: 0x00
-    off_key_text_color: *黑c
+    hilited_back_color: *白
+    off_key_text_color: *黑
     tab_back_color: 0xfff2f3f5 #tab背景
 
   dark:
