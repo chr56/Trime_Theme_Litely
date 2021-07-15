@@ -467,7 +467,7 @@ preset_keyboards:
       - {click: "9", width: 18}
       - {click: "BackSpace", width: 16, swipe_left: DelH}
       # Line4
-      - {click: "K_back_", long_click: "k_symbol", key_text_size: 15}
+      - {height: *downH, click: "K_back_", long_click: "k_symbol", key_text_size: 15}
       - {click: "q_zb", key_text_size: 15}
       - {click: "q_ts", long_click: "q_bq" , key_text_size: 15, width: 18}
       - {click: "0", width: 18}
