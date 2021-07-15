@@ -184,7 +184,6 @@ preset_color_schemes:
     kgt: *黑c
     qszb: 0xAAB1BB   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
-    qszt: *白   #字色 数字、符号
     hcb: 0x007AFE
     hct: *白
 
@@ -210,7 +209,6 @@ preset_color_schemes:
     kgt: *黑c
     qszb: 0xffe1e1e1   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
-    qszt: *黑c   #字色 数字、符号
     hcb: 0xFF82D0D2
     hct: *白
     hilite_b: 0xFF82D0D2
@@ -235,7 +233,6 @@ preset_color_schemes:
     szs: *灰
     qszb: 0xFF575759  #数字键盘 功能键背景
     tab_b: 0xff686973 #tab背景
-    qszt: *灰   #字色 数字、符号
     hcb: 0xFFE56D4B
     hct: *白
 
