@@ -144,6 +144,13 @@ colors:
   6: &银  0xffc0c0c0
   8: &灰 0xffa9a9a9
   9: &灰c 0xff696969
+  GboardBlue:  0xff1a73e9
+  GboardGreen: 0xff4cb6ac
+  GboardWhite: 0xfff8f9fb
+  GboardGrey:  0xfff2f3f5
+  GboardDeepGrey: 0xff616362
+  GboardBlack:    0xff1f1f1f
+  GboardDarkGrey: 0xffa7a7a7
   10: &gold 0xffd700
   11: &midnightblue 0x191970 #太空蓝
   12: &mediumslateblue 0x7b68ee #偏紫
@@ -167,24 +174,24 @@ preset_color_schemes:
     text_back_color: *白
     hilited_back_color: 0x00 #悬浮窗编码背景
     off_key_text_color: *黑
-    tab_back_color: 0xffbbbbbb #tab背景
+    tab_back_color: 0xffC0C0C0 #tab背景
 
-  ge:
-    name: "Google" 
-    back_color: 0xffeeeeee #候选背景
-    hilited_candidate_back_color: 0xFF4BCCD0   #首字 背景
+  gboard:
+    name: "Gboard" 
+    back_color: 0xfff8f9fb #候选背景
+    hilited_candidate_back_color: 0xff1a73e9   #首字 背景
     hilited_key_back_color: *橙
     hilited_key_text_color: *白
     key_back_color: *白
     key_symbol_color: *灰c
     key_text_color: *黑
     text_color: *黑 #次选
-    on_key_text_color: *红 #锁
-    hilited_text_color: *红
+    on_key_text_color: *gold #锁
+    hilited_text_color: 0xff1a73e9
     text_back_color: *白
     hilited_back_color: 0x00
     off_key_text_color: *黑c
-    tab_back_color: 0xffbbbbbb #tab背景
+    tab_back_color: 0xfff2f3f5 #tab背景
 
   dark:
     name: "暗黑"
