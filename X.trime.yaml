@@ -99,11 +99,11 @@ style:
 fallback_colors:
   keyboard_back_color: back_color  #键盘背景
   #悬浮窗
-  border_color: xbcbj #悬浮窗边框
-  hilited_back_color: xfcbmbj #back_color #悬浮窗首选编码背景
+  border_color: text_back_color #悬浮窗边框
+  hilited_back_color: back_color #back_color #悬浮窗首选编码背景
   hilited_candidate_back_color: hcb #悬浮窗首选背景
-  hilited_text_color: xfcbm #悬浮窗编码
-  text_back_color: xbcbj #编码区悬浮窗背景
+  hilited_text_color: text_color #悬浮窗编码
+  text_back_color: back_color #编码区悬浮窗背景
   label_color: candidate_text_color #悬浮窗次选序号
   #气泡
   preview_back_color: back_color #按键气泡背景
@@ -173,9 +173,9 @@ preset_color_schemes:
     key_text_color: *黑
     text_color: *黑 #次选
     on_key_text_color: *红 #锁
-    xfcbm: *红
-    xbcbj: *白
-    xfcbmbj: 0x00 #悬浮窗编码背景
+    hilited_text_color: *红
+    text_back_color: *白
+    hilited_back_color: 0x00 #悬浮窗编码背景
     AAA: *白
     AAH: *橙
     szb: 0xAAB1BB
@@ -199,9 +199,9 @@ preset_color_schemes:
     key_text_color: *黑
     text_color: *黑 #次选
     on_key_text_color: *红 #锁
-    xfcbm: *红
-    xbcbj: *白
-    xfcbmbj: 0x00
+    hilited_text_color: *红
+    text_back_color: *白
+    hilited_back_color: 0x00
     AAA: *白
     AAH: *橙
     szb: 0xffe1e1e1
@@ -226,9 +226,9 @@ preset_color_schemes:
     key_text_color: *白
     text_color: *白 #次选
     on_key_text_color: *橙 #锁
-    xfcbm: 0xFFF7FF00 #悬浮窗编码
-    xbcbj: 0xa0424347
-    xfcbmbj: 0x00
+    hilited_text_color: 0xFFF7FF00 #悬浮窗编码
+    text_back_color: 0xa0424347
+    hilited_back_color: 0x00
     AAH: 0xFFE56D4B
     szb: 0xFF515152
     szt: *灰
