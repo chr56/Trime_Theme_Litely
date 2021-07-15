@@ -133,9 +133,8 @@ fallback_colors:
   off_key_text_color: szt
   hilited_off_key_text_color: off_key_text_color 
   shb: szb
-  bdb: szb
-  zbd: bdb
-  ybd: bdb
+  zbd: szb
+  ybd: szb
   hsb: szb
   hcb: szb
   fhb: 0xff686973 #符号 导航键背景
