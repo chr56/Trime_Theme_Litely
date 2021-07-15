@@ -21,9 +21,9 @@ height:
   C: &miniH 32.5 #小键键高(符号键盘)
   D: &numbH 46.5 #数字键高(数字键盘)
   #间隔(键与键的距离) 
-  E: &baseLG 6 #基础行距
+  E: &baseLG 4 #基础行距
   F: &miniLG 3 #小键行距
-  G: &numbLG 3 #数字行距
+  G: &numbLG 4 #数字行距
   H: &baseCG 4 #基础列距
   I: &miniCG 3 #小键列距
   J: &numbCG 3 #数字列距
