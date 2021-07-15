@@ -174,7 +174,6 @@ preset_color_schemes:
     qszb: 0xAAB1BB   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0x007AFE
-    hct: *白
 
   ge:
     name: "Google" #Google 谷歌
@@ -195,7 +194,6 @@ preset_color_schemes:
     qszb: 0xffe1e1e1   #数字键盘 功能键背景
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0xFF82D0D2
-    hct: *白
 
   dark:
     name: "暗黑"
@@ -216,7 +214,6 @@ preset_color_schemes:
     qszb: 0xFF575759  #数字键盘 功能键背景
     tab_b: 0xff686973 #tab背景
     hcb: 0xFFE56D4B
-    hct: *白
 
 #键盘布局
 preset_keyboards:
