@@ -221,7 +221,7 @@ preset_color_schemes:
     on_key_text_color: *gold #Shift锁
     hilited_text_color: *gold #悬浮窗编码
     text_back_color: *灰
-    hilited_back_color: *黑
+    hilited_back_color: *灰
     off_key_text_color: *白
 
 #键盘布局
