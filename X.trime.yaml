@@ -141,7 +141,6 @@ fallback_colors:
   hsb: szb
   hcb: szb
   fhb: 0xff686973 #符号 导航键背景
-  hilite_b: szb #符号 导航选中键背景
 
 #颜色
 colors:
@@ -203,7 +202,6 @@ preset_color_schemes:
     tab_b: 0xffbbbbbb #tab背景
     hcb: 0xFF82D0D2
     hct: *白
-    hilite_b: 0xFF82D0D2
 
   dark:
     name: "暗黑"
