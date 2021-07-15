@@ -144,14 +144,16 @@ colors:
   6: &银  0xffc0c0c0
   8: &灰 0xffa9a9a9
   9: &灰c 0xff696969
-  10: &midnightblue 0x191970 #太空蓝(hei)
-  11: &gold 0xffd700
-
+  10: &gold 0xffd700
+  11: &midnightblue 0x191970 #太空蓝
+  12: &mediumslateblue 0x7b68ee #偏紫
+  13: &Darkslateblue 0x483D8B #偏紫
+  14: &Navy 0x000080
   
 #配色，
 preset_color_schemes:
   default:
-    name: "iOS" #ios
+    name: "iOS"
     back_color: 0xffD1D4D9 #候选背景
     hilited_candidate_back_color: 0xaa007AFE   #首字 背景
     hilited_key_back_color: *橙
@@ -164,11 +166,11 @@ preset_color_schemes:
     hilited_text_color: *红
     text_back_color: *白
     hilited_back_color: 0x00 #悬浮窗编码背景
-    off_key_text_color: *白
-    tab_b: 0xffbbbbbb #tab背景
+    off_key_text_color: *黑
+    tab_back_color: 0xffbbbbbb #tab背景
 
   ge:
-    name: "Google" #Google 谷歌
+    name: "Google" 
     back_color: 0xffeeeeee #候选背景
     hilited_candidate_back_color: 0xFF4BCCD0   #首字 背景
     hilited_key_back_color: *橙
@@ -182,24 +184,24 @@ preset_color_schemes:
     text_back_color: *白
     hilited_back_color: 0x00
     off_key_text_color: *黑c
-    tab_b: 0xffbbbbbb #tab背景
+    tab_back_color: 0xffbbbbbb #tab背景
 
   dark:
     name: "暗黑"
-    back_color: 0xFF353536 #候选背景
-    hilited_candidate_back_color: *gold #首字 背景
-    hilited_key_back_color: 0xFFE56D4B
+    back_color: *Navy #背景
+    hilited_candidate_back_color: *灰 #首字 背景
+    hilited_key_back_color: *灰c
     hilited_key_text_color: *白
-    key_back_color: 0xFF474747
+    tab_back_color: *Darkslateblue #tab背景
+    key_back_color: *Darkslateblue 
     key_symbol_color: *白
     key_text_color: *白
-    text_color: *白 #次选
-    on_key_text_color: *gold #锁
-    hilited_text_color: 0xFFF7FF00 #悬浮窗编码
-    text_back_color: 0xa0424347
-    hilited_back_color: 0x00
-    off_key_text_color: *银
-    tab_b: 0xff686973 #tab背景
+    text_color: *白 
+    on_key_text_color: *gold #Shift锁
+    hilited_text_color: *gold #悬浮窗编码
+    text_back_color: *灰
+    hilited_back_color: *黑
+    off_key_text_color: *白
 
 #键盘布局
 preset_keyboards:
@@ -502,12 +504,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: 中文, key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "，", key_text_size: 16}
       - {click: "。", key_text_size: 16}
@@ -553,10 +555,10 @@ preset_keyboards:
       - {click: ""}
       - {click: ""}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "中文"
@@ -572,12 +574,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: "中文", key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: "中文", key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: ",", key_text_size: 16}
       - {click: ".", key_text_size: 16}
@@ -623,10 +625,10 @@ preset_keyboards:
       - {click: ""}
       - {click: ""}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "英文"
@@ -642,12 +644,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: 中文, key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "❶", key_text_size: 16}
       - {click: "❷", key_text_size: 16}
@@ -693,10 +695,10 @@ preset_keyboards:
       - {click: "Ⅹ", key_text_size: 16}
       - {click: "Ⅺ", key_text_size: 16}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "序号"
@@ -712,12 +714,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: 中文, key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "壹", key_text_size: 16}
       - {click: "贰", key_text_size: 16}
@@ -763,10 +765,10 @@ preset_keyboards:
       - {click: "₍", key_text_size: 16}
       - {click: "₎", key_text_size: 16}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "序号2"
@@ -782,12 +784,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: 中文, key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "⅟", key_text_size: 16}
       - {click: "½", key_text_size: 16}
@@ -833,10 +835,10 @@ preset_keyboards:
       - {click: "㎟", key_text_size: 16}
       - {click: "㎣", key_text_size: 16}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "数学"
@@ -852,12 +854,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_zb", label: 中文, key_back_color: tab_b, width: 17}
-      - {click: "q_yb", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_b, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_b, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_b, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_b, width: 17}
+      - {click: "q_zb", label: 中文, key_back_color: tab_back_color, width: 17}
+      - {click: "q_yb", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "Ⓐ", width: 8, key_text_size: 16}
       - {click: "Ⓑ", width: 8, key_text_size: 16}
@@ -915,10 +917,10 @@ preset_keyboards:
       - {click: "🇾️", width: 8, key_text_size: 16}
       - {click: "🇿️", width: 8, key_text_size: 16}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "字母"
@@ -934,12 +936,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: 🥶}
       - {click: 🤬}
@@ -985,10 +987,10 @@ preset_keyboards:
       - {click: 🌂}
       - {click: 👠}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "表情"
@@ -1004,12 +1006,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: 🌱}
       - {click: ☘}
@@ -1055,10 +1057,10 @@ preset_keyboards:
       - {click: 🌩}
       - {click: ⚡️}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "植物"
@@ -1074,12 +1076,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: 🍏}
       - {click: 🍎}
@@ -1125,10 +1127,10 @@ preset_keyboards:
       - {click: 🍬}
       - {click: 🍰}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "食物"
@@ -1144,12 +1146,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: 🏀}
       - {click: ⚽️}
@@ -1195,10 +1197,10 @@ preset_keyboards:
       - {click: 🛫}
       - {click: 🛬}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "运动"
@@ -1214,12 +1216,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: 🦠}
       - {click: 🦟}
@@ -1265,10 +1267,10 @@ preset_keyboards:
       - {click: 🐕}
       - {click: 🐖}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "动物"
@@ -1284,12 +1286,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "q_bq",  key_back_color: tab_b, width: 17}
-      - {click: "q_bq1",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq2",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq3",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq4",  key_back_color: tab_b, width: 16.5}
-      - {click: "q_bq5",  key_back_color: tab_b, width: 17}
+      - {click: "q_bq",  key_back_color: tab_back_color, width: 17}
+      - {click: "q_bq1",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq2",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq3",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq4",  key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_bq5",  key_back_color: tab_back_color, width: 17}
       #❷
       - {click: ⌨}
       - {click: 🖱}
@@ -1335,10 +1337,10 @@ preset_keyboards:
       - {click: ✂️}
       - {click: 📁}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "其他"
@@ -1354,11 +1356,11 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: q_ts1, key_back_color: tab_b, width: 17}
-      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts1, key_back_color: tab_back_color, width: 17}
+      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 17}
       #❷
       - {click: ️️↖, key_text_size: 15}
@@ -1405,10 +1407,10 @@ preset_keyboards:
       - {click: ⬅, key_text_size: 15}
       - {click: 🔄, key_text_size: 15}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "箭头"
@@ -1424,11 +1426,11 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: q_ts1, key_back_color: tab_b, width: 17}
-      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts1, key_back_color: tab_back_color, width: 17}
+      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 17}
       # 二
       - {click: "❋️️", key_text_size: 15}
@@ -1475,10 +1477,10 @@ preset_keyboards:
       - {click: "❂", key_text_size: 15}
       - {click: "️✲", key_text_size: 15}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "星花"
@@ -1494,11 +1496,11 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: q_ts1, key_back_color: tab_b, width: 17}
-      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts1, key_back_color: tab_back_color, width: 17}
+      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 17}
       #❷
       - {click: 🆚, key_text_size: 15}
@@ -1545,10 +1547,10 @@ preset_keyboards:
       - {click: Ⓜ️️, key_text_size: 15}
       - {click: 🌐, key_text_size: 15}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊1"
@@ -1564,11 +1566,11 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: q_ts1, key_back_color: tab_b, width: 17}
-      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts1, key_back_color: tab_back_color, width: 17}
+      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 17}
       # 五
       - {click: "☪", key_text_size: 15}
@@ -1615,10 +1617,10 @@ preset_keyboards:
       - {click: "◐", key_text_size: 15}
       - {click: "●️", key_text_size: 15}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊2"
@@ -1634,11 +1636,11 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: q_ts1, key_back_color: tab_b, width: 17}
-      - {click: q_ts2, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts3, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_b, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_b, width: 16.5}
+      - {click: q_ts1, key_back_color: tab_back_color, width: 17}
+      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts3, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
+      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 17}
       #❷
       - {click: ▬️️, key_text_size: 15}
@@ -1685,10 +1687,10 @@ preset_keyboards:
       - {click: 💙️, key_text_size: 15}
       - {click: 💜, key_text_size: 15}
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_b, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_b, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_b, width: 16}
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊3"
