@@ -123,10 +123,10 @@ fallback_colors:
   key_symbol_color: comment_text_color #按键上下符号
   hilited_key_symbol_color: hilited_key_text_color #高亮按键符号
   #shift键锁定
-  on_key_back_color: 0xff7200
-  on_key_text_color: 0xffffffff
-  hilited_on_key_back_color: hilited_key_back_color
-  hilited_on_key_text_color: on_key_text_color
+  on_key_back_color: 0xff7200 #shift锁键时背景（shift键不得设置key_back_color，否则无效）
+  on_key_text_color: 0xffd700 #Shift锁键时文本
+  hilited_on_key_back_color: hilited_key_back_color #shift锁定时的高亮背景，按下时
+  hilited_on_key_text_color: on_key_text_color #hilited_key_text_color #shift锁定时的高亮文本
   #shift键常态及功能键
   off_key_back_color: key_back_color
   hilited_off_key_back_color: hilited_key_back_color
@@ -153,7 +153,7 @@ colors:
 #配色，
 preset_color_schemes:
   default:
-    name: "iOS"
+    name: "浅色"
     back_color: 0xffD1D4D9 #候选背景
     hilited_candidate_back_color: 0xaa007AFE   #首字 背景
     hilited_key_back_color: *橙
@@ -162,7 +162,7 @@ preset_color_schemes:
     key_symbol_color: *灰c
     key_text_color: *黑
     text_color: *黑 #次选
-    on_key_text_color: *红 #锁
+    on_key_text_color: *gold #Shift锁
     hilited_text_color: *红
     text_back_color: *白
     hilited_back_color: 0x00 #悬浮窗编码背景
@@ -1913,10 +1913,6 @@ preset_keys:
   # rime状态
   Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, En ]}
   #shift键锁定
-  on_key_back_color: 0xff7200 #shift锁键时背景（shift键不得设置key_back_color，否则无效）
-  on_key_text_color: 0xffffffff #hilited_key_text_color #shift锁键时文本
-  hilited_on_key_back_color: hilited_key_back_color #shift锁定时的高亮背景，按下时
-  hilited_on_key_text_color: on_key_text_color #hilited_key_text_color #shift锁定时的高亮文本
   Candidate_switch1: {toggle: _hide_candidate, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ☐, ─ ]}
   Comment_switch: {toggle: _hide_comment, send: Mode_switch, states: [ ZI.., "ZI  "]}
   Color_switch: {label: ◲, functional: false, send: PROG_RED} #配色
