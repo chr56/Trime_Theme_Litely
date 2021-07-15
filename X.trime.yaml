@@ -130,7 +130,7 @@ fallback_colors:
   #shift键常态及功能键
   off_key_back_color: key_back_color
   hilited_off_key_back_color: hilited_key_back_color
-  off_key_text_color: szt
+  off_key_text_color: key_text_color
   hilited_off_key_text_color: off_key_text_color 
 
 #颜色
@@ -162,7 +162,7 @@ preset_color_schemes:
     hilited_text_color: *红
     text_back_color: *白
     hilited_back_color: 0x00 #悬浮窗编码背景
-    szt: *白
+    off_key_text_color: *白
     tab_b: 0xffbbbbbb #tab背景
 
   ge:
@@ -179,7 +179,7 @@ preset_color_schemes:
     hilited_text_color: *红
     text_back_color: *白
     hilited_back_color: 0x00
-    szt: *黑c
+    off_key_text_color: *黑c
     tab_b: 0xffbbbbbb #tab背景
 
   dark:
@@ -196,7 +196,7 @@ preset_color_schemes:
     hilited_text_color: 0xFFF7FF00 #悬浮窗编码
     text_back_color: 0xa0424347
     hilited_back_color: 0x00
-    szt: *灰
+    off_key_text_color: *灰
     tab_b: 0xff686973 #tab背景
 
 #键盘布局
