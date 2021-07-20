@@ -304,15 +304,15 @@ preset_keyboards:
       - {click: "", key_back_color: 0x00, width: 10}
       - {click: "refresh", hint: 刷　新, key_text_size: 18, key_back_color: 0x00}
       - {click: "Deploy", hint: 部　署, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Menu", hint: 方　案, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Full_Half1", hint: 全半角, key_text_size: 18, key_back_color: 0x00}
       - {click: "IME_switch", hint: 输入法, key_text_size: 18, key_back_color: 0x00}
       - {click: "Hint_switch", hint: 提　示, key_text_size: 18, key_back_color: 0x00}
       - {click: "", key_back_color: 0x00, width: 10}
       # 二
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "", key_back_color: 0x00}
+      - {click: "Theme_settings", key_back_color: 0x00}
       - {click: "Color_settings", key_back_color: 0x00}
-      - {click: "Full_Half1", hint: 全半角, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Menu", hint: 方　案, key_text_size: 18, key_back_color: 0x00}
       - {click: "Candidate_switch", hint: 候选栏, key_text_size: 18, key_back_color: 0x00}
       - {click: "BackToDefault_", hint: 返  回,key_text_size: 18, key_back_color: 0x00}
       - {click: "", key_back_color: 0x00, width: 10}
