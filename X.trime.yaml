@@ -1911,6 +1911,12 @@ preset_keys:
   emoji_tab4: {label: "运动",send: Eisu_toggle, select: "qtbq3"}
   emoji_tab5: {label: "其他",send: Eisu_toggle, select: "qtbq5"}
   emoji_tab6: {label: "数字/表",send: Eisu_toggle, select: "emoji_num"}
+  # emoji_tab7: {label: "",send: Eisu_toggle, select: ""}
+  # emoji_tab8: {label: "",send: Eisu_toggle, select: ""}
+  # emoji_tab9: {label: "",send: Eisu_toggle, select: ""}
+  # emoji_tabA: {label: "",send: Eisu_toggle, select: ""}
+  # emoji_tabB: {label: "",send: Eisu_toggle, select: ""}
+  # emoji_tabC: {label: "",send: Eisu_toggle, select: ""}
   emoji_tab_: {label: "▷",send: Eisu_toggle, select: "qtzb"}
 
   q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}
