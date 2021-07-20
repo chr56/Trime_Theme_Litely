@@ -1,0 +1,15 @@
+      - {click: "emoji_tab1", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab2", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 16}
+
+      - {click: "emoji_tab7", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab8", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab9", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
