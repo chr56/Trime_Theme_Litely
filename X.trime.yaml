@@ -303,18 +303,18 @@ preset_keyboards:
       # 一
       - {click: "", key_back_color: 0x00, width: 10}
       - {click: "refresh", hint: 刷　新, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Deploy", hint: 部　署, key_text_size: 17, key_back_color: 0x00}
-      - {click: "Menu", hint: 方　案, key_text_size: 22, key_back_color: 0x00}
+      - {click: "Deploy", hint: 部　署, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Menu", hint: 方　案, key_text_size: 18, key_back_color: 0x00}
       - {click: "IME_switch", hint: 输入法, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Hint_switch", hint: 提　示, key_text_size: 20, key_back_color: 0x00}
+      - {click: "Hint_switch", hint: 提　示, key_text_size: 18, key_back_color: 0x00}
       - {click: "", key_back_color: 0x00, width: 10}
       # 二
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "K_mr", hint: 默　认, key_text_size: 16, key_back_color: 0x00}
+      - {click: "", key_back_color: 0x00}
       - {click: "Color_settings", key_back_color: 0x00}
-      - {click: "Full_Half1", hint: 全半角, key_text_size: 16, key_back_color: 0x00}
+      - {click: "Full_Half1", hint: 全半角, key_text_size: 18, key_back_color: 0x00}
       - {click: "Candidate_switch", hint: 候选栏, key_text_size: 18, key_back_color: 0x00}
-      - {click: "BackToDefault", key_back_color: 0x00}
+      - {click: "BackToDefault_", hint: 返  回,key_text_size: 18, key_back_color: 0x00}
       - {click: "", key_back_color: 0x00, width: 10}
       # 三
       - {width: 100}
@@ -2058,9 +2058,9 @@ preset_keys:
   Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]}
   Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
   Color_settings: {label: 配色, send: SETTINGS, option: "color"} #配色
-  K_mr: {label: Ⓜ, functional: false, send: Eisu_toggle, select: .default}
-  q_vuji: {label: Ⓙ, functional: false, send: Eisu_toggle, select: "qtVJ"} 
   Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
+  BackToDefault_: {label: Ⓑ , send: Eisu_toggle, select: .default} #返回主键盘
+
 
   #emoji 1
   emoji_tab01: {label: "表情1",send: Eisu_toggle, select: "emoji_face1"}
