@@ -962,8 +962,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 🥶}
       - {click: 🤬}
@@ -1033,8 +1033,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 🌱}
       - {click: ☘}
@@ -1104,8 +1104,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 🍏}
       - {click: 🍎}
@@ -1175,8 +1175,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 🏀}
       - {click: ⚽️}
@@ -1246,8 +1246,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 🦠}
       - {click: 🦟}
@@ -1317,8 +1317,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: ⌨}
       - {click: 🖱}
@@ -1738,8 +1738,8 @@ preset_keyboards:
       - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14.5}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 13.5}
       #❷
       - {click: 0️⃣, key_text_size: 15}
       - {click: 1️⃣, key_text_size: 15}
@@ -1756,6 +1756,7 @@ preset_keyboards:
       - {click: "#️⃣", key_text_size: 15}
       - {click: "*️⃣", key_text_size: 15}      
       - {click: 🔢, key_text_size: 15}
+      - {width: 10}
       - {width: 10}
       - {click: 🕤 , key_text_size: 15}
       - {click: 🕥 , key_text_size: 15}
@@ -1904,13 +1905,13 @@ preset_keys:
   Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
 
   #符号盘
-  emoji_tab1: {label: "emoji",send: Eisu_toggle, select: "q_bq"}
-  emoji_tab2: {label: "植物",send: Eisu_toggle, select: "q_bq1"}
-  emoji_tab3: {label: "食物",send: Eisu_toggle, select: "q_bq2"}
-  emoji_tab4: {label: "运动",send: Eisu_toggle, select: "q_bq3"}
-  emoji_tab5: {label: "其他",send: Eisu_toggle, select: "q_bq5"}
-  emoji_tab6: {label: "数字/时间",send: Eisu_toggle, select: "emoji_num"}
-  emoji_tab_: {label: "▷",send: Eisu_toggle, select: "q_zb"}
+  emoji_tab1: {label: "emoji",send: Eisu_toggle, select: "qtbq"}
+  emoji_tab2: {label: "植物",send: Eisu_toggle, select: "qtbq1"}
+  emoji_tab3: {label: "食物",send: Eisu_toggle, select: "qtbq2"}
+  emoji_tab4: {label: "运动",send: Eisu_toggle, select: "qtbq3"}
+  emoji_tab5: {label: "其他",send: Eisu_toggle, select: "qtbq5"}
+  emoji_tab6: {label: "数字/表",send: Eisu_toggle, select: "emoji_num"}
+  emoji_tab_: {label: "▷",send: Eisu_toggle, select: "qtzb"}
 
   q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}
   q_yb: {label: "英文", send: Eisu_toggle, select: "qtyb"}
