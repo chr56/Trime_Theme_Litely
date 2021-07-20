@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, qtzm, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -530,7 +530,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "，", key_text_size: 16}
       - {click: "。", key_text_size: 16}
@@ -600,7 +600,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: ",", key_text_size: 16}
       - {click: ".", key_text_size: 16}
@@ -670,7 +670,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "❶", key_text_size: 16}
       - {click: "❷", key_text_size: 16}
@@ -740,7 +740,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "壹", key_text_size: 16}
       - {click: "贰", key_text_size: 16}
@@ -810,7 +810,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "⅟", key_text_size: 16}
       - {click: "½", key_text_size: 16}
@@ -865,7 +865,7 @@ preset_keyboards:
     name: "数学"
     width: 10
 
-  qtzm:
+  k_alphabet:
     author: 青 铜 #字母，
     ascii_mode: 0
     height: *miniH
@@ -880,7 +880,7 @@ preset_keyboards:
       - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
       - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_zm", key_back_color: tab_back_color, width: 17}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
       #❷
       - {click: "Ⓐ", width: 8, key_text_size: 16}
       - {click: "Ⓑ", width: 8, key_text_size: 16}
@@ -1834,7 +1834,7 @@ preset_keys:
   q_xh: {label: "序号", send: Eisu_toggle, select: "qtxh"}
   q_xh2: {label: "序号2", send: Eisu_toggle, select: "qtxh2"}
   q_ux: {label: "数学", send: Eisu_toggle, select: "qtux"}
-  q_zm: {label: "字母", send: Eisu_toggle, select: "qtzm"}
+  K_alphabet: {label: "字母", send: Eisu_toggle, select: "k_alphabet"}
   q_bq: {label: "表情", send: Eisu_toggle, select: "qtbq"}
   q_bq1: {label: "植物", send: Eisu_toggle, select: "qtbq1"}
   q_bq2: {label: "食物", send: Eisu_toggle, select: "qtbq2"}
