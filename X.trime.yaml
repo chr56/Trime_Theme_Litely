@@ -278,7 +278,7 @@ preset_keyboards:
       - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
       - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
-      - {click: Return, long_click: Color_settings1, swipe_up: Theme_settings, width: 18}
+      - {click: Return, long_click: Color_settings, swipe_up: Theme_settings, width: 18}
     name: "默认"
     width: 10
 #英语键盘
@@ -311,10 +311,10 @@ preset_keyboards:
       # 二
       - {click: "", key_back_color: 0x00, width: 10}
       - {click: "K_mr", hint: 默　认, key_text_size: 16, key_back_color: 0x00}
-      - {click: "", key_back_color: 0x00}
+      - {click: "Color_settings", key_back_color: 0x00}
       - {click: "Full_Half1", hint: 全半角, key_text_size: 16, key_back_color: 0x00}
       - {click: "Candidate_switch", hint: 候选栏, key_text_size: 18, key_back_color: 0x00}
-      - {click: "t_fhvjj", key_back_color: 0x00}
+      - {click: "t_fhvj", key_back_color: 0x00}
       - {click: "", key_back_color: 0x00, width: 10}
       # 三
       - {width: 100}
@@ -348,7 +348,7 @@ preset_keyboards:
       - {click: "Space", width: 20}
       # ❹
       - {click: "0x00", long_click: "0xff"}
-      - {click: "Tab1"}
+      - {click: "Tab_"}
       - {click: "Down"}
       - {click: "SelectLine", hint: 选中行}
       - {click: "BackSpace", width: 20}
@@ -406,7 +406,7 @@ preset_keyboards:
       - {click:  "t_bj43", long_click: t_bj43s}
       - {click:  "t_bj44", long_click: t_bj44s}
       - {click: "0x00", long_click: "0xff"}
-      - {click: "Tab1"}
+      - {click: "Tab_"}
       - {click: "Down"}
       - {click: "SelectLine"}
       - {click: "BackSpace", width: 20}
@@ -510,7 +510,7 @@ preset_keyboards:
       - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: space, ascii: space_en, swipe_left: Left, swipe_right: Right, width: 38}
       - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
-      - {click: Return, long_click: Color_settings1, swipe_up: Theme_settings, width: 18}
+      - {click: Return, long_click: Color_settings, swipe_up: Theme_settings, width: 18}
     name: "符号"
     width: 10    
 
@@ -1822,8 +1822,7 @@ preset_keys:
   Deploy: {label: ♻, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
   Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]}
   Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
-  Color_settings: {label: ◀▷, functional: false, send: SETTINGS, option: "color"} #配色
-  Color_settings1: {label: 配色, send: SETTINGS, option: "color"} #配色
+  Color_settings: {label: 配色, send: SETTINGS, option: "color"} #配色
   K_mr: {label: Ⓜ, functional: false, send: Eisu_toggle, select: .default}
   q_vuji: {label: Ⓙ, functional: false, send: Eisu_toggle, select: "qtVJ"} 
   Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
@@ -1852,41 +1851,40 @@ preset_keys:
   t_yx: {label: "邮箱", functional: false, commit: "@qq.com"}
   t_fhvj: {label: 返回, send: Eisu_toggle, select: .default} #返回主键盘
   q_ywfh: {label: En, send: Eisu_toggle, select: .default}
-  t_fhvjj: {label: Ⓑ 返回, send: Eisu_toggle, select: .default}
   K_jh: {label: ".", functional: false, commit: "."}
 
  #超级编辑——
-  t_bj21: {label: "背景", functional: false, commit: ", key_back_color: "}
-  t_bj22: {label: "高亮", functional: false, commit: ", hilited_key_back_color: "}
-  t_bj23: {label: "字色", functional: false, commit: ", key_text_color: "}
-  t_bj23s: {label: "字号", functional: false, commit: ", key_text_size: "}
-  t_bj24: {label: "显示", functional: false, commit: ", label: "}
+  edit_21: {label: "背景", functional: false, commit: ", key_back_color: "}
+  edit_22: {label: "高亮", functional: false, commit: ", hilited_key_back_color: "}
+  edit_23: {label: "字色", functional: false, commit: ", key_text_color: "}
+  edit_23s: {label: "字号", functional: false, commit: ", key_text_size: "}
+  edit_24: {label: "显示", functional: false, commit: ", label: "}
 
-  t_bj31: {label: "键宽", functional: false, commit: ", width: "}
-  t_bj31s: {label: "行距", functional: false, commit: "vertical_gap: "}
-  t_bj32: {label: "键高", functional: false, commit: "height: "}
-  t_bj32s: {label: "竖距", functional: false, commit: "horizontal_gap: "}
-  t_bj33: {label: "上标", functional: false, commit: ", key_symbol_color: "}
-  t_bj33s: {label: "圆角", functional: false, commit: "round_corner: "}
-  t_bj34: {label: "下标", functional: false, commit: ", hint: "}
-  t_bj34s: {label: "前置", functional: false, commit: "before"}
+  edit_31: {label: "键宽", functional: false, commit: ", width: "}
+  edit_31s: {label: "行距", functional: false, commit: "vertical_gap: "}
+  edit_32: {label: "键高", functional: false, commit: "height: "}
+  edit_32s: {label: "竖距", functional: false, commit: "horizontal_gap: "}
+  edit_33: {label: "上标", functional: false, commit: ", key_symbol_color: "}
+  edit_33s: {label: "圆角", functional: false, commit: "round_corner: "}
+  edit_34: {label: "下标", functional: false, commit: ", hint: "}
+  edit_34s: {label: "前置", functional: false, commit: "before"}
   
-  t_bj41: {label: "点击", functional: false, commit: "click: "}
-  t_bj41s: {label: "编辑状态", functional: false, commit: ", composing: "}
-  t_bj42: {label: "长按", functional: false, commit: ", long_click: "}
-  t_bj43: {label: "坐标x", functional: false, commit: ", key_text_offset_x: "}
-  t_bj43s: {label: "坐标y", functional: false, commit: ", key_text_offset_y: "}
-  t_bj44: {label: "上标x", functional: false, commit: ", key_symbol_offset_x: "}
-  t_bj44s: {label: "上标y", functional: false, commit: ", key_symbol_offset_y: "}
+  edit_41: {label: "点击", functional: false, commit: "click: "}
+  edit_41s: {label: "编辑状态", functional: false, commit: ", composing: "}
+  edit_42: {label: "长按", functional: false, commit: ", long_click: "}
+  edit_43: {label: "坐标x", functional: false, commit: ", key_text_offset_x: "}
+  edit_43s: {label: "坐标y", functional: false, commit: ", key_text_offset_y: "}
+  edit_44: {label: "上标x", functional: false, commit: ", key_symbol_offset_x: "}
+  edit_44s: {label: "上标y", functional: false, commit: ", key_symbol_offset_y: "}
 
-  t_bj51: {label: "上划", functional: false, commit: ", swipe_up: "}
-  t_bj51s: {label: "上", functional: false, commit: "Up"}
-  t_bj52: {label: "下划", functional: false, commit: ", swipe_down: "}
-  t_bj52s: {label: "下", functional: false, commit: "Down"}
-  t_bj53: {label: "左划", functional: false, commit: ", swipe_left: "}
-  t_bj53s: {label: "左", functional: false, commit: "Left"}
-  t_bj54: {label: "右划", functional: false, commit: ", swipe_right: "}
-  t_bj54s: {label: "右", functional: false, commit: "Right"}
+  edit_51: {label: "上划", functional: false, commit: ", swipe_up: "}
+  edit_51s: {label: "上", functional: false, commit: "Up"}
+  edit_52: {label: "下划", functional: false, commit: ", swipe_down: "}
+  edit_52s: {label: "下", functional: false, commit: "Down"}
+  edit_53: {label: "左划", functional: false, commit: ", swipe_left: "}
+  edit_53s: {label: "左", functional: false, commit: "Left"}
+  edit_54: {label: "右划", functional: false, commit: ", swipe_right: "}
+  edit_54s: {label: "右", functional: false, commit: "Right"}
 
   # 编辑
   Shift_R: {label: Enter, send: Shift_R}
@@ -1914,8 +1912,7 @@ preset_keys:
   JumpLeft: {label: ⇦, send: Control+Left, repeatable: true, functional: false}
   JumpRight: {label: ⇨, send: Control+Right, repeatable: true, functional: false}
   Select_all: {label: 全选, functional: false, send: Control+a}
-  select_all1: {label: " ", functional: false, send: Control+a}
-  Tab1: {label: Tab, functional: false, preview: '↹', repeatable: false, text: '	'}
+  Tab_: {label: Tab, functional: false, preview: '↹', repeatable: false, text: '	'}
   Cut: {label: 剪切, functional: false, send: Control+x}
   Copy: {label: 复制, functional: false, send: Control+c}
   Paste: {label: 粘贴, functional: false, send: Control+v}
