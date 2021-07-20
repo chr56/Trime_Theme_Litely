@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_num] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq, qtbq1, qtbq2, qtbq3, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3,emoji_sports, emoji_num] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -1938,6 +1938,77 @@ preset_keyboards:
     name: "emoji 表情3"
     width: 10
 
+#emoji 
+  emoji_sports:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      - {click: "emoji_tab7", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab8", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab9", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      # 2
+      - {click: ⚽}
+      - {click: ⚾}
+      - {click: 🥎}
+      - {click: 🏀}
+      - {click: 🏐}
+      - {click: 🏈}
+      - {click: 🏉}
+      - {click: 🎱}
+      - {click: 🎳}
+      - {click: 🥌}
+      # 3
+      - {click: ⛳}
+      - {click: ⛸}
+      - {click: 🏓}
+      - {click: 🏸}
+      - {click: 🎾}
+      - {click: 🥏}
+      - {click: 🎣}
+      - {click: 🤿}
+      - {click: 🎽}
+      - {click: 🛶}
+      # 4
+      - {click: 🎿}
+      - {click: 🛷}
+      - {click: 🥅}
+      - {click: 🏒}
+      - {click: 🥍}
+      - {click: 🏏}
+      - {click: 🏑}
+      - {click: 🪁}
+      - {click: 🎯}
+      - {click: 🥊}
+      # 5
+      - {click: 🥇}
+      - {click: 🥈}
+      - {click: 🥉}
+      - {click: 🏅}
+      - {click: 🎖}
+      - {click: 🏆}
+      - {click: 🤺}
+      - {click: 🥋}
+      - {click: ⛷}
+      - {click: 🤼}
+      #❻
+      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 运动"
+    width: 10
 
   # emoji 数字时间
   emoji_num:
@@ -2125,14 +2196,14 @@ preset_keys:
   emoji_tab1: {label: "表情1",send: Eisu_toggle, select: "emoji_face1"}
   emoji_tab2: {label: "表情2",send: Eisu_toggle, select: "emoji_face2"}
   emoji_tab3: {label: "表情3",send: Eisu_toggle, select: "emoji_face3"}
-  emoji_tab4: {label: "运动",send: Eisu_toggle, select: "qtbq3"}
+  emoji_tab4: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab5: {label: "其他",send: Eisu_toggle, select: "qtbq5"}
   emoji_tab6: {label: "数字/表",send: Eisu_toggle, select: "emoji_num"}
   #emoji 2
   emoji_tab7: {label: "植物",send: Eisu_toggle, select: "qtbq1"}
   emoji_tab8: {label: "食物",send: Eisu_toggle, select: "qtbq2"}
   emoji_tab9: {label: "动物",send: Eisu_toggle, select: "qtbq4"}
-  emoji_tabA: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tabA: {label: "运动",send: Eisu_toggle, select: "emoji_sports"}
   emoji_tabB: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tabC: {label: "x",send: Eisu_toggle, select: ""}
   #emoji 切换
