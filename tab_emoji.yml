@@ -1,15 +1,24 @@
-      - {click: "emoji_tab1", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab2", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 16}
-
-      - {click: "emoji_tab7", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab8", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab9", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      #page 1
+      - {click: "emoji_tab01", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab02", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab03", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab04", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab05", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab06", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_2", key_back_color: tab_back_color, width: 16}
+      # page 2
+      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+      # page 3
+      - {click: "emoji_tab13", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab14", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab15", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab16", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab17", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab18", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_4", key_back_color: tab_back_color, width: 16}
