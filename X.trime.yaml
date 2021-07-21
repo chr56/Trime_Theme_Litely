@@ -1,4 +1,3 @@
-#顶部 顶端
 name: x
 author: chr
 
@@ -27,7 +26,7 @@ height:
   H: &baseCG 4 #基础列距
   I: &miniCG 3 #小键列距
   J: &numbCG 3 #数字列距
-#
+
 style:
   auto_caps: false #自动句首大写:true|false|ascii
   background_dim_amount: 0.5
@@ -75,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_shape, emoji_symbol1,emoji_symbol2] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_shape, emoji_symbol1, emoji_symbol2, emoji_symbol3] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -2613,6 +2612,134 @@ preset_keyboards:
       - {click: "emoji_tabE", key_back_color: tab_back_color, width: 16}
       - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 20}
       # 共计10行
+      - {click: 📛}
+      - {click: 🔰}
+      - {click: 🔒}
+      - {click: 🔓}
+      - {click: 🔏}
+      - {click: 🔐}
+      - {click: 🗑}
+      - {click: 💾}
+      - {click: 🗜}
+      - {click: 💻}
+      - {click: 🔌}
+      - {click: 🔈}
+      - {click: 🔉}
+      - {click: 🔊}
+      - {click: 📢}
+      - {click: 📣}
+      - {click: 🔔}
+      - {click: 🔑}
+      - {click: 🔍}
+      - {click: 🔎}
+      - {click: 📱}
+      - {click: 📲}
+      - {click: 📳}
+      - {click: 📴}
+      - {click: 🔋}
+      - {click: ☎}
+      - {click: 📞}
+      - {click: 🔗}
+      - {click: ⛓}
+      - {click: 🖥}
+      - {click: 🖨}
+      - {click: 🖱}
+      - {click: 🖲}
+      - {click: ⌨}
+      - {click: 📟}
+      - {click: 📠}
+      - {click: ✉}
+      - {click: 📧}
+      - {click: 📨}
+      - {click: 📩}
+      - {click: 📤}
+      - {click: 📥}
+      - {click: 📁}
+      - {click: 📂}
+      - {click: 🗂}
+      - {click: 📎}
+      - {click: ✂}
+      - {click: 🛡}
+      - {click: 🔘}
+      - {click: 🔳}
+      - {click: 🔲}
+      - {click: ◼️}
+      - {click: ◻️️}
+      - {click: ◾}
+      - {click: ◽}
+      - {click: ▪}
+      - {click: ️}
+      - {click: ▫}
+      - {click: ️}
+      - {click: ⚰}
+      - {click: ⚱}
+      - {click: ⚗}
+      - {click: 🎗}
+      - {click: 🗝}
+      - {click: 🪓}
+      - {click: 🔨}
+      - {click: ⛏}
+      - {click: ⚒}
+      - {click: 🛠}
+      - {click: 🔧}
+      - {click: 🏹}
+      - {click: 🗡}
+      - {click: ⚔}
+      - {click: 🔪}
+      - {click: 💣}
+      - {click: 🦯}
+      - {click: ❣}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}
+      - {width: 10}      
+      #❻
+      - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 符号1"
+    width: 10
+  #emoji 符号2
+  emoji_symbol2:
+    author: 
+    ascii_mode: 0
+    height: 31
+    horizontal_gap: 0
+    vertical_gap: 0
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      # page X 扩展页
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 20}
+      # 共计10行
       - {click: ✅}
       - {click: ☑️}
       - {click: ✔️}
@@ -2720,10 +2847,10 @@ preset_keyboards:
       - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "emoji "
+    name: "emoji 符号2"
     width: 10
-  #emoji 符号2
-  emoji_symbol2:
+  #emoji 符号3
+  emoji_symbol3:
     author: 
     ascii_mode: 0
     height: 31
@@ -2848,8 +2975,9 @@ preset_keyboards:
       - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "emoji 符号2"
+    name: "emoji 符号3"
     width: 10
+
 android_keys:
   name: [VoidSymbol, SOFT_LEFT, SOFT_RIGHT, HOME, BACK, CALL, ENDCALL,
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -2990,9 +3118,9 @@ preset_keys:
   emoji_tab23: {label: "形状",send: Eisu_toggle, select: "emoji_shape"}
   emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_symbol1"}
   #emoji Page X
-  emoji_tabA: {label: "x",send: Eisu_toggle, select: ""}
-  emoji_tabB: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
-  emoji_tabC: {label: "符号2",send: Eisu_toggle, select: "emoji_symbol2"}
+  emoji_tabA: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
+  emoji_tabB: {label: "符号2",send: Eisu_toggle, select: "emoji_symbol2"}
+  emoji_tabC: {label: "符号3",send: Eisu_toggle, select: "emoji_symbol3"}
   emoji_tabD: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tabE: {label: "x",send: Eisu_toggle, select: ""}
   #emoji 切换
