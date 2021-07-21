@@ -22,6 +22,21 @@
       - {click: "emoji_tab17", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab18", key_back_color: tab_back_color, width: 14}
       - {click: "EmojiTab_4", key_back_color: tab_back_color, width: 16}
+      # page 4
+      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      # page X 扩展页
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
 
       - {click: }
       
