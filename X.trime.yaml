@@ -2598,20 +2598,20 @@ preset_keyboards:
   emoji_symbol1:
     author: 
     ascii_mode: 0
-    height: *miniH
-    horizontal_gap: *miniCG
-    vertical_gap: *miniLG
+    height: 31
+    horizontal_gap: 0
+    vertical_gap: 0
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
       #❶ 
       # page X 扩展页
-      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 20}
       # 共计10行
       - {click: ✅}
       - {click: ☑️}
@@ -2714,7 +2714,7 @@ preset_keyboards:
       - {click: ""} 
       - {click: ""}
       #❻
-      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -2861,7 +2861,7 @@ preset_keys:
   emoji_tab21: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab22: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab23: {label: "形状",send: Eisu_toggle, select: "emoji_shape"}
-  emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_tabA"}
+  emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_symbol1"}
   #emoji Page X
   emoji_tabA: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
   emoji_tabB: {label: "x",send: Eisu_toggle, select: ""}

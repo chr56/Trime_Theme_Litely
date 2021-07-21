@@ -31,12 +31,12 @@
       - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
       - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       # page X 扩展页
-      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabD", key_back_color: tab_back_color, width: 16}
+      - {click: "emoji_tabE", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 20}
 
       - {click: }
       
