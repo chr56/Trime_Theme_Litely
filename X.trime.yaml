@@ -2639,6 +2639,8 @@ preset_keyboards:
       - {click: ⏏️}
       - {click: 🎦}
       - {click: 📶}
+      - {click: 🔃} 
+      - {click: 🔄}
       - {click: 🛐}
       - {click: ⚛️}
       - {click: 🕉️️}
@@ -2711,8 +2713,6 @@ preset_keyboards:
       - {click: 🔱}
       - {click: ➰}
       - {click: ➿}
-      - {click: ""} 
-      - {click: ""}
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
