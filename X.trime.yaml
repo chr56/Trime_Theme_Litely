@@ -2460,14 +2460,14 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      # page 3
-      - {click: "emoji_tab13", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab14", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab15", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab16", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab17", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab18", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_4", key_back_color: tab_back_color, width: 16}
+      # page 4
+      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       #❷
       - {click: 0️⃣, key_text_size: 15}
       - {click: 1️⃣, key_text_size: 15}
@@ -2653,13 +2653,13 @@ preset_keys:
   emoji_tab15: {label: "动物3",send: Eisu_toggle, select: "emoji_animal3"}
   emoji_tab16: {label: "自然",send: Eisu_toggle, select: "emoji_nature"}
   emoji_tab17: {label: "建筑",send: Eisu_toggle, select: "emoji_building"}
-  emoji_tab18: {label: "数字/钟",send: Eisu_toggle, select: "emoji_num"}
+  emoji_tab18: {label: "x",send: Eisu_toggle, select: ""}
   #emoji Page 4
   emoji_tab19: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab20: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab21: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab22: {label: "x",send: Eisu_toggle, select: ""}
-  emoji_tab23: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab23: {label: "数字/钟",send: Eisu_toggle, select: "emoji_num"}
   emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select:"emoji_tabA"}
   #emoji Page X
   emoji_tabA: {label: "x",send: Eisu_toggle, select: ""}
@@ -2671,7 +2671,7 @@ preset_keys:
   EmojiTab_1: {label: "emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
   EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports"}
   EmojiTab_3: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_animal1"}
-  EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_face1"}
+  EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_num"}
 
 
   q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}
