@@ -1885,14 +1885,14 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶ 
-      # page 2
-      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+      #page 1
+      - {click: "emoji_tab01", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab02", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab03", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab04", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab05", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab06", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_2", key_back_color: tab_back_color, width: 16}
       # 2
       - {click: 💐}
       - {click: 🌸}
@@ -1957,14 +1957,14 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶ 
-      # page 2
-      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+      #page 1
+      - {click: "emoji_tab01", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab02", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab03", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab04", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab05", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab06", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_2", key_back_color: tab_back_color, width: 16}
       # 2
       - {click: 🎈}
       - {click: 🎆}
@@ -2711,15 +2711,15 @@ preset_keys:
   emoji_tab02: {label: "表情2",send: Eisu_toggle, select: "emoji_face2"}
   emoji_tab03: {label: "表情3",send: Eisu_toggle, select: "emoji_face3"}
   emoji_tab04: {label: "果蔬",send: Eisu_toggle, select: "emoji_fruit_"}
-  emoji_tab05: {label: "x",send: Eisu_toggle, select: ""}
-  emoji_tab06: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab05: {label: "植物",send: Eisu_toggle, select: "emoji_plant"}
+  emoji_tab06: {label: "节庆",send: Eisu_toggle, select: "emoji_festival"}
   #emoji Page 2
-  emoji_tab07: {label: "运动",send: Eisu_toggle, select: "emoji_sports"}
-  emoji_tab08: {label: "服饰",send: Eisu_toggle, select: "emoji_clothes"}
-  emoji_tab09: {label: "食物1",send: Eisu_toggle, select: "emoji_food1"}
-  emoji_tab10: {label: "食物2",send: Eisu_toggle, select: "emoji_food2"}
-  emoji_tab11: {label: "植物",send: Eisu_toggle, select: "emoji_plant"}
-  emoji_tab12: {label: "节庆",send: Eisu_toggle, select: "emoji_festival"}
+  emoji_tab07: {label: "食物1",send: Eisu_toggle, select: "emoji_food1"}
+  emoji_tab08: {label: "食物2",send: Eisu_toggle, select: "emoji_food2"}
+  emoji_tab09: {label: "运动",send: Eisu_toggle, select: "emoji_sports"}
+  emoji_tab10: {label: "服饰",send: Eisu_toggle, select: "emoji_clothes"}
+  emoji_tab11: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab12: {label: "x",send: Eisu_toggle, select: ""}
   #emoji Page 3
   emoji_tab13: {label: "动物1",send: Eisu_toggle, select: "emoji_animal1"}
   emoji_tab14: {label: "动物2",send: Eisu_toggle, select: "emoji_animal2"} 
@@ -2733,7 +2733,7 @@ preset_keys:
   emoji_tab21: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab22: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab23: {label: "形状",send: Eisu_toggle, select: "emoji_shape"}
-  emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select:"emoji_tabA"}
+  emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_tabA"}
   #emoji Page X
   emoji_tabA: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tabB: {label: "x",send: Eisu_toggle, select: ""}
@@ -2742,7 +2742,7 @@ preset_keys:
   emoji_tabE: {label: "x",send: Eisu_toggle, select: ""}
   #emoji 切换
   EmojiTab_1: {label: "emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
-  EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports"}
+  EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_food1"}
   EmojiTab_3: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_animal1"}
   EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_office"}
 
