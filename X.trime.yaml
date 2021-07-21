@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_shape, emoji_num] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_shape, emoji_num] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -2521,6 +2521,78 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 交通"
     width: 10
+  #emoji 办公
+  emoji_office:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      # page 4
+      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      # 2
+      - {click: 📃}
+      - {click: 📜}
+      - {click: 📄}
+      - {click: 📑}
+      - {click: 🔖}
+      - {click: 🏷}
+      - {click: 🧾}
+      - {click: 📫}
+      - {click: 📪}
+      - {click: 📬}
+      # 3
+      - {click: 📭}
+      - {click: 🗳}
+      - {click: ✏}
+      - {click: ✒}
+      - {click: 🖋}
+      - {click: 🖊}
+      - {click: 🖌}
+      - {click: 🖍}
+      - {click: 📝}
+      - {click: 🗒}
+      # 4
+      - {click: 💼}
+      - {click: 📅}
+      - {click: 📆}
+      - {click: 🗓}
+      - {click: 📇}
+      - {click: 📋}
+      - {click: 📌}
+      - {click: 📍}
+      - {click: 🖇}
+      - {click: 🗃}
+      # 5
+      - {click: 🗄}
+      - {click: 💽}
+      - {click: 💿}
+      - {click: 📀}
+      - {click: 📹}
+      - {click: 📼}
+      - {click: 📈}
+      - {click: 📉}
+      - {click: 📊}
+      - {click: ""}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 办公"
+    width: 10
   #emoji 形状
   emoji_shape:
     author: 
@@ -2799,7 +2871,7 @@ preset_keys:
   emoji_tab17: {label: "建筑",send: Eisu_toggle, select: "emoji_building"}
   emoji_tab18: {label: "交通",send: Eisu_toggle, select: emoji_transports}
   #emoji Page 4
-  emoji_tab19: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab19: {label: "办公",send: Eisu_toggle, select: "emoji_office"}
   emoji_tab20: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab21: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab22: {label: "形状",send: Eisu_toggle, select: "emoji_shape"}
@@ -2815,7 +2887,7 @@ preset_keys:
   EmojiTab_1: {label: "emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
   EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports"}
   EmojiTab_3: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_animal1"}
-  EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_num"}
+  EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_office"}
 
 
   q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}

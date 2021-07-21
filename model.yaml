@@ -9,14 +9,14 @@
     key_text_offset_y: *textY
     keys:
       #❶ 
-      # page 2
-      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+      # page 4
+      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
 
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
