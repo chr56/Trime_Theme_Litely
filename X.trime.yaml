@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant,emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_num] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_num] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -2017,6 +2017,67 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 植物"
     width: 10
+    #emoji 节庆
+  emoji_festival:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      # page 2
+      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+      # 2
+      - {click: 🎈}
+      - {click: 🎆}
+      - {click: 🎇}
+      - {click: 🧨}
+      - {click: ✨}
+      - {click: 🎉}
+      - {click: 🎊}
+      - {click: 🎃}
+      - {click: 🧧}
+      - {click: 🎑}
+      # 3
+      - {click: 🎐}
+      - {click: 🎏}
+      - {click: 🎎}
+      - {click: 🎍}
+      - {click: 🎋}
+      - {click: 🎄}
+      - {click: 🎀}
+      - {click: 🎁}
+      - {click: 🌂}
+      - {click: ☂}
+      # 4
+      - {click: ☔}
+      - {click: ⛱}
+      - {click: ☃}
+      - {click: ⛄}
+      - {click: ️🏖️}
+      - {click: ️⛱️}
+      - {click: 🏮}
+      - {click: 🗿}
+      - {click: 🧿}
+      - {click: ""}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 节庆"
+    width: 10
   #emoji 动物1
   emoji_animal1:
     author: 
@@ -2502,7 +2563,7 @@ preset_keys:
   emoji_tab09: {label: "食物1",send: Eisu_toggle, select: "emoji_food1"}
   emoji_tab10: {label: "食物2",send: Eisu_toggle, select: "emoji_food2"}
   emoji_tab11: {label: "植物",send: Eisu_toggle, select: "emoji_plant"}
-  emoji_tab12: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab12: {label: "节庆",send: Eisu_toggle, select: "emoji_festival"}
   #emoji Page 3
   emoji_tab13: {label: "动物1",send: Eisu_toggle, select: "emoji_animal1"}
   emoji_tab14: {label: "动物2",send: Eisu_toggle, select: "emoji_animal2"} 
