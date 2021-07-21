@@ -75,7 +75,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq1, qtbq2, qtbq4, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3,emoji_sports, emoji_clothes, emoji_animal1,emoji_animal2, emoji_animal3, emoji_num] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtbq1, qtbq2, qtbq5, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3,emoji_sports, emoji_clothes, emoji_animal1,emoji_animal2, emoji_animal3, emoji_num] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -1092,79 +1092,6 @@ preset_keyboards:
     name: "食物"
     width: 10
 
-
-  qtbq4:
-    author: 青 铜 #动物，
-    ascii_mode: 0
-    height: *miniH
-    horizontal_gap: *miniCG
-    vertical_gap: *miniLG
-    round_corner: *Corner
-    key_text_offset_y: *textY
-    keys:
-      #❶
-      # page 2
-      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
-      #❷
-      - {click: 🦠}
-      - {click: 🦟}
-      - {click: 🕷}
-      - {click: 🐜}
-      - {click: 🕸}
-      - {click: 🐞}
-      - {click: 🦀}
-      - {click: 🐶}
-      - {click: 🦊}
-      - {click: 🐙}
-      #❸
-      - {click: 🐦}
-      - {click: 🐤}
-      - {click: 🦅}
-      - {click: 🐝}
-      - {click: 🐛}
-      - {click: 🦖}
-      - {click: 🦐}
-      - {click: 🐠}
-      - {click: 🐟}
-      - {click: 🦛}
-      #❹
-      - {click: 🐘}
-      - {click: 🐾}
-      - {click: 🐷}
-      - {click: 🐽}
-      - {click: 🐸}
-      - {click: 🦇}
-      - {click: 🦞}
-      - {click: "", label: 生肖▶, key_text_size: 12, key_back_color: 0x00}
-      - {click: 🐁}
-      - {click: 🐄}
-      #❺
-      - {click: 🐅}
-      - {click: 🐇}
-      - {click: 🐉}
-      - {click: 🐍}
-      - {click: 🐎}
-      - {click: 🐏}
-      - {click: 🐒}
-      - {click: 🐓}
-      - {click: 🐕}
-      - {click: 🐖}
-      #❻
-      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
-      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "动物"
-    width: 10
-
   qtbq5:
     author: 青 铜 #其他，
     ascii_mode: 0
@@ -2138,23 +2065,23 @@ preset_keyboards:
       - {click: 🦂}
       - {click: 🕷}
       - {click: 🐽}
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       # 5
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
-      - {click: }
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -2358,7 +2285,7 @@ preset_keys:
   #emoji 2
   emoji_tab07: {label: "运动",send: Eisu_toggle, select: "emoji_sports"}
   emoji_tab08: {label: "服饰",send: Eisu_toggle, select: "emoji_clothes"}
-  emoji_tab09: {label: "动物",send: Eisu_toggle, select: "qtbq4"}
+  emoji_tab09: {label: "x",send: Eisu_toggle, select: ""}
   emoji_tab10: {label: "植物",send: Eisu_toggle, select: "qtbq1"}
   emoji_tab11: {label: "食物",send: Eisu_toggle, select: "qtbq2"}
   emoji_tab12: {label: "x",send: Eisu_toggle, select: ""}
