@@ -9,18 +9,19 @@
     key_text_offset_y: *textY
     keys:
       #❶ 
-      - {click: "emoji_tab1", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab2", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab3", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab4", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab5", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab6", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 16}
-      
+      # page 2
+      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
+
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}

@@ -1887,13 +1887,14 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶ 
-      - {click: "emoji_tab7", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab8", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab9", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabA", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabB", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tabC", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab_", key_back_color: tab_back_color, width: 14}
+      # page 2
+      - {click: "emoji_tab07", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab08", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab09", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab10", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab11", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab12", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_3", key_back_color: tab_back_color, width: 16}
       # 2
       - {click: 👓}
       - {click: 🕶}
@@ -1939,9 +1940,9 @@ preset_keyboards:
       - {click: 🎓}
       - {click: ""}     
       #❻
-      - {height: *downH, click: "t_fhvj", key_back_color: tab_back_color, width: 18}
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "q_bq", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
