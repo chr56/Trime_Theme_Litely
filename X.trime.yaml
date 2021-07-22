@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, number, k_symbol, editmenu, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -340,13 +340,13 @@ preset_keyboards:
       - {click: End, hint: 行尾}
       - {click: "K_back_", width: 20}
       # ❸
-      - {click: "edit_plus"}
+      - {click: ""}
       - {click: "Left"}
-      - {click: "Shift"}
+      - {click: "Shift_Lock"}
       - {click: "Right"}
       - {click: "Space", width: 20}
       # ❹
-      - {click: "0x00", long_click: "0xff"}
+      - {click: "Hint_switch"}
       - {click: "Tab_"}
       - {click: "Down"}
       - {click: "SelectLine", hint: 选中行}
@@ -359,69 +359,7 @@ preset_keyboards:
       - {click: "Return", width: 20}
     name: "编辑"
     width: 20
-# 编辑增强
-  editplus:
-    author: 
-    height: *miniH #高
-    horizontal_gap: *baseCG #竖
-    vertical_gap: *baseLG #行
-    round_corner: *Corner #圆
-    key_text_offset_y: *textY
-    keys:
-      # ❶
-      - {click: "1", height: 35}
-      - {click: "2"}
-      - {click: "3"}
-      - {click: "4"}
-      - {click: "5"}
-      - {click: "6"}
-      - {click: "7"}
-      - {click: "8"}
-      - {click: "9"}
-      - {click: "0"}
-      # ❷
-      - {click:  "t_bj21", hint: 按键}
-      - {click:  "t_bj22", hint: 按键}
-      - {click:  "t_bj23", long_click: t_bj23s}
-      - {click:  "t_bj24"}
-      - {click: "undo"}
-      - {click: Home}
-      - {click: "Up"}
-      - {click: End}
-      - {click: "K_back_", width: 20}
-      # ❸
-      - {click:  "t_bj31", long_click: t_bj31s}
-      - {click:  "t_bj32", long_click: t_bj32s}
-      - {click:  "t_bj33", long_click: t_bj33s}
-      - {click:  "t_bj34", long_click: t_bj34s}
-      - {click: "Hint_switch"}
-      - {click: "Left"}
-      - {click: "Shift_lock", key_back_color: 0xdd8024}
-      - {click: "Right"}
-      - {click: "space_", width: 20}
-      # ❹
-      - {click:  "t_bj41", long_click: t_bj41s}
-      - {click:  "t_bj42"}
-      - {click:  "t_bj43", long_click: t_bj43s}
-      - {click:  "t_bj44", long_click: t_bj44s}
-      - {click: "0x00", long_click: "0xff"}
-      - {click: "Tab_"}
-      - {click: "Down"}
-      - {click: "SelectLine"}
-      - {click: "BackSpace", width: 20}
-      # ❺
-      - {click:  "t_bj51", long_click: t_bj51s}
-      - {click:  "t_bj52", long_click: t_bj52s}
-      - {click:  "t_bj53", long_click: t_bj53s}
-      - {click:  "t_bj54", long_click: t_bj54s}
-      - {click: "Select_all"}
-      - {click: "Cut"}
-      - {click: "Copy"}
-      - {click: "Paste"}
-      - {click: "Return", width: 20}
-    name: "编辑增强"
-    width: 10
-# 数字小键盘
+  # 数字小键盘
   number:
     height: *numbH 
     horizontal_gap: *numbCG
@@ -3733,7 +3671,6 @@ android_keys:
     
 preset_keys:
   edit_menu: {label: 编辑 , send: Eisu_toggle, select: "editmenu"}
-  edit_plus: {label: 增强编辑 , send: Eisu_toggle, select: "editplus"}
   number: {label: 12! , send: Eisu_toggle, select: "number"}
   english: {label: ️中文, send: Eisu_toggle, select: english} #英文键盘
   k_symbol: {label: ".?!" , send: Eisu_toggle, select: "k_symbol"} #符号键盘
@@ -3823,45 +3760,13 @@ preset_keys:
   q_ts4: {label: "②", send: Eisu_toggle, select: "qtts4"}
   q_ts5: {label: "③", send: Eisu_toggle, select: "qtts5"}
 
- #超级编辑——
-  edit_21: {label: "背景", functional: false, commit: ", key_back_color: "}
-  edit_22: {label: "高亮", functional: false, commit: ", hilited_key_back_color: "}
-  edit_23: {label: "字色", functional: false, commit: ", key_text_color: "}
-  edit_23s: {label: "字号", functional: false, commit: ", key_text_size: "}
-  edit_24: {label: "显示", functional: false, commit: ", label: "}
-
-  edit_31: {label: "键宽", functional: false, commit: ", width: "}
-  edit_31s: {label: "行距", functional: false, commit: "vertical_gap: "}
-  edit_32: {label: "键高", functional: false, commit: "height: "}
-  edit_32s: {label: "竖距", functional: false, commit: "horizontal_gap: "}
-  edit_33: {label: "上标", functional: false, commit: ", key_symbol_color: "}
-  edit_33s: {label: "圆角", functional: false, commit: "round_corner: "}
-  edit_34: {label: "下标", functional: false, commit: ", hint: "}
-  edit_34s: {label: "前置", functional: false, commit: "before"}
-  
-  edit_41: {label: "点击", functional: false, commit: "click: "}
-  edit_41s: {label: "编辑状态", functional: false, commit: ", composing: "}
-  edit_42: {label: "长按", functional: false, commit: ", long_click: "}
-  edit_43: {label: "坐标x", functional: false, commit: ", key_text_offset_x: "}
-  edit_43s: {label: "坐标y", functional: false, commit: ", key_text_offset_y: "}
-  edit_44: {label: "上标x", functional: false, commit: ", key_symbol_offset_x: "}
-  edit_44s: {label: "上标y", functional: false, commit: ", key_symbol_offset_y: "}
-
-  edit_51: {label: "上划", functional: false, commit: ", swipe_up: "}
-  edit_51s: {label: "上", functional: false, commit: "Up"}
-  edit_52: {label: "下划", functional: false, commit: ", swipe_down: "}
-  edit_52s: {label: "下", functional: false, commit: "Down"}
-  edit_53: {label: "左划", functional: false, commit: ", swipe_left: "}
-  edit_53s: {label: "左", functional: false, commit: "Left"}
-  edit_54: {label: "右划", functional: false, commit: ", swipe_right: "}
-  edit_54s: {label: "右", functional: false, commit: "Right"}
 
   # 编辑
   Shift_R: {label: Enter, send: Shift_R}
   Caps_Lock: {label: Caps, send: Caps_Lock}
   Shift_L: {label: Shift, functional: true, send: Shift_L, shift_lock: ascii_long}  # 中文状态一次锁定，英文状态长按锁定
   Shift_L_: {label: Shift, functional: true, send: Shift_L, shift_lock: long}  # 中文状态长按锁定
-  Shift_lock: {label: ☩, preview: ☩, functional: false, send: Shift_L, shift_lock: click}  # 英文状态一次锁定
+  Shift_Lock: {label: ☩, preview: ☩, functional: false, send: Shift_L, shift_lock: click}  # 英文状态一次锁定
   Return: {label: Enter, preview: ↩, send: Return}
   BackSpace: {label: " ⌫ ", preview: ⌫ , repeatable: true, send: BackSpace}
   space: {repeatable: false, preview: ␣, functional: false, send: space} #空格
