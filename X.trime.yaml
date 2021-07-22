@@ -1638,16 +1638,16 @@ preset_keyboards:
       - {click: 🎯}
       - {click: 🥊}
       # 5
+      - {click: 🥋}
       - {click: 🥇}
       - {click: 🥈}
       - {click: 🥉}
       - {click: 🏅}
       - {click: 🎖}
       - {click: 🏆}
-      - {click: 🤺}
-      - {click: 🥋}
-      - {click: ⛷}
-      - {click: 🤼}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -2633,7 +2633,7 @@ preset_keyboards:
       - {click: 🎴}
       - {click: 🎭}
       - {click: 🛒}
-      - {click: 🚣}
+      - {click: ""}
       # 4
       - {click: 📏}
       - {click: 📐}
