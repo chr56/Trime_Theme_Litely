@@ -16,7 +16,7 @@
       - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
       - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
-      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_5", key_back_color: tab_back_color, width: 16}
 
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}

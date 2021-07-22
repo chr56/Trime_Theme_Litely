@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_symbol1, emoji_symbol2, emoji_symbol3] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -2809,6 +2809,78 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 生活3"
     width: 10
+  #emoji 其他
+  emoji_other:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      # page 4
+      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_5", key_back_color: tab_back_color, width: 16}
+      # 2
+      - {click: 💢}
+      - {click: 💥}
+      - {click: 💤}
+      - {click: 💦}
+      - {click: 💨}
+      - {click: 🐚}
+      - {click: 🗨}
+      - {click: 💭}
+      - {click: 🗯}
+      - {click: 💬}
+      # 3
+      - {click: 👁‍🗨}
+      - {click: 🌐}
+      - {click: 🌍}
+      - {click: 🌎}
+      - {click: 🌏}
+      - {click: 🌌}
+      - {click: 🪐}
+      - {click: 🚀}
+      - {click: ⚰}
+      - {click: 🪂}
+      # 4
+      - {click: 🛸}
+      - {click: 🗣}
+      - {click: 👤}
+      - {click: 👥}
+      - {click: ©} 
+      - {click: ®} 
+      - {click: ™} 
+      - {click: 🐱‍👤}
+      - {click: 🐱‍🏍} 
+      - {click: 🐱‍💻‍} 
+      # 5
+      - {click: 🐱‍🐉‍} 
+      - {click: 🐱‍👓} 
+      - {click: ‍🐱‍🚀} 
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 其他"
+    width: 10
   #emoji 形状
   emoji_shape:
     author: 
@@ -3403,7 +3475,7 @@ preset_keys:
   emoji_tab20: {label: "生活1",send: Eisu_toggle, select: "emoji_life1"}
   emoji_tab21: {label: "生活2",send: Eisu_toggle, select: "emoji_life2"}
   emoji_tab22: {label: "生活3",send: Eisu_toggle, select: "emoji_life3"}
-  emoji_tab23: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab23: {label: "其他",send: Eisu_toggle, select: "emoji_other"}
   emoji_tab24: {label: "x",send: Eisu_toggle, select: ""}
   #emoji Page 5
   emoji_tab25: {label: "x", send: Eisu_toggle, select: ""}
