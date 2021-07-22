@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3] #声明
+  keyboards: [.default, number, k_symbol, editmenu, editplus, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts3, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -1295,7 +1295,56 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊3"
     width: 10
-
+  #emoji 常用
+  emoji_quick:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶ 
+      #page 1
+      - {click: "emoji_tab01", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab02", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab03", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab04", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab05", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab06", key_back_color: tab_back_color, width: 14}
+      - {click: "EmojiTab_2", key_back_color: tab_back_color, width: 16}
+      # 2
+      - {click: 💊} 
+      - {click: ❤} 
+      - {click: 💔} 
+      - {click: 💘} 
+      - {click: 💋} 
+      - {click: 🎉} 
+      - {click: 🎁} 
+      - {click: 💣} 
+      - {click: 🔪} 
+      - {click: 🙏} 
+      # 3
+      - {click: 👏} 
+      - {click: 👌} 
+      - {click: 🐶} 
+      - {click: 🐱} 
+      - {click: 👓} 
+      - {click: "",width: 50}
+      # 4
+      - {width: 100}
+      # 5
+      - {width: 100}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "emoji 常用"
+    width: 10
   #emoji 表情1
   emoji_face1:
     author: 
@@ -3718,7 +3767,7 @@ preset_keys:
   emoji_tab03: {label: "表情3",send: Eisu_toggle, select: "emoji_face3"}
   emoji_tab04: {label: "果蔬",send: Eisu_toggle, select: "emoji_fruit_"}
   emoji_tab05: {label: "植物",send: Eisu_toggle, select: "emoji_plant"}
-  emoji_tab06: {label: "常用",send: Eisu_toggle, select: ""} #TODO
+  emoji_tab06: {label: "常用",send: Eisu_toggle, select: "emoji_quick"} 
   #emoji Page 2
   emoji_tab07: {label: "人类1", send: Eisu_toggle, select: "emoji_people1"}
   emoji_tab08: {label: "人类2", send: Eisu_toggle, select: "emoji_people2"}
@@ -3726,7 +3775,6 @@ preset_keys:
   emoji_tab10: {label: "职业", send: Eisu_toggle, select: "emoji_careers"}
   emoji_tab11: {label: "食物1",send: Eisu_toggle, select: "emoji_food1"}
   emoji_tab12: {label: "食物2",send: Eisu_toggle, select: "emoji_food2"}
-
   #emoji Page 3
   emoji_tab13: {label: "动物1",send: Eisu_toggle, select: "emoji_animal1"}
   emoji_tab14: {label: "动物2",send: Eisu_toggle, select: "emoji_animal2"} 
@@ -3752,8 +3800,8 @@ preset_keys:
   emoji_tabA: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
   emoji_tabB: {label: "符号2",send: Eisu_toggle, select: "emoji_symbol2"}
   emoji_tabC: {label: "符号3",send: Eisu_toggle, select: "emoji_symbol3"}
-  emoji_tabD: {label: "x",send: Eisu_toggle, select: ""}
-  emoji_tabE: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tabD: {label: " ",send: Eisu_toggle, select: ""}
+  emoji_tabE: {label: " ",send: Eisu_toggle, select: ""}
   #emoji 切换
   EmojiTab_1: {label: "emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
   EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_people1"}
