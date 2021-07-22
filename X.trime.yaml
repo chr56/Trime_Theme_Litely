@@ -3794,7 +3794,7 @@ preset_keys:
   emoji_tab26: {label: "运动2",send: Eisu_toggle, select: "emoji_sports2"}
   emoji_tab27: {label: "服饰",send: Eisu_toggle, select: "emoji_clothes"}
   emoji_tab28: {label: "形状", send: Eisu_toggle, select: "emoji_shape"}
-  emoji_tab29: {label: "",send: Eisu_toggle, select: ""}
+  emoji_tab29: {label: " ",send: Eisu_toggle, select: ""}
   emoji_tab30: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_symbol1"}
   #emoji Page X
   emoji_tabA: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
