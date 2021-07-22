@@ -251,7 +251,7 @@ preset_keyboards:
       - {click: o, long_click: "9"}
       - {click: p, long_click: "0"}
       # 2
-      - {width: 5}
+      - {click: Left_, width: 5 ,key_back_color: back_color}
       - {click: a, long_click: '@', swipe_down: Select_all, hint: "全选"}
       - {click: s, long_click: '#'}
       - {click: d, long_click: '$', swipe_down: Date_time, hint: "时间"}
@@ -261,7 +261,7 @@ preset_keyboards:
       - {click: j, long_click: '+', swipe_down: Down, hint: "↓"}
       - {click: k, long_click: '(', swipe_down: Up, hint: "↑"}
       - {click: l, long_click: ')', swipe_down: Right, hint: "→"}
-      - {width: 5}
+      - {click: Right_, width: 5 ,key_back_color: back_color}
       # 3 
       - {click: Shift_L, composing: Escape, width: 15}
       - {click: z, long_click: '\'}
@@ -3789,6 +3789,8 @@ preset_keys:
   Cut: {label: 剪切, functional: false, send: Control+x}
   Copy: {label: 复制, functional: false, send: Control+c}
   Paste: {label: 粘贴, functional: false, send: Control+v}
+  Left_: {label: " ", send: Left, repeatable: true, functional: false}
+  Right_: {label: " ", send: Right, repeatable: true, functional: false}
   # 符号输入
   cn_fullstop: {label: '  。', send: period}
   cn_comma: {label: '  ，', send: comma}
