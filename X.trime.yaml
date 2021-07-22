@@ -906,10 +906,10 @@ preset_keyboards:
       - {click: △️️, key_text_size: 15}
       - {click: ▲️️, key_text_size: 15}
       - {click: ▽️️, key_text_size: 15}
-      - {click: ""}
-      - {click: ⬆️, key_text_size: 15}
+      - {width: 10}
+      - {click: ⬆, key_text_size: 15}
       - {click: ️⇧️️, key_text_size: 15}
-      - {click: ⬇️️, key_text_size: 15}
+      - {click: ⬇, key_text_size: 15}
       #❸
       - {click: ←️️, key_text_size: 15}
       - {click: ⇋️️️, key_text_size: 15}
@@ -917,7 +917,7 @@ preset_keyboards:
       - {click: ️◀, key_text_size: 15}
       - {click: ↺, key_text_size: 15}
       - {click: ▶, key_text_size: 15}
-      - {click: ""}
+      - {width: 10}
       - {click: ⇦️️, key_text_size: 15}
       - {click: ⬅, key_text_size: 15}
       - {click: ⇨️️, key_text_size: 15}
@@ -928,10 +928,10 @@ preset_keyboards:
       - {click: ◁️️, key_text_size: 15}
       - {click: ▼, key_text_size: 15}
       - {click: ️▷, key_text_size: 15}
-      - {click: ""}
-      - {click: ⬅️, key_text_size: 15}
+      - {width: 10}
+      - {click: ⬅, key_text_size: 15}
       - {click: ⇩️️️, key_text_size: 15}
-      - {click: ➡️️, key_text_size: 15}
+      - {click: ️➡, key_text_size: 15}
       #❺
       - {click: ⇤️️, key_text_size: 15}
       - {click: ⇥️️️️, key_text_size: 15}
@@ -939,10 +939,10 @@ preset_keyboards:
       - {click: ◂️▸, key_text_size: 15}
       - {click: ▴▾️️, key_text_size: 15}
       - {click: ◃▹️️️, key_text_size: 15}
-      - {click: ""}
+      - {width: 10}
       - {click: ⇐, key_text_size: 15}
       - {click: ⬅, key_text_size: 15}
-      - {click: 🔄, key_text_size: 15}
+      - {width: 10}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -954,7 +954,7 @@ preset_keyboards:
     width: 10
 
   qtts2:
-    author: 青 铜 #星花，
+    author: 青 铜 #星号，
     ascii_mode: 0
     height: *miniH
     horizontal_gap: *miniCG
@@ -969,28 +969,6 @@ preset_keyboards:
       - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
       - {width: 34}
       # 二
-      - {click: "❋️️", key_text_size: 15}
-      - {click: "❊️️", key_text_size: 15}
-      - {click: "❉️", key_text_size: 15}
-      - {click: "❈️️", key_text_size: 15}
-      - {click: "✱️", key_text_size: 15}
-      - {click: "❆️", key_text_size: 15}
-      - {click: "❅", key_text_size: 15}
-      - {click: "❃", key_text_size: 15}
-      - {click: "❂️", key_text_size: 15}
-      - {click: "✡", key_text_size: 15}
-      # 三
-      - {click: "❁", key_text_size: 15}
-      - {click: "❀", key_text_size: 15}
-      - {click: "✿️", key_text_size: 15}
-      - {click: "✾", key_text_size: 15}
-      - {click: "✽", key_text_size: 15}
-      - {click: "✼", key_text_size: 15}
-      - {click: "✻", key_text_size: 15}
-      - {click: "✺", key_text_size: 15}
-      - {click: "✹️", key_text_size: 15}
-      - {click: "✵", key_text_size: 15}
-      # 四
       - {click: "★️", key_text_size: 15}
       - {click: "☆️", key_text_size: 15}
       - {click: "⛤", key_text_size: 15}
@@ -1000,8 +978,8 @@ preset_keyboards:
       - {click: "✯️", key_text_size: 15}
       - {click: "✮", key_text_size: 15}
       - {click: "✭", key_text_size: 15}
-      - {click: "✳", key_text_size: 15}
-      # 五
+      - {click: "✳", key_text_size: 15}     
+      # 三
       - {click: "✫", key_text_size: 15}
       - {click: "️✪", key_text_size: 15}
       - {click: "️✩", key_text_size: 15}
@@ -1012,6 +990,28 @@ preset_keyboards:
       - {click: "※", key_text_size: 15}
       - {click: "❂", key_text_size: 15}
       - {click: "️✲", key_text_size: 15}
+      # 四
+      - {click: "❋️️", key_text_size: 15}
+      - {click: "❊️️", key_text_size: 15}
+      - {click: "❉️", key_text_size: 15}
+      - {click: "❈️️", key_text_size: 15}
+      - {click: "✱️", key_text_size: 15}
+      - {click: "❆️", key_text_size: 15}
+      - {click: "❅", key_text_size: 15}
+      - {click: "❃", key_text_size: 15}
+      - {click: "❂️", key_text_size: 15}
+      - {click: "✡", key_text_size: 15}
+      # 五
+      - {click: "❁", key_text_size: 15}
+      - {click: "❀", key_text_size: 15}
+      - {click: "✿️", key_text_size: 15}
+      - {click: "✾", key_text_size: 15}
+      - {click: "✽", key_text_size: 15}
+      - {click: "✼", key_text_size: 15}
+      - {click: "✻", key_text_size: 15}
+      - {click: "✺", key_text_size: 15}
+      - {click: "✹️", key_text_size: 15}
+      - {click: "✵", key_text_size: 15}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -1129,27 +1129,9 @@ preset_keyboards:
       - {click: ◆, key_text_size: 15}
       - {click: ◇, key_text_size: 15}
       #❹
-      - {click: 🔺, key_text_size: 15}
-      - {click: 🔻️, key_text_size: 15}
-      - {click: 🔹, key_text_size: 15}
-      - {click: 🔸, key_text_size: 15}
-      - {click: 🔵️, key_text_size: 15}
-      - {click: 🔴, key_text_size: 15}
-      - {click: 🔇️, key_text_size: 15}
-      - {click: 🇨🇳️, key_text_size: 15}
-      - {click: 💲️, key_text_size: 15}
-      - {click: 🀄️, key_text_size: 15}
+      - {width: 100}
       #❺
-      - {click: ♦️️, key_text_size: 15}
-      - {click: ♥️, key_text_size: 15}
-      - {click: ♣️️, key_text_size: 15}
-      - {click: ♠️, key_text_size: 15}
-      - {click: 🃏, key_text_size: 15}
-      - {click: 💛, key_text_size: 15}
-      - {click: 🧡, key_text_size: 15}
-      - {click: 💚, key_text_size: 15}
-      - {click: 💙️, key_text_size: 15}
-      - {click: 💜, key_text_size: 15}
+      - {width: 100}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
@@ -3044,7 +3026,7 @@ preset_keyboards:
       - {click: 🦾}
       - {click: 🦿}
       - {click: 👣}
-      - {click: ""}
+      - {click: 🇨🇳}
       - {click: ""}
       - {click: ""}
       - {click: ""}
@@ -3406,7 +3388,7 @@ preset_keyboards:
       # 共计10行
       - {click: ↕}
       - {click: ↖}
-      - {click: ⬆}
+      - {click: ⬆️}
       - {click: ↗}
       - {click: ⤴}
       - {click: 🔚}
@@ -3415,9 +3397,9 @@ preset_keyboards:
       - {click: ℹ️}
       - {click: 🆔}
       - {click: ↩}
-      - {click: ⬅}
+      - {click: ⬅️}
       - {click: ⚙}
-      - {click: ➡}
+      - {click: ➡️}
       - {click: ↪}
       - {click: 🔛}
       - {click: Ⓜ️}
@@ -3426,7 +3408,7 @@ preset_keyboards:
       - {click: 🆗}
       - {click: ↔}
       - {click: ↙}
-      - {click: ⬇}
+      - {click: ⬇️}
       - {click: ↘} 
       - {click: ⤵}
       - {click: 🔜}
@@ -3460,6 +3442,7 @@ preset_keyboards:
       - {click: 🈷️️}
       - {click: 🈶}
       - {click: 🈯}
+      - {click: 🔇️}   
       - {click: 🉐}
       - {click: 🈹}
       - {click: 🈚}
@@ -3503,7 +3486,6 @@ preset_keyboards:
       - {click: 〽}
       - {click: 〰}
       - {click: ⚖}
-      - {click: ""}   
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
