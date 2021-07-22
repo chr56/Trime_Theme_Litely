@@ -17,14 +17,14 @@ height:
   #键高(按键上下方向长度) 
   A: &baseH 46.5 #基础键高
   B: &downH 48.5 #末行键高
-  C: &miniH 32.5 #小键键高(符号键盘)
+  C: &miniH 32   #小键键高(符号键盘)
   D: &numbH 46.5 #数字键高(数字键盘)
   #间隔(键与键的距离) 
   E: &baseLG 4 #基础行距
-  F: &miniLG 3 #小键行距
+  F: &miniLG 2 #小键行距
   G: &numbLG 4 #数字行距
   H: &baseCG 4 #基础列距
-  I: &miniCG 3 #小键列距
+  I: &miniCG 2 #小键列距
   J: &numbCG 3 #数字列距
 
 style:
@@ -1638,12 +1638,12 @@ preset_keyboards:
       - {click: ⛷} 
       - {click: ""}
       # 5
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: 🥇}
+      - {click: 🥈}
+      - {click: 🥉}
+      - {click: 🏅}
+      - {click: 🎖}
+      - {click: 🏆}
       - {click: ""}
       - {click: ""}
       - {click: ""}
@@ -1711,12 +1711,12 @@ preset_keyboards:
       - {click: 🥊}
       # 5
       - {click: 🥋}
-      - {click: 🥇}
-      - {click: 🥈}
-      - {click: 🥉}
-      - {click: 🏅}
-      - {click: 🎖}
-      - {click: 🏆}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
@@ -2820,13 +2820,13 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶ 
-      # page 4
-      - {click: "emoji_tab19", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab20", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab21", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab22", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab23", key_back_color: tab_back_color, width: 14}
-      - {click: "emoji_tab24", key_back_color: tab_back_color, width: 14}
+      # page 5
+      - {click: "emoji_tab25", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab26", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab27", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab28", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab29", key_back_color: tab_back_color, width: 14}
+      - {click: "emoji_tab30", key_back_color: tab_back_color, width: 14}
       - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       # 2
       - {click: 🔴}
@@ -3403,8 +3403,15 @@ preset_keys:
   emoji_tab20: {label: "生活1",send: Eisu_toggle, select: "emoji_life1"}
   emoji_tab21: {label: "生活2",send: Eisu_toggle, select: "emoji_life2"}
   emoji_tab22: {label: "生活3",send: Eisu_toggle, select: "emoji_life3"}
-  emoji_tab23: {label: "形状",send: Eisu_toggle, select: "emoji_shape"}
-  emoji_tab24: {label: "更多", functional: true, send: Eisu_toggle, select: "emoji_symbol1"}
+  emoji_tab23: {label: "x",send: Eisu_toggle, select: ""}
+  emoji_tab24: {label: "x", functional: true, send: , select: ""}
+  #emoji Page 5
+  emoji_tab25: {label: "x", send: Eisu_toggle, select: ""}
+  emoji_tab26: {label: "x", send: Eisu_toggle, select: ""}
+  emoji_tab27: {label: "x", send: Eisu_toggle, select: ""}
+  emoji_tab28: {label: "x", send: Eisu_toggle, select: ""}
+  emoji_tab29: {label: "形状", send: Eisu_toggle, select: "emoji_shape"}
+  emoji_tab30: {label: "更多", send: Eisu_toggle, select: "emoji_symbol1"}
   #emoji Page X
   emoji_tabA: {label: "符号1",send: Eisu_toggle, select: "emoji_symbol1"}
   emoji_tabB: {label: "符号2",send: Eisu_toggle, select: "emoji_symbol2"}
@@ -3416,7 +3423,7 @@ preset_keys:
   EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_food1"}
   EmojiTab_3: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_animal1"}
   EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_office"}
-
+  EmojiTab_5: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_shape"}
 
   q_zb: {label: "标点", send: Eisu_toggle, select: "qtzb"}
   q_yb: {label: "英文", send: Eisu_toggle, select: "qtyb"}
