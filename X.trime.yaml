@@ -469,11 +469,11 @@ preset_keyboards:
     keys:
       #❶
       # page1
-      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab01", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab02", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab03", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab04", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab05", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "，", key_text_size: 16}
@@ -528,11 +528,11 @@ preset_keyboards:
     keys:
       #❶
       # page1
-      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab01", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab02", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab03", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab04", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab05", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: ",", key_text_size: 16}
@@ -590,11 +590,11 @@ preset_keyboards:
     keys:
       #❶
       # page1
-      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab01", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab02", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab03", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab04", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab05", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
 
@@ -662,11 +662,11 @@ preset_keyboards:
     keys:
       #❶
       # page1
-      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab01", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab02", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab03", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab04", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab05", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "¹", key_text_size: 16}
@@ -721,12 +721,13 @@ preset_keyboards:
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
+      #1
       # page 2
-      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab06", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab07", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab08", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab09", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab10", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab1", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "×", key_text_size: 16}
@@ -785,11 +786,11 @@ preset_keyboards:
     keys:
       #❶
       # page 2
-      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab06", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab07", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab08", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab09", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab10", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab1", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "℃", long_click: "℉", key_text_size: 16}
@@ -856,11 +857,11 @@ preset_keyboards:
     keys:
       # 1
       # page1
-      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab01", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab02", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab03", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab04", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab05", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       # 2
       - {click: "Ⓐ", width: 8, key_text_size: 16}
@@ -3667,15 +3668,22 @@ preset_keys:
 
   #标点
   Punctuation: {label: "符号", send: Eisu_toggle, select: "punc_zh"} #
-  punc_zh: {label: "中文", send: Eisu_toggle, select: "punc_zh"}
-  punc_en: {label: "英文", send: Eisu_toggle, select: "punc_en"}
-  symb_math1: {label: "数学1", send: Eisu_toggle, select: "symb_math1"}
-  symb_math2: {label: "数学2", send: Eisu_toggle, select: "symb_math2"}
-  symb_num1: {label: "序号1", send: Eisu_toggle, select: "symb_num1"}
-  symb_num2: {label: "序号2", send: Eisu_toggle, select: "symb_num2"}
+  #Page 1
+  punct_tab01: {label: "中文",send: Eisu_toggle, select: "punc_zh"}
+  punct_tab02: {label: "英文",send: Eisu_toggle, select: "punc_en"}
+  punct_tab03: {label: "序号1",send: Eisu_toggle, select: "symb_num1"}
+  punct_tab04: {label: "序号2",send: Eisu_toggle, select: "symb_num2"}
+  punct_tab05: {label: "字母",send: Eisu_toggle, select: "k_alphabet"}
+  #Page 2
+  punct_tab06: {label: "数学1",send: Eisu_toggle, select: "symb_math1"}
+  punct_tab07: {label: "数学2", send: Eisu_toggle, select: "symb_math2"}
+  punct_tab08: {label: " ", send: Eisu_toggle, select: ""}
+  punct_tab09: {label: " ", send: Eisu_toggle, select: ""}
+  punct_tab10: {label: " ", send: Eisu_toggle, select: ""}
   #标点切换
   PunctTab1: {label: "▷", functional: true,send: Eisu_toggle, select: "punc_zh"}
   PunctTab2: {label: "▷", functional: true,send: Eisu_toggle, select: "symb_math1"}
+
   #emoji Page 1
   emoji_tab01: {label: "表情1",send: Eisu_toggle, select: "emoji_face1"}
   emoji_tab02: {label: "表情2",send: Eisu_toggle, select: "emoji_face2"}
@@ -3725,8 +3733,6 @@ preset_keys:
   EmojiTab_5: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports1"}
 
   q_ts: {label: "特殊", send: Eisu_toggle, select: "qtts1"}
-  k_alphabet: {label: "字母", send: Eisu_toggle, select: "k_alphabet"}
-
   q_ts1: {label: "箭头", send: Eisu_toggle, select: "qtts1"}
   q_ts2: {label: "星号", send: Eisu_toggle, select: "qtts2"}
   q_ts4: {label: "②", send: Eisu_toggle, select: "qtts4"}
