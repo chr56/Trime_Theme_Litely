@@ -1,0 +1,6 @@
+      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_math2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 17.5}

@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_math1, symb_math2, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_math1, symb_math2, qtxh, qtxh2, qtVJ, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -837,76 +837,6 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "数学符号 2"
     width: 10
-  qtux:
-    author: 青 铜 #数学，
-    ascii_mode: 0
-    height: *miniH
-    horizontal_gap: *miniCG
-    vertical_gap: *miniLG
-    round_corner: *Corner
-    key_text_offset_y: *textY
-    keys:
-      #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
-      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
-      #❷
-      - {click: "⅟", key_text_size: 16}
-      - {click: "½", key_text_size: 16}
-      - {click: "↉", key_text_size: 16}
-      - {click: "⅓", key_text_size: 16}
-      - {click: "⅔", key_text_size: 16}
-      - {click: '¼', key_text_size: 16}
-      - {click: "⅕", key_text_size: 16}
-      - {click: "⅖", key_text_size: 16}
-      - {click: "⅗", key_text_size: 16}
-      - {click: "⅘", key_text_size: 16}
-      #❸
-      - {click: "⅙", key_text_size: 16}
-      - {click: "⅚", key_text_size: 16}
-      - {click: "⅐", key_text_size: 16}
-      - {click: "⅛", key_text_size: 16}
-      - {click: "⅜", key_text_size: 16}
-      - {click: "⅝", key_text_size: 16}
-      - {click: "⅞", key_text_size: 16}
-      - {click: "⅑", key_text_size: 16}
-      - {click: "⅒", key_text_size: 16}
-      - {click: "°", key_text_size: 16}
-      #❹
-      - {click: "℃", key_text_size: 16}
-      - {click: "℉", key_text_size: 16}
-      - {click: "％", key_text_size: 16}
-      - {click: "‰", key_text_size: 16}
-      - {click: "‱", key_text_size: 16}
-      - {click: "㎝", key_text_size: 16}
-      - {click: "㎠", key_text_size: 16}
-      - {click: "㎤", key_text_size: 16}
-      - {click: "㎎", key_text_size: 16}
-      - {click: "㎏", key_text_size: 16}
-      #❺
-      - {click: "㎞", key_text_size: 16}
-      - {click: "㎢", key_text_size: 16}
-      - {click: "㎦", key_text_size: 16}
-      - {click: "㎧", key_text_size: 16}
-      - {click: "㎨", key_text_size: 16}
-      - {click: "㎡", key_text_size: 16}
-      - {click: "㎥", key_text_size: 16}
-      - {click: "㎜", key_text_size: 16}
-      - {click: "㎟", key_text_size: 16}
-      - {click: "㎣", key_text_size: 16}
-      #❻
-      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
-      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
-      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
-      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "数学"
-    width: 10
-
   k_alphabet:
     author: 青 铜 #字母，
     ascii_mode: 0
@@ -3783,7 +3713,6 @@ preset_keys:
   q_ts: {label: "特殊", send: Eisu_toggle, select: "qtts1"}
   q_xh: {label: "序号", send: Eisu_toggle, select: "qtxh"}
   q_xh2: {label: "序号2", send: Eisu_toggle, select: "qtxh2"}
-  q_ux: {label: "数学", send: Eisu_toggle, select: "qtux"}
   K_alphabet: {label: "字母", send: Eisu_toggle, select: "k_alphabet"}
 
   q_ts1: {label: "箭头", send: Eisu_toggle, select: "qtts1"}
