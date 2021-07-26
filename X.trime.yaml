@@ -752,7 +752,16 @@ preset_keyboards:
       # - {click: "", key_text_size: 16}
       # - {click: "", key_text_size: 16}
       #❺
-      - {width: 100}
+      - {click: "⁺", key_text_size: 16}
+      - {click: "⁻", key_text_size: 16}
+      - {click: "⁼", key_text_size: 16}
+      - {click: "⁽", key_text_size: 16}
+      - {click: "⁾", key_text_size: 16}
+      - {click: "₊", key_text_size: 16}
+      - {click: "₋", key_text_size: 16}
+      - {click: "₌", key_text_size: 16}
+      - {click: "₍", key_text_size: 16}
+      - {click: "₎", key_text_size: 16}
       # - {click: "", key_text_size: 16}
       # - {click: "", key_text_size: 16}
       # - {click: "", key_text_size: 16}
