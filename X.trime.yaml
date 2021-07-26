@@ -277,7 +277,7 @@ preset_keyboards:
       - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
       - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
-      - {click: Return, long_click: Color_settings, swipe_up: Theme_settings, width: 18}
+      - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "默认"
     width: 10
 #英语键盘
@@ -291,7 +291,7 @@ preset_keyboards:
         # "keys/@34/click": ","
         "keys/@34/long_click": "，"
     name: "英文键盘"
-# 菜单
+  # 菜单
   K_menu:
     height: *baseH
     horizontal_gap: *baseCG
@@ -299,29 +299,33 @@ preset_keyboards:
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
-      # 一
+      # 1
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "refresh", hint: 刷　新, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Deploy", hint: 部　署, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Full_Half1", hint: 全半角, key_text_size: 18, key_back_color: 0x00}
-      - {click: "IME_switch", hint: 输入法, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Hint_switch", hint: 提　示, key_text_size: 18, key_back_color: 0x00}
+      - {click: "Refresh", key_back_color: 0x00, width: 20}
+      - {click: "Deploy", key_back_color: 0x00, width: 20}
+      - {click: "IME_switch", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}
+      # 2
       - {click: "", key_back_color: 0x00, width: 10}
-      # 二
+      - {click: "Theme_settings", key_back_color: 0x00, width: 20}
+      - {click: "Color_settings", key_back_color: 0x00, width: 20}
+      - {click: "Schema_settings", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}
+      # 3
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "Theme_settings", key_back_color: 0x00}
-      - {click: "Color_settings", key_back_color: 0x00}
-      - {click: "Menu", hint: 方　案, key_text_size: 18, key_back_color: 0x00}
-      - {click: "Candidate_switch", hint: 候选栏, key_text_size: 18, key_back_color: 0x00}
-      - {click: "BackToDefault_", hint: 返  回,key_text_size: 18, key_back_color: 0x00}
+      - {click: "Full_Half_", hint: 全半角, key_back_color: 0x00, width: 20}
+      - {click: "Hint_switch", hint: 提　示, key_back_color: 0x00, width: 20}
+      - {click: "Candidate_switch", hint: 候选栏, key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}      
+      # 4
       - {click: "", key_back_color: 0x00, width: 10}
-      # 三
-      - {width: 100}
-      #四
-      - {width: 100}
+      - {click: "Settings", key_back_color: 0x00, width: 20}
+      - {click: "",key_back_color: 0x00, width: 40}
+      - {click: "BackToDefault_", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 10}      
     key_hint_offset_y: *hintY
     name: "菜单"
-    width: 16
+    width: 10
 
 # 编辑
   editmenu: #编辑
@@ -338,7 +342,7 @@ preset_keyboards:
       - {click: Home, hint: 行首}
       - {click: "Up"}
       - {click: End, hint: 行尾}
-      - {click: "K_back_", width: 20}
+      - {click: "K_back", width: 20}
       # ❸
       - {click: ""}
       - {click: "Left"}
@@ -373,7 +377,7 @@ preset_keyboards:
       - {click: "1", width: 18}
       - {click: "2", width: 18}
       - {click: "3", width: 18}
-      - {click: "K_back_", width: 16, key_text_size: 13}
+      - {click: "K_back", width: 16, key_text_size: 13}
       # Line2
       - {click: "*", key_text_size: 21}
       - {click: "/", key_text_size: 15}
@@ -389,7 +393,7 @@ preset_keyboards:
       - {click: "9", width: 18}
       - {click: "BackSpace", width: 16, swipe_left: DelH}
       # Line4
-      - {height: *downH, click: "K_back_", long_click: "k_symbol", key_text_size: 15}
+      - {height: *downH, click: "K_back", long_click: "k_symbol", key_text_size: 15}
       - {click: "q_zb", key_text_size: 15}
       - {click: "q_ts", long_click: "EmojiTab_1" , key_text_size: 15, width: 18}
       - {click: "0", width: 18}
@@ -447,7 +451,7 @@ preset_keyboards:
       - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: space, ascii: space_en, swipe_left: Left, swipe_right: Right, width: 38}
       - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
-      - {click: Return, long_click: Color_settings, swipe_up: Theme_settings, width: 18}
+      - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "符号"
     width: 10    
 
@@ -3585,7 +3589,7 @@ preset_keys:
   k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
   BackToDefault: {label: 返回, send: Eisu_toggle, select: .default} #返回主键盘
 
-#编辑
+  #编辑
   redo: {label: ↷, functional: false, send: Control+y} #重做
   undo: {label: 撤销, functional: false, send: Control+z} #撤销
   Home: {label: ⇤, send: Home, functional: false} #行首
@@ -3593,18 +3597,33 @@ preset_keys:
   SelectLine: {label: ↔, functional: false, text: "{End}{Shift+Home}"}  #选择行
   Delete: {label: Del, send: Delete, repeatable: true, functional: false}
 
- #菜单
-  refresh: {label: "⇋️", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+  # 菜单(图标)
   K_menu: {label: "菜单", send: Eisu_toggle, select: "K_menu"}
-  Menu: {label: ✡, functional: false, send: Menu} #方案菜单
-  IME_switch: {label: ⌨, functional: false, send: LANGUAGE_SWITCH} #输入法
-  Deploy: {label: ♻, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
-  Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]}
-  Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
-  Color_settings: {label: 配色, send: SETTINGS, option: "color"} #配色
-  Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
-  BackToDefault_: {label: Ⓑ , send: Eisu_toggle, select: .default} #返回主键盘
-
+  Refresh: {label: "↺  刷新", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+  Deploy: {label: ♲️  部署, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
+  Theme_settings: {label: ❉  主题, send: SETTINGS, option: "theme"} #主题
+  Color_settings: {label: ✎  配色, send: SETTINGS, option: "color"} #配色
+  Schema_settings: {label: ▤  方案, send: SETTINGS, option: "schema"} #方案菜单
+  IME_switch: {label: ⌨ 输入法, functional: false, send: LANGUAGE_SWITCH} #输入法
+  Help: {label: Ⓗ  帮助, send: Help}
+  Info: {label: ⓘ  关于, send: INFO}
+  Settings: {label: ⚒  设置, functional: false, send: SETTINGS}
+  BackToDefault_: {label: ⇦️️  返回, send: Eisu_toggle, select: .default} #返回主键盘
+  # 菜单
+  Color_settings_: {label: 配色, send: SETTINGS, option: "color"} #配色(无图标)
+  Color_switch: {label: ◲, functional: false, send: PROG_RED} #配色切换
+  Schema_Switch: {label: ⇄, functional: false, send: Control+Shift+1}
+  Schema_Eng: {label: En, send: Control+Shift+0}
+  Comment_switch: {toggle: _hide_comment, send: Mode_switch, states: [ ZI.., "ZI  "]}
+  K_back: {label: 返回, send: Eisu_toggle, select: .last_lock}
+  # 开关
+  Full_Half: {toggle: full_shape, functional: false, send: Mode_switch, states: [ ◐, ● ]} # 半角全角
+  Full_Half_: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
+  Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]} #候选栏
+  Candidate_switch_: {toggle: _hide_candidate, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ☐, ─ ]}
+  Hint_switch: {toggle: _hide_key_hint, functional: false, send: Mode_switch, states: [ ≑, ≟]} #提示
+  Hint_switch_: {toggle: _hide_key_hint, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ≑, ≟]} 
+  Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, En ]}
 
   #emoji Page 1
   emoji_tab01: {label: "表情1",send: Eisu_toggle, select: "emoji_face1"}
@@ -3711,23 +3730,7 @@ preset_keys:
   CommitComment: {label: 编码, send: Control+Shift+Return}
   DeleteCandidate: {label: 删词, send: Control+Delete, functional: false}
   # rime状态
-  Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, En ]}
-  #shift键锁定
-  Candidate_switch1: {toggle: _hide_candidate, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ☐, ─ ]}
-  Comment_switch: {toggle: _hide_comment, send: Mode_switch, states: [ ZI.., "ZI  "]}
-  Color_switch: {label: ◲, functional: false, send: PROG_RED} #配色
-  Hint_switch: {toggle: _hide_key_hint, functional: false, send: Mode_switch, states: [ ≑, ≟]}
-  # trime设置
-  IME_switch1: {label: ●, functional: false, send: LANGUAGE_SWITCH}
-  K_back: {label: 返回, send: Eisu_toggle, select: .last_lock}
-  K_back_: {label: "返回", functional: false, send: Eisu_toggle, select: .last_lock}
-  Schema_switch: {label: ⇄, functional: false, send: Control+Shift+1}
-  Schema_Eng: {label: En, send: Control+Shift+0}
-  Help: {label: 说明, send: Help}
-  Info: {label: 关于, send: INFO}
-  Settings: {label: ⚙, functional: false, send: SETTINGS}
-  Theme_settings: {label:  主题, send: SETTINGS, option: "theme"} #主题
-  Schema_settings: {label: 方案, send: SETTINGS, option: "schema"}
+
   
   # trime命令
   Date: {label: "日期", send: function, command: date, option: "yy.MM.d"}
