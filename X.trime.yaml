@@ -394,8 +394,8 @@ preset_keyboards:
       - {click: "BackSpace", swipe_left: DelH, width: 18}
       # Line4
       - {height: *downH, click: "K_back", width: 15}
-      - {click: "q_ts", long_click: "EmojiTab_1", width: 14}
       - {click: "q_zb", long_click: "k_symbol", width: 13}
+      - {click: "q_ts", long_click: "EmojiTab_1", width: 14}
       - {click: "0", width: 20}
       - {click: "=", width: 8}
       - {click: ".", long_click: ",", key_text_size: 14, width: 12}
@@ -519,9 +519,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "中文"
@@ -589,9 +589,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "英文"
@@ -659,9 +659,9 @@ preset_keyboards:
       - {click: "Ⅺ", key_text_size: 16}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "序号"
@@ -729,9 +729,9 @@ preset_keyboards:
       - {click: "₎", key_text_size: 16}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "序号2"
@@ -799,9 +799,9 @@ preset_keyboards:
       - {click: "㎣", key_text_size: 16}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "数学"
@@ -881,9 +881,9 @@ preset_keyboards:
       - {click: "🇿️", width: 8, key_text_size: 16}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "字母"
@@ -950,9 +950,9 @@ preset_keyboards:
       - {width: 10}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "箭头"
@@ -1019,9 +1019,9 @@ preset_keyboards:
       - {click: "✵", key_text_size: 15}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "星花"
@@ -1088,9 +1088,9 @@ preset_keyboards:
       - {click: "●️", key_text_size: 15}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊2"
@@ -1139,9 +1139,9 @@ preset_keyboards:
       - {width: 100}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "特殊3"
@@ -1189,9 +1189,9 @@ preset_keyboards:
       - {width: 100}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 常用"
@@ -1261,9 +1261,9 @@ preset_keyboards:
       - {click: 😛}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 表情1"
@@ -1333,9 +1333,9 @@ preset_keyboards:
       - {click: 🤮}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 表情2"
@@ -1405,9 +1405,9 @@ preset_keyboards:
       - {click: 🌜}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 表情3"
@@ -1473,9 +1473,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 人类1"
@@ -1541,9 +1541,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 人类2"
@@ -1604,9 +1604,9 @@ preset_keyboards:
       - {width: 100}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 人类3"
@@ -1668,9 +1668,9 @@ preset_keyboards:
       - {width: 60}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 职业"
@@ -1741,9 +1741,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 果蔬"
@@ -1813,9 +1813,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 运动1"
@@ -1885,9 +1885,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 运动2"
@@ -1957,9 +1957,9 @@ preset_keyboards:
       - {click: ""}     
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 服饰"
@@ -2029,9 +2029,9 @@ preset_keyboards:
       - {click: 🥣}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 食物1"
@@ -2101,9 +2101,9 @@ preset_keyboards:
       - {click: 🥤}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 食物2"
@@ -2173,9 +2173,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 植物"
@@ -2245,9 +2245,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 节庆"
@@ -2317,9 +2317,9 @@ preset_keyboards:
       - {click: 🐄}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 动物1"
@@ -2389,9 +2389,9 @@ preset_keyboards:
       - {click: 🦃}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 动物2"
@@ -2461,9 +2461,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 动物3"
@@ -2533,9 +2533,9 @@ preset_keyboards:
       - {click: 💧}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 自然"
@@ -2605,9 +2605,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 建筑"
@@ -2677,9 +2677,9 @@ preset_keyboards:
       - {click: 🚡}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 交通"
@@ -2749,9 +2749,9 @@ preset_keyboards:
       - {click: 📊}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 办公"
@@ -2821,9 +2821,9 @@ preset_keyboards:
       - {click: 🕸}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 生活1"
@@ -2893,9 +2893,9 @@ preset_keyboards:
       - {click: 🛢}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 生活"
@@ -2965,9 +2965,9 @@ preset_keyboards:
       - {click: ⚱}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 生活3"
@@ -3037,9 +3037,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 其他"
@@ -3109,9 +3109,9 @@ preset_keyboards:
       - {click: ""}
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 形状"
@@ -3237,9 +3237,9 @@ preset_keyboards:
       - {width: 10}      
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 符号1"
@@ -3365,9 +3365,9 @@ preset_keyboards:
       - {click: ➿}
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 符号2"
@@ -3493,9 +3493,9 @@ preset_keyboards:
       - {click: ⚖}
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "q_zb", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_text_size: 15, key_back_color: tab_back_color, width: 16}
-      - {click: "number", long_click: "k_symbol", key_text_size: 15, key_back_color: tab_back_color, width: 16}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "number", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "emoji 符号3"
