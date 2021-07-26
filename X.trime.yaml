@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, qtzb, qtyb, qtxh, qtxh2, qtVJ, qtux, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -394,7 +394,7 @@ preset_keyboards:
       - {click: "BackSpace", swipe_left: DelH, width: 18}
       # Line4
       - {height: *downH, click: "K_back", width: 15}
-      - {click: "q_zb", long_click: "k_symbol", width: 13}
+      - {click: "punc_zh", long_click: "k_symbol", width: 13}
       - {click: "q_ts", long_click: "EmojiTab_1", width: 14}
       - {click: "0", width: 20}
       - {click: "=", width: 8}
@@ -402,7 +402,7 @@ preset_keyboards:
       - {click: "Return", width: 18}
     name: "数字小键盘"
     width: 15
-# 符号布局
+  # 符号布局
   k_symbol:
     height: *baseH  
     horizontal_gap: *baseCG 
@@ -535,6 +535,7 @@ preset_keyboards:
     vertical_gap: *miniLG
     round_corner: *Corner
     key_text_offset_y: *textY
+    key_symbol_offset_y: *symbolY
     keys:
       #❶
       - {click: "q_zb", label: "中文", key_back_color: tab_back_color, width: 17}
@@ -596,7 +597,126 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "英文"
     width: 10
-
+  # 中文标点
+  punc_zh:
+    author: 青 铜 #中文，
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    key_symbol_offset_y: *symbolY
+    keys:
+      #❶
+      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
+      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
+      #❷
+      - {click: "，", key_text_size: 16}
+      - {click: "。", key_text_size: 16}
+      - {click: "？", key_text_size: 16}
+      - {click: "！", key_text_size: 16}
+      - {click: "：", key_text_size: 16}
+      - {click: "；", key_text_size: 16}
+      - {click: "、", key_text_size: 16}
+      - {click: "“”{Left}", key_text_size: 16}
+      #❸
+      - {click: "……", key_text_size: 16}
+      - {click: "——", key_text_size: 16}
+      - {click: "～", key_text_size: 16}
+      - {click: "｀", key_text_size: 16}
+      - {click: "•", key_text_size: 16}
+      - {click: "￥", key_text_size: 16}
+      - {click: '“', long_click: '‘', key_text_size: 16}
+      - {click: '”', long_click: '’', key_text_size: 16}
+      #❹
+      - {click: "«»{Left}", key_text_size: 16}
+      - {click: "‹›{Left}", key_text_size: 16}
+      - {click: "ˉ", key_text_size: 16}
+      - {click: "＿", key_text_size: 16}
+      - {click: "ˇ", key_text_size: 16}
+      - {click: "¨", key_text_size: 16}
+      - {click: ""}
+      - {click: ""}
+      #❺
+      - {click: "（）{Left}", long_click: "〔〕{Left}", key_text_size: 16, width: 25}
+      - {click: "［］{Left}", long_click: "【】{Left}", key_text_size: 16, width: 25}
+      - {click: "『』{Left}", long_click: "「」{Left}", key_text_size: 16, width: 25}
+      - {click: '《》{Left}', long_click: "〈〉{Left}", key_text_size: 16, width: 25}      
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "q_zb", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "中文标点"
+    width: 12.5
+  # 英文标点
+  punc_en:
+    author: 青 铜 #英文，
+    ascii_mode: 1
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
+      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "q_ux", key_back_color: tab_back_color, width: 16.5}
+      - {click: "K_alphabet", key_back_color: tab_back_color, width: 17}
+      #❷
+      - {click: ",", key_text_size: 16}
+      - {click: ".", key_text_size: 16}
+      - {click: "?", key_text_size: 16}
+      - {click: "!", key_text_size: 16}
+      - {click: ":", key_text_size: 16}
+      - {click: ";", key_text_size: 16}
+      - {click: "-", key_text_size: 16}
+      - {click: '"', long_click: "'", key_text_size: 16}
+      #❸
+      - {click: "…", key_text_size: 16}
+      - {click: "~", key_text_size: 16}
+      - {click: "`", key_text_size: 16}
+      - {click: "_", key_text_size: 16}
+      - {click: "·", key_text_size: 16}
+      - {click: "$", key_text_size: 16}
+      - {click: "#", key_text_size: 16}
+      - {click: "&", key_text_size: 16}
+      #❹
+      - {click: "^", key_text_size: 16}
+      - {click: "*", key_text_size: 16}
+      - {click: "/", key_text_size: 16}
+      - {click: "\\", key_text_size: 16}
+      - {click: "%", key_text_size: 16}
+      - {click: "+", key_text_size: 16}
+      - {click: "-", key_text_size: 16}
+      - {click: "=", key_text_size: 16}
+      #❺
+      - {click: "(){Left}", key_text_size: 16, width: 25}
+      - {click: "[]{Left}", key_text_size: 16, width: 25}
+      - {click: "<>{Left}", key_text_size: 16, width: 25}
+      - {click: "{}{Left}", key_text_size: 16, width: 25}   
+      # - {click: "×", key_text_size: 16}
+      # - {click: "÷", key_text_size: 16}
+      # - {click: ""}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "punc_zh", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "英文标点"
+    width: 12.5
   qtxh:
     author: 青 铜 #序号，
     ascii_mode: 0
@@ -3626,6 +3746,9 @@ preset_keys:
   Hint_switch_: {toggle: _hide_key_hint, functional: false, text: "{Candidate_switch}{K_back}", send: Mode_switch, states: [ ≑, ≟]} 
   Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, En ]}
 
+  #标点
+  punc_zh: {label: "标点", send: Eisu_toggle, select: "punc_zh"}
+  punc_en: {label: "英文", send: Eisu_toggle, select: "punc_en"}
   #emoji Page 1
   emoji_tab01: {label: "表情1",send: Eisu_toggle, select: "emoji_face1"}
   emoji_tab02: {label: "表情2",send: Eisu_toggle, select: "emoji_face2"}
