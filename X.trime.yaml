@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_arrow, symb_math1, symb_math2, symb_star, k_alphabet, symb_1, symb_2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_arrow, symb_math1, symb_math2, symb_star, k_alphabet, symb_1, symb_2, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -1196,125 +1196,6 @@ preset_keyboards:
     name: "特殊2"
     width: 10
 
-  qtts4:
-    author: 青 铜 #特殊2，
-    ascii_mode: 0
-    height: *miniH
-    horizontal_gap: *miniCG
-    vertical_gap: *miniLG
-    round_corner: *Corner
-    key_text_offset_y: *textY
-    keys:
-      #❶
-      - {click: q_ts1, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
-      - {width: 34}
-      # 五
-      - {click: "☪", key_text_size: 15}
-      - {click: "️☫", key_text_size: 15}
-      - {click: "☬️", key_text_size: 15}
-      - {click: "☭️", key_text_size: 15}
-      - {click: "️⚆", key_text_size: 15}
-      - {click: "️⚇", key_text_size: 15}
-      - {click: "⚈", key_text_size: 15}
-      - {click: "⚉", key_text_size: 15}
-      - {click: "⚿", key_text_size: 15}
-      - {click: "❖️", key_text_size: 15}
-      # 三
-      - {click: "♻", key_text_size: 15}
-      - {click: "♲️", key_text_size: 15}
-      - {click: "⎇️", key_text_size: 15}
-      - {click: "⏏", key_text_size: 15}
-      - {click: "⌖", key_text_size: 15}
-      - {click: "⎋", key_text_size: 15}
-      - {click: "⌨", key_text_size: 15}
-      - {click: "⌦", key_text_size: 15}
-      - {click: "⌫️", key_text_size: 15}
-      - {click: "⌅", key_text_size: 15}
-      # 四
-      - {click: "㊊️", key_text_size: 15}
-      - {click: "㊋️", key_text_size: 15}
-      - {click: "㊌", key_text_size: 15}
-      - {click: "㊍", key_text_size: 15}
-      - {click: "㊎", key_text_size: 15}
-      - {click: "㊏️", key_text_size: 15}
-      - {click: "㊐️", key_text_size: 15}
-      - {click: "㊗", key_text_size: 15}
-      - {click: "㊡️️", key_text_size: 15}
-      - {click: "⚙", key_text_size: 15}
-      # 五
-      - {click: "▁️️", key_text_size: 15}
-      - {click: "️▂️️", key_text_size: 15}
-      - {click: "▃️", key_text_size: 15}
-      - {click: "▄️️️", key_text_size: 15}
-      - {click: "️▅️", key_text_size: 15}
-      - {click: "️▆", key_text_size: 15}
-      - {click: "▇", key_text_size: 15}
-      - {click: "█", key_text_size: 15}
-      - {click: "◐", key_text_size: 15}
-      - {click: "●️", key_text_size: 15}
-      #❻
-      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
-      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
-      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
-      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "特殊2"
-    width: 10
-
-  qtts5:
-    author: 青 铜 #特殊3，
-    ascii_mode: 0
-    height: *miniH
-    horizontal_gap: *miniCG
-    vertical_gap: *miniLG
-    round_corner: *Corner
-    key_text_offset_y: *textY
-    keys:
-      #❶
-      - {click: q_ts1, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts2, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts4, key_back_color: tab_back_color, width: 16.5}
-      - {click: q_ts5, key_back_color: tab_back_color, width: 16.5}
-      - {width: 34}
-      #❷
-      - {click: ▬️️, key_text_size: 15}
-      - {click: ▭, key_text_size: 15}
-      - {click: ▰, key_text_size: 15}
-      - {click: ▱, key_text_size: 15}
-      - {click: ／, key_text_size: 15}
-      - {click: ＼, key_text_size: 15}
-      - {click: ｜, key_text_size: 15}
-      - {click: ☑, key_text_size: 15}
-      - {click: ️️☒, key_text_size: 15}
-      - {click: ️☩, key_text_size: 15}
-      #❸
-      - {click: ◎, key_text_size: 15}
-      - {click: ◉️, key_text_size: 15}
-      - {click: ○, key_text_size: 15}
-      - {click: ◌, key_text_size: 15}
-      - {click: ◖, key_text_size: 15}
-      - {click: ⊕️, key_text_size: 15}
-      - {click: ␣️, key_text_size: 15}
-      - {click: ⌥, key_text_size: 15}
-      - {click: ◆, key_text_size: 15}
-      - {click: ◇, key_text_size: 15}
-      #❹
-      - {width: 100}
-      #❺
-      - {width: 100}
-      #❻
-      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
-      - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
-      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
-      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
-      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
-    name: "特殊3"
-    width: 10
   #emoji 常用
   emoji_quick:
     author: 
@@ -3869,11 +3750,6 @@ preset_keys:
   EmojiTab_5: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports1"}
 
   q_ts: {label: "符号", send: Eisu_toggle, select: "symb_star"}
-  q_ts1: {label: "箭头", send: Eisu_toggle, select: ""}
-  q_ts2: {label: "星号", send: Eisu_toggle, select: ""}
-  q_ts4: {label: "②", send: Eisu_toggle, select: "qtts4"}
-  q_ts5: {label: "③", send: Eisu_toggle, select: "qtts5"}
-
 
   # 编辑
   Shift_R: {label: Enter, send: Shift_R}
