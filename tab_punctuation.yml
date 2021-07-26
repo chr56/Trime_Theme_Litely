@@ -1,8 +1,8 @@
       # page1
       - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
       - {click: "", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       # page 2

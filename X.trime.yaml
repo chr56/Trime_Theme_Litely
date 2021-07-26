@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_math1, symb_math2, qtxh, qtxh2, qtVJ, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_math1, symb_math2, qtxh, qtxh2, qtVJ, k_alphabet, qtts1, qtts2, qtts4, qtts5, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -468,12 +468,12 @@ preset_keyboards:
     key_symbol_offset_y: *symbolY
     keys:
       #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
+      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 17}
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "，", key_text_size: 16}
       - {click: "。", key_text_size: 16}
@@ -526,12 +526,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
+      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 17}
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: ",", key_text_size: 16}
       - {click: ".", key_text_size: 16}
@@ -715,6 +715,140 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "序号2"
     width: 10
+  # 序号1
+  symb_num1:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      # page1
+      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
+      #❷
+
+      - {click: "①", key_text_size: 16}
+      - {click: "②", key_text_size: 16}
+      - {click: "③", key_text_size: 16}
+      - {click: "④", key_text_size: 16}
+      - {click: "⑤", key_text_size: 16}
+      - {click: "⑥", key_text_size: 16}
+      - {click: "⑦", key_text_size: 16}
+      - {click: "⑧", key_text_size: 16}
+      - {click: "⑨", key_text_size: 16}
+      - {click: "⑩", key_text_size: 16}      
+      #❸
+      - {click: "❶", key_text_size: 16}
+      - {click: "❷", key_text_size: 16}
+      - {click: "❸", key_text_size: 16}
+      - {click: "❹", key_text_size: 16}
+      - {click: "❺", key_text_size: 16}
+      - {click: "❻", key_text_size: 16}
+      - {click: "❼", key_text_size: 16}
+      - {click: "❽", key_text_size: 16}
+      - {click: "❾", key_text_size: 16}
+      - {click: "❿", key_text_size: 16}
+      #❹
+      - {click: "⒈", key_text_size: 16}
+      - {click: "⒉", key_text_size: 16}
+      - {click: "⒊", key_text_size: 16}
+      - {click: "⒋", key_text_size: 16}
+      - {click: "⒌", key_text_size: 16}
+      - {click: "⒍", key_text_size: 16}
+      - {click: "⒎", key_text_size: 16}
+      - {click: "⒏", key_text_size: 16}
+      - {click: "⒐", key_text_size: 16}
+      - {click: "⒑", key_text_size: 16}
+      #❺
+      - {click: "Ⅰ", key_text_size: 16}
+      - {click: "Ⅱ", key_text_size: 16}
+      - {click: "Ⅲ", key_text_size: 16}
+      - {click: "Ⅳ", key_text_size: 16}
+      - {click: "Ⅴ", key_text_size: 16}
+      - {click: "Ⅵ", key_text_size: 16}
+      - {click: "Ⅶ", key_text_size: 16}
+      - {click: "Ⅷ", key_text_size: 16}
+      - {click: "Ⅹ", key_text_size: 16}
+      - {click: "Ⅺ", key_text_size: 16}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "序号1"
+    width: 10
+  #序号2
+  symb_num2:
+    author: 
+    ascii_mode: 0
+    height: *miniH
+    horizontal_gap: *miniCG
+    vertical_gap: *miniLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      #❶
+      # page1
+      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
+      #❷
+      - {click: "¹", key_text_size: 16}
+      - {click: "²", key_text_size: 16}
+      - {click: "³", key_text_size: 16}
+      - {click: "⁴", key_text_size: 16}
+      - {click: "⁵", key_text_size: 16}
+      - {click: "⁶", key_text_size: 16}
+      - {click: "⁷", key_text_size: 16}
+      - {click: "⁸", key_text_size: 16}
+      - {click: "⁹", key_text_size: 16}
+      - {click: "⁰", key_text_size: 16}
+      #❸
+      - {click: "₁", key_text_size: 16}
+      - {click: "₂", key_text_size: 16}
+      - {click: "₃", key_text_size: 16}
+      - {click: "₄", key_text_size: 16}
+      - {click: "₅", key_text_size: 16}
+      - {click: "₆", key_text_size: 16}
+      - {click: "₇", key_text_size: 16}
+      - {click: "₈", key_text_size: 16}
+      - {click: "₉", key_text_size: 16}
+      - {click: "₀", key_text_size: 16}
+      #❹
+      - {click: "壹", key_text_size: 16}
+      - {click: "贰", key_text_size: 16}
+      - {click: "叁", key_text_size: 16}
+      - {click: "肆", key_text_size: 16}
+      - {click: "伍", key_text_size: 16}
+      - {click: "陆", key_text_size: 16}
+      - {click: "柒", key_text_size: 16}
+      - {click: "捌", key_text_size: 16}
+      - {click: "玖", key_text_size: 16}
+      - {click: "拾", long_click: 〇, key_text_size: 16}      
+      #❺
+      - {width: 100}
+      #❻
+      - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
+      - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
+      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "num_pad", key_back_color: tab_back_color, width: 16}
+      - {click: "space_", key_text_color: 0xffcccccc, width: 18}
+      - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
+    name: "序号2"
+    width: 10
   #数学符号1
   symb_math1:
     author: 
@@ -724,13 +858,13 @@ preset_keyboards:
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
-      #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      # page 2
       - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 17}
+      - {click: "symb_math2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab1", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "×", key_text_size: 16}
       - {click: "÷", key_text_size: 16}
@@ -787,12 +921,13 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
-      - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
+      # page 2
       - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 17}
+      - {click: "symb_math2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab1", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "℃", long_click: "℉", key_text_size: 16}
       - {click: "%", key_text_size: 16}
@@ -3671,6 +3806,8 @@ preset_keys:
   punc_en: {label: "英文", send: Eisu_toggle, select: "punc_en"}
   symb_math1: {label: "数学1", send: Eisu_toggle, select: "symb_math1"}
   symb_math2: {label: "数学2", send: Eisu_toggle, select: "symb_math2"}
+  symb_num1: {label: "序号1", send: Eisu_toggle, select: "symb_num1"}
+  symb_num2: {label: "序号2", send: Eisu_toggle, select: "symb_num2"}
   #标点切换
   PunctTab1: {label: "▷", functional: true,send: Eisu_toggle, select: "punc_zh"}
   PunctTab2: {label: "▷", functional: true,send: Eisu_toggle, select: "symb_math1"}
