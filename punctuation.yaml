@@ -8,6 +8,7 @@
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
+      #❶
 
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}

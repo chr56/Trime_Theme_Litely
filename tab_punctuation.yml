@@ -11,17 +11,11 @@
       - {click: "punct_tab08", key_back_color: tab_back_color, width: 16.5}
       - {click: "punct_tab09", key_back_color: tab_back_color, width: 16.5}
       - {click: "punct_tab10", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab3", key_back_color: tab_back_color, width: 17.5}
+      # page 3
+      - {click: "punct_tab11", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab12", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab13", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab14", key_back_color: tab_back_color, width: 16.5}
+      - {click: "punct_tab15", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab1", key_back_color: tab_back_color, width: 17.5}
-
-  #Page 1
-  punct_tab01: {label: "中文",send: Eisu_toggle, select: "punc_zh"}
-  punct_tab02: {label: "英文",send: Eisu_toggle, select: "punc_en"}
-  punct_tab03: {label: "序号1",send: Eisu_toggle, select: "symb_num1"}
-  punct_tab04: {label: "序号2",send: Eisu_toggle, select: "symb_num2"}
-  punct_tab05: {label: "字母",send: Eisu_toggle, select: "k_alphabet"}
-  #Page 2
-  punct_tab06: {label: "数学1",send: Eisu_toggle, select: "symb_math1"}
-  punct_tab07: {label: "数学2", send: Eisu_toggle, select: "symb_math2"}
-  punct_tab08: {label: "", send: Eisu_toggle, select: ""}
-  punct_tab09: {label: "", send: Eisu_toggle, select: ""}
-  punct_tab10: {label: "", send: Eisu_toggle, select: ""}
