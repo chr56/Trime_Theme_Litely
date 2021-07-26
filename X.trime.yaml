@@ -1,5 +1,5 @@
 name: x
-author: chr
+author: chr_56
 
 other:
   #圆角
@@ -28,7 +28,7 @@ height:
   J: &numbCG 3 #数字列距
 
 style:
-  auto_caps: false #自动句首大写:true|false|ascii
+  auto_caps: ascii #自动句首大写:true|false|ascii
   background_dim_amount: 0.5
   #candidate_font: ziti.ttf #候选字型
   candidate_padding: 2 #候选项内边距
@@ -90,7 +90,7 @@ style:
   shadow_radius: 0.0 #按键阴影半径
   speech_opencc_config: none #语音输入简繁转换
   symbol_font: ziti.ttf #符号字型
-  symbol_text_size: 8 #符号字号 上标字号
+  symbol_text_size: 9 #符号字号 上标字号
   text_font: ziti.ttf #编码字型
   text_size: 16 #编码字号
   vertical_correction: -3 #按键纵向偏移，负数下移接触面
@@ -274,22 +274,22 @@ preset_keyboards:
       - {click: BackSpace, width: 15, swipe_left: DelH}
       # 4
       - {height: *downH, click: number, swipe_up: q_zb, has_menu: Page_Down, long_click: "K_menu", width: 18}
-      - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
+      - {click: "，", label: "   ，", key_text_size: 12, ascii: ",", long_click: ",", swipe_up: ";", width: 13}
       - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
-      - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
+      - {click: "。", label: "   。", key_text_size: 12, ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "默认"
     width: 10
-#英语键盘
+  # 英语键盘
   english:
     __include: /preset_keyboards/default
     ascii_mode: 1
     __patch:
-        # "keys/@32/click": "."
-        "keys/@32/long_click": "。"
-        # "keys/@33/long_click": "k_default"
-        # "keys/@34/click": ","
-        "keys/@34/long_click": "，"
+        "keys/@31/click": ","
+        "keys/@31/long_click": "，"
+        "keys/@32/long_click": "k_default"
+        "keys/@33/click": "."
+        "keys/@33/long_click": "。"        
     name: "英文键盘"
   # 菜单
   K_menu:
