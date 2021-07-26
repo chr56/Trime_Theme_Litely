@@ -190,7 +190,7 @@ preset_color_schemes:
     tab_back_color: 0xffC0C0C0 #tab背景
 
   gboard:
-    name: "Gboard" 
+    name: "浅色(Gboard)" 
     back_color: 0xfff8f9fb #背景
     hilited_candidate_back_color: *GBlue   #首字 背景
     hilited_key_back_color: 0xff616362
@@ -206,8 +206,8 @@ preset_color_schemes:
     off_key_text_color: *黑
     tab_back_color: 0xfff2f3f5 #tab背景
 
-  dark:
-    name: "暗黑"
+  purple:
+    name: "深紫"
     back_color: *Navy #背景
     hilited_candidate_back_color: *灰 #首字 背景
     hilited_key_back_color: *灰c
