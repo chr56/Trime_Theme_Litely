@@ -395,7 +395,7 @@ preset_keyboards:
       # Line4
       - {height: *downH, click: "K_back", width: 15}
       - {click: "Punctuation", long_click: "k_symbol", width: 13}
-      - {click: "q_ts", long_click: "EmojiTab_1", width: 14}
+      - {click: "EmojiTab_1", width: 14}
       - {click: "0", width: 20}
       - {click: "=", width: 8}
       - {click: ".", long_click: ",", key_text_size: 14, width: 12}
@@ -438,7 +438,7 @@ preset_keyboards:
       - {click: ')', long_click: "}", swipe_down: "="}
       - {click: '/', long_click: "\\"}
       # 3 
-      - {click: q_ts ,long_click: num_pad, width: 15}
+      - {click: num_pad ,long_click: EmojiTab_1, width: 15}
       - {click: '*', long_click: "★"}
       - {click: '"', long_click: "✔", swipe_down: Cut}
       - {click: "'", long_click: "✘", swipe_down: Copy}
@@ -510,7 +510,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -572,7 +572,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -644,7 +644,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -706,7 +706,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -777,7 +777,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -841,7 +841,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -911,7 +911,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -994,7 +994,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1065,7 +1065,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1127,7 +1127,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1189,7 +1189,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1240,7 +1240,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1312,7 +1312,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1384,7 +1384,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1456,7 +1456,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1524,7 +1524,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1592,7 +1592,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1655,7 +1655,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1719,7 +1719,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1792,7 +1792,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1864,7 +1864,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -1936,7 +1936,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2008,7 +2008,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2080,7 +2080,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2152,7 +2152,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2224,7 +2224,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2296,7 +2296,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2368,7 +2368,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2440,7 +2440,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2512,7 +2512,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2584,7 +2584,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2656,7 +2656,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2728,7 +2728,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2800,7 +2800,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2872,7 +2872,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -2944,7 +2944,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3016,7 +3016,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3088,7 +3088,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3160,7 +3160,7 @@ preset_keyboards:
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3288,7 +3288,7 @@ preset_keyboards:
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3416,7 +3416,7 @@ preset_keyboards:
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3544,7 +3544,7 @@ preset_keyboards:
       #❻
       - {height: 38, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
@@ -3743,13 +3743,11 @@ preset_keys:
   emoji_tabD: {label: " ",send: Eisu_toggle, select: ""}
   emoji_tabE: {label: " ",send: Eisu_toggle, select: ""}
   #emoji 切换
-  EmojiTab_1: {label: "emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
+  EmojiTab_1: {label: "Emoji", functional: true, send: Eisu_toggle, select: "emoji_face1"}
   EmojiTab_2: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_people1"}
   EmojiTab_3: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_animal1"}
   EmojiTab_4: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_transports"}
   EmojiTab_5: {label: "▷", functional: true,send: Eisu_toggle, select: "emoji_sports1"}
-
-  q_ts: {label: "符号", send: Eisu_toggle, select: "symb_star"}
 
   # 编辑
   Shift_R: {label: Enter, send: Shift_R}

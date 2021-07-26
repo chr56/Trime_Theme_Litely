@@ -13,7 +13,7 @@
       #❻
       - {height: *downH, click: "BackToDefault", key_back_color: tab_back_color, width: 18}
       - {click: "Punctuation", long_click: "k_symbol", key_back_color: tab_back_color, width: 16}
-      - {click: "q_ts", long_click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
+      - {click: "EmojiTab_1", key_back_color: tab_back_color, width: 16}
       - {click: "num_pad", key_back_color: tab_back_color, width: 16}
       - {click: "space_", key_text_color: 0xffcccccc, width: 18}
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
