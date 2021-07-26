@@ -372,34 +372,35 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       # Line1
-      - {click: "+", key_text_size: 15}
-      - {click: "-", key_text_size: 15}
-      - {click: "1", width: 18}
-      - {click: "2", width: 18}
-      - {click: "3", width: 18}
-      - {click: "K_back", width: 16, key_text_size: 13}
+      - {click: "+", width: 11}
+      - {click: "-", width: 11}
+      - {click: "1", width: 20}
+      - {click: "2", width: 20}
+      - {click: "3", width: 20}
+      - {click: "%", width: 18}
       # Line2
-      - {click: "*", key_text_size: 21}
-      - {click: "/", key_text_size: 15}
-      - {click: "4", width: 18}
-      - {click: "5", width: 18}
-      - {click: "6", width: 18}
-      - {click: "space_", width: 16, key_text_size: 18}
+      - {click: "*", width: 11}
+      - {click: "/", width: 11}
+      - {click: "4", width: 20}
+      - {click: "5", width: 20}
+      - {click: "6", width: 20}
+      - {click: "space_", width: 18}
       # Line3
-      - {click: "(){Left}", key_text_size: 14}
-      - {click: "=", key_text_size: 18}
-      - {click: "7", width: 18}
-      - {click: "8", width: 18}
-      - {click: "9", width: 18}
-      - {click: "BackSpace", width: 16, swipe_left: DelH}
+      - {click: "(){Left}", width: 11}
+      - {click: "@", width: 11}
+      - {click: "7", width: 20}
+      - {click: "8", width: 20}
+      - {click: "9", width: 20}
+      - {click: "BackSpace", swipe_left: DelH, width: 18}
       # Line4
-      - {height: *downH, click: "K_back", long_click: "k_symbol", key_text_size: 15}
-      - {click: "q_zb", key_text_size: 15}
-      - {click: "q_ts", long_click: "EmojiTab_1" , key_text_size: 15, width: 18}
-      - {click: "0", width: 18}
-      - {click: ".", long_click: ",", key_text_size: 22, width: 18}
-      - {click: "Return", width: 16, key_text_size: 15}
-    name: "数字"
+      - {height: *downH, click: "K_back", width: 15}
+      - {click: "q_ts", long_click: "EmojiTab_1", width: 14}
+      - {click: "q_zb", long_click: "k_symbol", width: 13}
+      - {click: "0", width: 20}
+      - {click: "=", width: 8}
+      - {click: ".", long_click: ",", key_text_size: 14, width: 12}
+      - {click: "Return", width: 18}
+    name: "数字小键盘"
     width: 15
 # 符号布局
   k_symbol:
@@ -448,9 +449,9 @@ preset_keyboards:
       - {click: BackSpace, width: 15, swipe_left: DelH}
       # 4
       - {height: *downH, click: K_back, swipe_up: q_zb, long_click: K_menu, width: 18}
-      - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
-      - {click: space, ascii: space_en, swipe_left: Left, swipe_right: Right, width: 38}
       - {click: "，", label: " ，", ascii: ",", long_click: ",", swipe_up: ";", width: 13}
+      - {click: space, ascii: space_en, swipe_left: Left, swipe_right: Right, width: 38}
+      - {click: "。", label: "  。", ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
       - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "符号"
     width: 10    
@@ -3599,7 +3600,7 @@ preset_keys:
 
   # 菜单(图标)
   K_menu: {label: "菜单", send: Eisu_toggle, select: "K_menu"}
-  Refresh: {label: "↺  刷新", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+  Refresh: {label: "↺  刷新", functional: false, text: "{Schema_Switch}{Schema_Switch}"}  #刷新
   Deploy: {label: ♲️  部署, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
   Theme_settings: {label: ❉  主题, send: SETTINGS, option: "theme"} #主题
   Color_settings: {label: ✎  配色, send: SETTINGS, option: "color"} #配色
