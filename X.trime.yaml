@@ -468,11 +468,12 @@ preset_keyboards:
     key_symbol_offset_y: *symbolY
     keys:
       #❶
+      # page1
       - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "，", key_text_size: 16}
@@ -526,11 +527,12 @@ preset_keyboards:
     key_text_offset_y: *textY
     keys:
       #❶
+      # page1
       - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: ",", key_text_size: 16}
@@ -592,7 +594,7 @@ preset_keyboards:
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
 
@@ -664,7 +666,7 @@ preset_keyboards:
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
       - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "", key_back_color: tab_back_color, width: 16.5}
+      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
       - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
       #❷
       - {click: "¹", key_text_size: 16}
@@ -842,6 +844,7 @@ preset_keyboards:
       - {click: "BackSpace", key_text_color: 0xffcccccc, width: 16}
     name: "数学符号 2"
     width: 10
+  # 字母
   k_alphabet:
     author: 
     ascii_mode: 0
@@ -851,14 +854,15 @@ preset_keyboards:
     round_corner: *Corner
     key_text_offset_y: *textY
     keys:
-      #❶
-      - {click: "punc_zh", label: "中文", key_back_color: tab_back_color, width: 17}
+      # 1
+      # page1
+      - {click: "punc_zh", key_back_color: tab_back_color, width: 16.5}
       - {click: "punc_en", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh", key_back_color: tab_back_color, width: 16.5}
-      - {click: "q_xh2", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math1", key_back_color: tab_back_color, width: 16.5}
-      - {click: "symb_math2", key_back_color: tab_back_color, width: 17}
-      #❷
+      - {click: "symb_num1", key_back_color: tab_back_color, width: 16.5}
+      - {click: "symb_num2", key_back_color: tab_back_color, width: 16.5}
+      - {click: "k_alphabet", key_back_color: tab_back_color, width: 16.5}
+      - {click: "PunctTab2", key_back_color: tab_back_color, width: 17.5}
+      # 2
       - {click: "Ⓐ", width: 8, key_text_size: 16}
       - {click: "Ⓑ", width: 8, key_text_size: 16}
       - {click: "Ⓒ", key_text_size: 16}
@@ -872,7 +876,7 @@ preset_keyboards:
       - {click: "Ⓚ", width: 8, key_text_size: 16}
       - {click: "Ⓛ️", width: 8, key_text_size: 16}
       - {click: "Ⓜ", width: 8, key_text_size: 16}
-      #❸
+      # 3
       - {click: "Ⓝ️️", width: 8, key_text_size: 16}
       - {click: "️️Ⓞ", width: 8, key_text_size: 16}
       - {click: "Ⓟ", key_text_size: 16}
@@ -886,7 +890,7 @@ preset_keyboards:
       - {click: "Ⓧ️️", width: 8, key_text_size: 16}
       - {click: "Ⓨ️", width: 8, key_text_size: 16}
       - {click: "Ⓩ️", width: 8, key_text_size: 16}
-      #❹
+      # 4
       - {click: "🇦", width: 8, key_text_size: 16}
       - {click: "🇧", width: 8, key_text_size: 16}
       - {click: "️🇨", key_text_size: 16}
