@@ -139,7 +139,7 @@ colors:
   3: &橙  0xffa500
   7: &红  0xff1100
   4: &黑b 0xff888888
-  5: &黑c 0xff555555
+  5: &黑c 0xff454545
   6: &银  0xffc0c0c0
   8: &灰 0xffa9a9a9
   9: &灰c 0xff696969
@@ -200,11 +200,28 @@ preset_color_schemes:
     key_text_color: *黑
     text_color: *黑 
     on_key_text_color: *GBlue #Shift锁
-    hilited_text_color: 0xff1a73e9
+    hilited_text_color: *GBlue
     text_back_color: *白
     hilited_back_color: *白
     off_key_text_color: 0xff101017
     tab_back_color: 0xfff2f3f5 #tab背景
+
+  dark:
+    name: "暗黑"
+    back_color: *黑 #背景
+    hilited_candidate_back_color: *灰 #首字 背景
+    hilited_key_back_color: *灰c
+    hilited_key_text_color: *白
+    tab_back_color: *黑c #tab背景
+    key_back_color: *黑c  
+    key_symbol_color: 0xffa7a7a7
+    key_text_color: *白
+    off_key_text_color: *白
+    text_color: *白 
+    on_key_text_color: *gold #Shift锁
+    hilited_text_color: *白 #悬浮窗编码
+    text_back_color: *灰c
+    hilited_back_color: *黑b
 
   purple:
     name: "深紫"
