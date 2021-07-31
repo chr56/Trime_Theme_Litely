@@ -273,10 +273,10 @@ preset_keyboards:
       - {click: m, long_click: '?'}
       - {click: BackSpace, width: 15, swipe_left: DelH}
       # 4
-      - {height: *downH, click: num_pad, swipe_up: Punctuation, has_menu: Page_Down, long_click: "K_menu", width: 18}
-      - {click: "，", label: "   ，", key_text_size: 12, ascii: ",", long_click: ",", swipe_up: ";", width: 13}
+      - {height: *downH, click: num_pad, swipe_up: Punctuation, has_menu: Page_Down, long_click: "K_menu", key_text_size: 14, width: 18}
+      - {click: "，", label: "   ，", long_click: ",", ascii: ",",ascii_long: "，", swipe_up: ";", has_menu: Page_Up, key_text_size: 14, width: 13}
       - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
-      - {click: "。", label: "   。", key_text_size: 12, ascii: ".", paging: Page_Up, long_click: ".", swipe_up: "；", width: 13} 
+      - {click: "。", label: "   。", long_click: ".", ascii: ".",ascii_long: "。", swipe_up: "；", key_text_size: 14, width: 13} 
       - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "默认"
     width: 10
