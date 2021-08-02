@@ -3190,7 +3190,7 @@ preset_keyboards:
     height: 31
     horizontal_gap: 0
     vertical_gap: 0
-    round_corner: *Corner
+    round_corner: 0
     key_text_offset_y: *textY
     keys:
       #❶ 
@@ -3318,7 +3318,7 @@ preset_keyboards:
     height: 31
     horizontal_gap: 0
     vertical_gap: 0
-    round_corner: *Corner
+    round_corner: 0
     key_text_offset_y: *textY
     keys:
       #❶ 
@@ -3446,7 +3446,7 @@ preset_keyboards:
     height: 31
     horizontal_gap: 0
     vertical_gap: 0
-    round_corner: *Corner
+    round_corner: 0
     key_text_offset_y: *textY
     keys:
       #❶ 
