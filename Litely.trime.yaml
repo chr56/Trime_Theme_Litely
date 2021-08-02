@@ -74,7 +74,7 @@ style:
   key_long_text_size: 15 #两字以上时键字号
   key_text_size: 21 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
-  keyboards: [.default, num_pad, k_symbol, editmenu, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_arrow, symb_math1, symb_math2, symb_star, k_alphabet, symb_1, symb_2, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
+  keyboards: [.default, num_pad, k_symbol, editmenu, k_date, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_arrow, symb_math1, symb_math2, symb_star, k_alphabet, symb_1, symb_2, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
   label_font: ziti.ttf #标签字型
   latin_font: latin.ttf #西文字型
@@ -271,7 +271,7 @@ preset_keyboards:
       - {click: Left_, width: 5 ,key_back_color: back_color}
       - {click: a, long_click: '@', swipe_down: Select_all, hint: "全选"}
       - {click: s, long_click: '#'}
-      - {click: d, long_click: '$', swipe_down: Date_time, hint: "时间"}
+      - {click: d, long_click: '$', swipe_down: k_date, hint: "时间"}
       - {click: f, long_click: '_'}
       - {click: g, long_click: '&'}
       - {click: h, long_click: '-', swipe_down: Left, hint: "←"}
@@ -344,7 +344,32 @@ preset_keyboards:
     name: "菜单"
     width: 10
 
-# 编辑
+  # 时间日期输入
+  k_date: 
+    height: *baseH
+    horizontal_gap: *baseCG
+    vertical_gap: *baseLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    key_hint_offset_y: *hintY
+    keys: 
+      # 1
+      - {click: Date, key_back_color: back_color}
+      - {click: "", key_back_color: back_color}
+      # 2
+      - {click: Date_Time, key_back_color: back_color}
+      - {click: Date_Time_full, key_back_color: back_color}
+      # 3
+      - {click: ChineseDate, key_back_color: back_color}
+      - {click: "", key_back_color: back_color}
+      # 4
+      - {click: K_back, key_back_color: back_color, width: 20}
+      - {width: 40}
+      - {click: space_, key_back_color: back_color, width: 20}
+      - {click: BackSpace, key_back_color: back_color, width: 20}
+    name: "时间日期"
+    width: 50
+  # 编辑
   editmenu: #编辑
     author: nobody
     height: *baseH #高
@@ -446,7 +471,7 @@ preset_keyboards:
       # 2
       - {click: '@', long_click: "", swipe_down: Select_all}
       - {click: '#', long_click: "№"}
-      - {click: '$', long_click: "￥", swipe_down: Date_time}
+      - {click: '$', long_click: "￥", swipe_down: k_date}
       - {click: '_', long_click: "—"}
       - {click: '&', long_click: "*"}
       - {click: '-', long_click: "["}
@@ -3657,6 +3682,7 @@ preset_keys:
   k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
   BackToDefault: {label: 返回, send: Eisu_toggle, select: .default} #返回主键盘
 
+  k_date: {label: 日期, send: Eisu_toggle, select: k_date}
   #编辑
   redo: {label: ↷, functional: false, send: Control+y} #重做
   undo: {label: 撤销, functional: false, send: Control+z} #撤销
@@ -3809,13 +3835,16 @@ preset_keys:
   CommitScriptText: {label: 编码, send: Shift+Return}
   CommitComment: {label: 编码, send: Control+Shift+Return}
   DeleteCandidate: {label: 删词, send: Control+Delete, functional: false}
-  # rime状态
 
+  # 时间
+  Date: {label: "日期", send: function, command: date, option: "yy.MM.d"}
+  Date_Time: {label: "日期时间", send: function, command: date, option: "yyyy.M.d HH:mm"}
+  Date_Time_full: {label: "日期时间(含星期)", send: function, command: date, option: "yyyy.M.d E HH:mm"}
+  ChineseDate: {label: "农历", send: function, command: date, option: "zh_CN@calendar=chinese"}
+  # (>=Android 7.0)日期格式：
+  # date [语言]@calendar=[历法模式]。具体参见 https://developer.android.com/reference/android/icu/util/Calendar.html
   
   # trime命令
-  Date: {label: "日期", send: function, command: date, option: "yy.MM.d"}
-  Date_time: {label: "日期时间", send: function, command: date, option: "yyyy.M.d E HH:mm"}
-  ChineseDate: {label: " ", send: function, command: date, option: "zh_CN@calendar=chinese"} #农历等日期(>=Android 7.0)：date 语言@calendar=历法 格式。具体參見https://developer.android.com/reference/android/icu/util/Calendar.html
   EnglishDate: {label: " ", send: function, command: date, option: "en_US@calendar=english"}
   Time: {label: "时间", send: function, command: date, option: " HH:mm E"}
   TrimeCmp: {label: 同文组件, send: function, command: run, option: "com.osfans.trime/ .Pref"} #运行程序指定组件：run包名/组件名
