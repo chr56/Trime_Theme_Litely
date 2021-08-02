@@ -384,29 +384,29 @@ preset_keyboards:
     keys:
       # ❶
       # ❷
-      - {click: "undo"}
+      - {click: "Copy"}
       - {click: Home, hint: 行首}
       - {click: "Up"}
       - {click: End, hint: 行尾}
-      - {click: "K_back", width: 20}
+      - {click: "Select_all"}
       # ❸
-      - {click: ""}
+      - {click: "Cut"}
       - {click: "Left"}
       - {click: "Shift_Lock"}
       - {click: "Right"}
-      - {click: "Space", width: 20}
+      - {click: "BackSpace"}
       # ❹
-      - {click: "Hint_switch"}
+      - {click: "Paste"}
       - {click: "Tab_"}
       - {click: "Down"}
       - {click: "SelectLine", hint: 选中行}
-      - {click: "BackSpace", width: 20}
+      - {click: "space_"}
       # ❺ 
-      - {click: "Select_all"}
-      - {click: "Cut"}
-      - {click: "Copy"}
-      - {click: "Paste"}
-      - {click: "Return", width: 20}
+      - {click: "K_back", long_click: "K_menu"}
+      - {click: "k_date"}
+      - {click: "Hint_switch"}
+      - {click: "undo"}
+      - {click: "Return"}
     name: "编辑"
     width: 20
   # 数字小键盘
