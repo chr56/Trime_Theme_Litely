@@ -390,14 +390,14 @@ preset_keyboards:
     keys:
       # Line1
       - {click: "+", width: 11}
-      - {click: "-", width: 11}
+      - {click: "-", width: 11,long_click: "_"}
       - {click: "1", width: 20}
       - {click: "2", width: 20}
       - {click: "3", width: 20}
       - {click: "%", width: 18}
       # Line2
       - {click: "*", width: 11}
-      - {click: "/", width: 11}
+      - {click: "/", width: 11,long_click: "\\"}
       - {click: "4", width: 20}
       - {click: "5", width: 20}
       - {click: "6", width: 20}
