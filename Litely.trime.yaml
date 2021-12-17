@@ -291,9 +291,9 @@ preset_keyboards:
       - {click: BackSpace, width: 15, swipe_left: DelH}
       # 4
       - {height: *downH, click: num_pad, swipe_up: Punctuation, has_menu: Page_Down, long_click: "K_menu", key_text_size: 14, width: 18}
-      - {click: "，", label: "   ，", long_click: ",", ascii: ",",ascii_long: "，", swipe_up: ";", has_menu: Page_Up, key_text_size: 14, width: 13}
+      - {click: cn_comma, long_click: en_comma, ascii: en_comma,ascii_long: cn_comma, swipe_up: ";", has_menu: Page_Up, key_text_size: 14, width: 13}
       - {click: space, ascii: space_en,long_click: "english", swipe_left: Left, swipe_right: Right, width: 38}
-      - {click: "。", label: "   。", long_click: ".", ascii: ".",ascii_long: "。", swipe_up: "；", composing: "'", key_text_size: 14, width: 13} 
+      - {click: cn_full_stop, long_click: en_full_stop, ascii: en_full_stop,ascii_long: cn_full_stop, swipe_up: "；", composing: "'", key_text_size: 14, width: 13} 
       - {click: Return, long_click: Color_settings_, swipe_up: Theme_settings, width: 18}
     name: "默认"
     width: 10
@@ -303,10 +303,10 @@ preset_keyboards:
     ascii_mode: 1
     __patch:
         "keys/@31/click": ","
-        "keys/@31/long_click": "，"
-        "keys/@32/long_click": "k_default"
+        "keys/@31/long_click": cn_comma
+        "keys/@32/long_click": k_default
         "keys/@33/click": "."
-        "keys/@33/long_click": "。"        
+        "keys/@33/long_click": cn_full_stop        
     name: "英文键盘"
   # 菜单
   K_menu:
@@ -443,8 +443,8 @@ preset_keyboards:
       - {click: "Punctuation", long_click: "k_symbol", width: 13}
       - {click: "EmojiTab", width: 14}
       - {click: "0", width: 20}
-      - {click: "=", width: 8}
-      - {click: ".", long_click: ",", key_text_size: 14, width: 12}
+      - {click: "=", long_click: ':', width: 8}
+      - {click: en_full_stop, long_click: en_comma, key_text_size: 14, width: 12}
       - {click: "Return", width: 18}
     name: "数字小键盘"
     width: 15
@@ -3681,7 +3681,7 @@ android_keys:
 preset_keys:
   edit_menu: {label: 编辑 , send: Eisu_toggle, select: "editmenu"}
   num_pad: {label: 12! , send: Eisu_toggle, select: "num_pad"}
-  english: {label: ️中文, send: Eisu_toggle, select: english} #英文键盘
+  english: {label: "中文", send: Eisu_toggle, select: english} #英文键盘
   k_symbol: {label: ".?!" , send: Eisu_toggle, select: "k_symbol"} #符号键盘
   k_default: {label: English, send: Eisu_toggle, select: .default} #默认键盘（汉语）
   BackToDefault: {label: 返回, send: Eisu_toggle, select: .default} #返回主键盘
@@ -3828,9 +3828,9 @@ preset_keys:
   Left_: {label: " ", send: Left, repeatable: true, functional: false}
   Right_: {label: " ", send: Right, repeatable: true, functional: false}
   # 符号输入
-  cn_fullstop: {label: '  。', send: period}
-  cn_comma: {label: '  ，', send: comma}
-  en_fullstop: {label: ".", commit: "."}
+  cn_full_stop: {label: " 。", commit: "。"}
+  cn_comma: {label: "，", commit: "，"}
+  en_full_stop: {label: ".", commit: "."}
   en_comma: {label: ",", commit: ","}
   # rime组合键
   F4: {label: 方案菜单, send: F4} 
