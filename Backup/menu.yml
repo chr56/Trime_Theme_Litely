@@ -1,0 +1,58 @@
+  # 菜单
+  K_menu:
+    height: *baseH
+    horizontal_gap: *baseCG
+    vertical_gap: *baseLG
+    round_corner: *Corner
+    key_text_offset_y: *textY
+    keys:
+      # 1
+      - {click: "", key_back_color: 0x00, width: 10}
+      - {click: "Refresh", key_back_color: 0x00, width: 20}
+      - {click: "Deploy", key_back_color: 0x00, width: 20}
+      - {click: "IME_switch", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}
+      # 2
+      - {click: "", key_back_color: 0x00, width: 10}
+      - {click: "Theme_settings", key_back_color: 0x00, width: 20}
+      - {click: "Color_settings", key_back_color: 0x00, width: 20}
+      - {click: "Schema_settings", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}
+      # 3
+      - {click: "", key_back_color: 0x00, width: 10}
+      - {click: "Full_Half1", hint: 全半角, key_back_color: 0x00, width: 20}
+      - {click: "Hint_switch", hint: 提　示, key_back_color: 0x00, width: 20}
+      - {click: "Candidate_switch", hint: 候选栏, key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 30}      
+      # 4
+      - {click: "", key_back_color: 0x00, width: 70}
+      - {click: "BackToDefault_", key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 10}      
+    key_hint_offset_y: *hintY
+    name: "菜单"
+    width: 10
+
+#  #菜单
+#   refresh: {label: "⇋️", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+#   K_menu: {label: "菜单", send: Eisu_toggle, select: "K_menu"}
+#   Menu: {label: ✡, functional: false, send: Menu} #方案菜单
+#   IME_switch: {label: ⌨, functional: false, send: LANGUAGE_SWITCH} #输入法
+#   Deploy: {label: ♻, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
+#   Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]}
+#   Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]}
+#   Color_settings: {label: 配色, send: SETTINGS, option: "color"} #配色
+#   Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
+#   BackToDefault_: {label: Ⓑ , send: Eisu_toggle, select: .default} #返回主键盘
+
+  # 菜单选项
+  K_menu: {label: "菜单", send: Eisu_toggle, select: "K_menu"}
+  Refresh: {label: "↺  刷新", functional: false, text: "{Schema_switch}{Schema_switch}"}  #刷新
+  Deploy: {label: ♲️  部署, functional: false, send: function, command: broadcast, option: "com.osfans.trime.deploy"} #部署
+  Schema_settings: {label: ▤  方案, functional: false, send: Menu} #方案菜单
+  Color_settings: {label: ✎  配色, send: SETTINGS, option: "color"} #配色
+  IME_switch: {label: ⌨ 输入法, functional: false, send: LANGUAGE_SWITCH} #输入法
+  Full_Half: {toggle: full_shape, send: Mode_switch, states: [ ◖, ● ]} # 半角全角
+  Full_Half1: {toggle: full_shape, functional: false, text: "{Full_Half}{K_back}", send: Mode_switch, states: [ ◐, ● ]} # 半角全角
+  Candidate_switch: {toggle: _hide_candidate, functional: false, send: Mode_switch, states: [ ☐️️, ️＿ ]}
+  BackToDefault_: {label: ⇦️️  返回, send: Eisu_toggle, select: .default} #返回主键盘
+
