@@ -33,26 +33,26 @@ style:
   #candidate_font: ziti.ttf #候选字型
   candidate_padding: 2 #候选项内边距
   candidate_spacing: 4 #候选间距
-  candidate_text_size: 21 #候选字号
+  candidate_text_size: 24 #候选字号
   candidate_use_cursor: true #高亮候选项
   candidate_view_height: 26 #候选区高度
   color_scheme: default #配色方案
   comment_font: ziti.ttf #候选窗和状态栏提示字型
   comment_height: 10 #候选窗和状态栏提示区高度
   comment_on_top: true #候选窗和状态栏提示在上方true或右侧false
-  comment_text_size: 12 #候选窗和状态栏提示字号
+  comment_text_size: 13 #候选窗和状态栏提示字号
   hanb_font: Ext.ttf #扩充字型
   horizontal: false #水平模式
   horizontal_gap: *miniCG #符号键盘列间距
   layout: #悬浮窗口位置
     position: bottom_left #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right
-    min_length: 2 #候选窗口最小词长
-    max_length: 18 #超过字数则换行
+    min_length: 1 #候选窗口最小词长
+    max_length: 25 #超过字数则换行
     sticky_lines: 0 #固顶行数
-    max_entries: 7 #候选窗口最大词条数
+    max_entries: 9 #候选窗口最大词条数
     all_phrases: false #所有满足条件的词语都显示在窗口
     border: 1 #候选窗口边框宽度
-    max_width: 620 #最大宽度，超过则自动换行
+    max_width: 380 #最大宽度，超过则自动换行
     max_height: 30 #最大高度
     min_width: 0 #最小宽度
     min_height: 0 #最小高度
@@ -71,8 +71,8 @@ style:
     - {start: "\n", label: "", candidate: " %s ", comment: " %s", end: " ", sep: " "}  #label: "%s.", 序号;start: "\n", 换行
   key_font: ziti.ttf #键盘字型
   key_height: *baseH #符号键盘键高
-  key_long_text_size: 15 #两字以上时键字号
-  key_text_size: 21 #键字号
+  key_long_text_size: 16 #两字以上时键字号
+  key_text_size: 23 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
   keyboards: [.default, num_pad, k_symbol, editmenu, k_date, english, K_menu, punc_zh, punc_en, symb_num1, symb_num2, symb_arrow, symb_math1, symb_math2, symb_star, k_alphabet, symb_1, symb_2, emoji_face1, emoji_face2, emoji_face3, emoji_people1, emoji_people2, emoji_people3, emoji_careers, emoji_fruit_, emoji_sports1, emoji_sports2, emoji_clothes, emoji_food1, emoji_food2, emoji_plant, emoji_festival, emoji_animal1, emoji_animal2, emoji_animal3, emoji_nature, emoji_building, emoji_transports, emoji_office, emoji_life1, emoji_life2, emoji_life3, emoji_shape, emoji_other, emoji_symbol1, emoji_symbol2, emoji_symbol3, emoji_quick] #声明
   label_text_size: 11 #悬浮窗序号字号
@@ -90,7 +90,7 @@ style:
   shadow_radius: 0.0 #按键阴影半径
   speech_opencc_config: none #语音输入简繁转换
   symbol_font: ziti.ttf #符号字型
-  symbol_text_size: 9 #符号字号 上标字号
+  symbol_text_size: 11 #符号字号 上标字号
   text_font: ziti.ttf #编码字型
   text_size: 16 #编码字号
   vertical_correction: -3 #按键纵向偏移，负数下移接触面
