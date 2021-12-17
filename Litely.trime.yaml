@@ -318,27 +318,28 @@ preset_keyboards:
     keys:
       # 1
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "Refresh", key_back_color: 0x00, width: 20}
-      - {click: "Deploy", key_back_color: 0x00, width: 20}
-      - {click: "IME_switch", key_back_color: 0x00, width: 20}
+      - {click: Refresh, key_back_color: 0x00, width: 20}
+      - {click: Deploy, key_back_color: 0x00, width: 20}
+      - {click: IME_switch, key_back_color: 0x00, width: 20}
       - {click: "", key_back_color: 0x00, width: 30}
       # 2
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "Theme_settings", key_back_color: 0x00, width: 20}
-      - {click: "Color_settings", key_back_color: 0x00, width: 20}
-      - {click: "Schema_settings", key_back_color: 0x00, width: 20}
-      - {click: "", key_back_color: 0x00, width: 30}
+      - {click: Theme_settings, key_back_color: 0x00, width: 20}
+      - {click: Color_settings, key_back_color: 0x00, width: 20}
+      - {click: Schema_settings, key_back_color: 0x00, width: 20}
+      - {click: SchemaSwitch, key_back_color: 0x00, width: 20}
+      - {click: "", key_back_color: 0x00, width: 10}
       # 3
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "Full_Half_", hint: 全半角, key_back_color: 0x00, width: 20}
-      - {click: "Hint_switch", hint: 提　示, key_back_color: 0x00, width: 20}
-      - {click: "Candidate_switch", hint: 候选栏, key_back_color: 0x00, width: 20}
+      - {click: Full_Half_, hint: 全半角, key_back_color: 0x00, width: 20}
+      - {click: Hint_switch, hint: 提　示, key_back_color: 0x00, width: 20}
+      - {click: Candidate_switch, hint: 候选栏, key_back_color: 0x00, width: 20}
       - {click: "", key_back_color: 0x00, width: 30}      
       # 4
       - {click: "", key_back_color: 0x00, width: 10}
-      - {click: "Settings", key_back_color: 0x00, width: 20}
+      - {click: Settings, key_back_color: 0x00, width: 20}
       - {click: "",key_back_color: 0x00, width: 40}
-      - {click: "BackToDefault_", key_back_color: 0x00, width: 20}
+      - {click: BackToDefault_, key_back_color: 0x00, width: 20}
       - {click: "", key_back_color: 0x00, width: 10}      
     key_hint_offset_y: *hintY
     name: "菜单"
@@ -3679,6 +3680,7 @@ android_keys:
     send: 按键
     
 preset_keys:
+  #键盘
   edit_menu: {label: 编辑 , send: Eisu_toggle, select: "editmenu"}
   num_pad: {label: 12! , send: Eisu_toggle, select: "num_pad"}
   english: {label: "中文", send: Eisu_toggle, select: english} #英文键盘
@@ -3702,6 +3704,7 @@ preset_keys:
   Theme_settings: {label: ❉  主题, functional: false, send: SETTINGS, option: "theme"} #主题
   Color_settings: {label: ✎  配色, functional: false, send: SETTINGS, option: "color"} #配色
   Schema_settings: {label: ▤  方案, functional: false, send: SETTINGS, option: "schema"} #方案菜单
+  SchemaSwitch: {label: ▤ 切换, functional: false, send: F4} #方案切换
   IME_switch: {label: ⌨ 输入法, functional: false, send: LANGUAGE_SWITCH} #输入法
   Help: {label: Ⓗ  帮助, functional: false, send: Help}
   Info: {label: ⓘ  关于, functional: false, send: INFO}
@@ -3833,7 +3836,6 @@ preset_keys:
   en_full_stop: {label: ".", commit: "."}
   en_comma: {label: ",", commit: ","}
   # rime组合键
-  F4: {label: 方案菜单, send: F4} 
   BackToPreviousSyllable: {label: 删音节, send: Control+BackSpace}
   CommitRawInput: {label: 编码, send: Control+Return}
   CommitScriptText: {label: 编码, send: Shift+Return}
@@ -3853,9 +3855,9 @@ preset_keys:
   # date [语言]@calendar=[历法模式]。具体参见 https://developer.android.com/reference/android/icu/util/Calendar.html
   
   # trime命令
-  TrimeCmp: {label: 同文组件, send: function, command: run, option: "com.osfans.trime/ .Pref"} #运行程序指定组件：run包名/组件名
-  HDSS: {label: ◫, functional: false, send: function, command: run, option: "https://www.zdic.net/hans/?q=%3$s"}
-  LLQ: {label: ◰, functional: false, send: function, command: web_search, option: "%4$s"} # 直达光标前http开头的网址或搜索光标前内容
+  Run: {label: 同文组件, send: function, command: run, option: "com.osfans.trime/ .Pref"} #运行程序指定组件：run包名/组件名
+  Web_Lookup: {label: ◫, functional: false, send: function, command: run, option: "https://www.zdic.net/hans/?q=%3$s"}
+  Web_Search: {label: ◰, functional: false, send: function, command: web_search, option: "%4$s"} # 直达光标前http开头的网址或搜索光标前内容
   Sync: {label: 同步, send: function, command: broadcast, option: "com.osfans.trime.sync"}
   Share: {label: 分享, functional: false, command: send, option: "%1$s"} #分享指定文本: %s或者%1$s爲當前字符
 # 仙鹤群 966868329
